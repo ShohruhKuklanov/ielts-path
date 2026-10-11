@@ -34,7 +34,7 @@ export default function Learn() {
             <View style={styles.text}>
               <AppText variant="label">{s.title}</AppText>
               <AppText variant="small" muted>
-                {s.cefrFrom === s.cefrTo ? s.cefrFrom : `${s.cefrFrom}–${s.cefrTo}`} · {band}
+                {s.cefrFrom === s.cefrTo ? s.cefrFrom : `${s.cefrFrom} to ${s.cefrTo}`} · {band}
               </AppText>
             </View>
             <Ionicons
