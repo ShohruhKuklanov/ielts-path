@@ -1,0 +1,7 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+# pnpm 10 skips install scripts unless allowed; the Supabase CLI needs its script to download the binary.
+onlyBuiltDependencies:
+  - supabase

@@ -1,0 +1,88 @@
+# Local Supabase settings (used by `supabase start`).
+# The hosted project is configured in the Supabase dashboard; keep the two in step.
+
+project_id = "ielts-app"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 17
+
+[studio]
+enabled = true
+port = 54323
+
+# Captures every email the local auth server sends (sign-in codes).
+# Open http://127.0.0.1:54324 to read them.
+[inbucket]
+enabled = true
+port = 54324
+
+[auth]
+enabled = true
+site_url = "ieltsapp://"
+additional_redirect_urls = [
+  "ieltsapp://**",
+  "exp://**",
+  "http://localhost:8081/**",
+]
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+enable_signup = true
+
+# Email: a 6-digit code (no password). The template below shows the code.
+[auth.email]
+enable_signup = true
+enable_confirmations = false
+otp_length = 6
+otp_expiry = 600
+max_frequency = "30s"
+
+[auth.email.template.magic_link]
+subject = "Your sign-in code"
+content_path = "./supabase/templates/magic_link.html"
+
+# Phone: a 6-digit SMS code. Sending real SMS needs a provider (Twilio, or a
+# local provider through the Send SMS hook). For local testing you can add a
+# fixed code for your own number instead, e.g.:
+#   [auth.sms.test_otp]
+#   998901234567 = "123456"
+[auth.sms]
+enable_signup = true
+enable_confirmations = false
+max_frequency = "30s"
+template = "Your IELTS app code is {{ .Code }}"
+
+[auth.sms.twilio]
+enabled = false
+account_sid = ""
+message_service_sid = ""
+auth_token = "env(SUPABASE_AUTH_SMS_TWILIO_AUTH_TOKEN)"
+
+# Google: create OAuth credentials in Google Cloud, then put them in supabase/.env.
+[auth.external.google]
+enabled = false
+client_id = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID)"
+secret = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_SECRET)"
+skip_nonce_check = false
+
+# Apple: native sign-in on iOS sends an ID token; client_id is the app's bundle ID
+# (plus the Services ID for Android/web, comma-separated).
+[auth.external.apple]
+enabled = false
+client_id = "env(SUPABASE_AUTH_EXTERNAL_APPLE_CLIENT_ID)"
+secret = "env(SUPABASE_AUTH_EXTERNAL_APPLE_SECRET)"
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+[edge_runtime]
+enabled = true
+policy = "per_worker"
