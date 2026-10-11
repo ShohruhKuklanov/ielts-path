@@ -41,7 +41,7 @@ Then, in Terminal:
 cd ~/Documents/ielts-app
 
 # 1. Install pnpm and the project's packages
-corepack enable
+sudo npm install -g pnpm   # asks for your Mac password
 pnpm install
 pnpm fix-deps            # aligns Expo package versions with SDK 57
 
