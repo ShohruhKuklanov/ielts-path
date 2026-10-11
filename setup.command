@@ -5,6 +5,7 @@
 # writes apps/mobile/.env, and starts the app.
 set -euo pipefail
 cd "$(dirname "$0")"
+exec 3>&1 4>&2
 exec > >(tee setup.log) 2>&1
 
 TOOLS="$HOME/.ielts-tools"
@@ -71,4 +72,6 @@ fi
 # 5. Start the app
 step "Ilova ishga tushirilmoqda / starting the app"
 echo "Telefon kamerasi bilan QR kodni skanerlang, yoki 'w' bosing (brauzerda ochish)."
+# Give Expo the real terminal so it shows the QR code and accepts key presses.
+exec 1>&3 2>&4
 pnpm dev

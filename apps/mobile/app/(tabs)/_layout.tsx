@@ -1,6 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
 import type { ComponentProps } from 'react';
+import type { ColorValue } from 'react-native';
 
 import { useTheme } from '@/theme/ThemeProvider';
 
@@ -8,7 +9,7 @@ type IconName = ComponentProps<typeof Ionicons>['name'];
 
 const icon =
   (active: IconName, inactive: IconName) =>
-  ({ color, focused, size }: { color: string; focused: boolean; size: number }) => (
+  ({ color, focused, size }: { color: ColorValue; focused: boolean; size: number }) => (
     <Ionicons name={focused ? active : inactive} size={size} color={color} />
   );
 

@@ -20,7 +20,7 @@ port = 54323
 
 # Captures every email the local auth server sends (sign-in codes).
 # Open http://127.0.0.1:54324 to read them.
-[inbucket]
+[local_smtp]
 enabled = true
 port = 54324
 
