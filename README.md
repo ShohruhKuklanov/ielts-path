@@ -13,7 +13,7 @@ The full plan is in the **IELTS 0→9 App — Technical Blueprint** doc.
 ## Build progress
 
 - [x] **Step 1:** monorepo, full database schema with security rules, app shell (light/dark, 5 tabs), sign-in
-- [ ] Step 2: shared logic (exercise schemas, IELTS band maths, SM-2) with tests
+- [x] **Step 2:** shared logic: 10 exercise types with validation and grading, IELTS band maths, SM-2 flashcard scheduling (41 tests)
 - [ ] Step 3: content pipeline and minimal admin
 - [ ] Step 4: Foundation and Elementary content
 - [ ] Step 5: placement test and onboarding
@@ -110,7 +110,7 @@ apps/mobile/
     features/auth/     session + profile provider
     lib/               Supabase client, sign-in functions
     theme/             colours, spacing, type; light/dark provider
-packages/shared/       types and constants used everywhere (stages, CEFR, profile)
+packages/shared/       code used everywhere: exercise schemas + grading, IELTS band maths, SM-2, stages, types
 supabase/
   migrations/          database schema + security rules (RLS)
   templates/           sign-in email
@@ -136,3 +136,4 @@ supabase/
 | `pnpm db:reset` | Rebuild the local database from the migrations (deletes local data) |
 | `pnpm db:types` | Regenerate TypeScript types from the database |
 | `pnpm typecheck` | Type-check all packages |
+| `pnpm test` | Run the unit tests (exercise grading, band maths, SM-2) |

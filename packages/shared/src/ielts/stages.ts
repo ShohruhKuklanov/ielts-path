@@ -1,4 +1,4 @@
-import type { Cefr } from '../types/domain';
+import type { Cefr } from '../types/domain.ts';
 
 export type StageCode =
   | 'foundation'
