@@ -2,42 +2,105 @@
   "title": "How much? How many?",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 7,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "How many + things we can count."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
-      "type": "example",
-      "en": "How many apples do you want?"
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question",
+          "noun",
+          "example"
+        ],
+        [
+          "How many",
+          "+ plural countable",
+          "How many apples do you want?"
+        ],
+        [
+          "How much",
+          "+ uncountable",
+          "How much water do you drink?"
+        ]
+      ]
     },
     {
-      "type": "text",
-      "text": "How much + things we cannot count."
+      "type": "heading",
+      "text": "2. Prices"
     },
     {
-      "type": "example",
-      "en": "How much water do you drink?"
+      "type": "rule",
+      "title": "How much for prices",
+      "points": [
+        "How much is it? / How much is this bag? — It's 20 dollars.",
+        "How much are they? / How much are these shoes? — They're 35 dollars.",
+        "Short: How much? — Ten dollars."
+      ]
     },
     {
-      "type": "text",
-      "text": "We also use How much for prices."
+      "type": "heading",
+      "text": "3. Answers about quantity"
     },
     {
-      "type": "example",
-      "en": "How much is it? — It's five dollars."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "countable",
+          "uncountable"
+        ],
+        [
+          "a lot of / many apples",
+          "a lot of / much water"
+        ],
+        [
+          "a few apples",
+          "a little water"
+        ],
+        [
+          "no apples / not any",
+          "no water / not any"
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "How much are the shoes? — They're thirty dollars."
+      "type": "rule",
+      "title": "much / many in positive sentences",
+      "points": [
+        "In positive sentences we usually say a lot of: I drink a lot of tea.",
+        "much / many are common in questions and negatives: I don't have much time."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "How much eggs do we need?",
+      "right": "How many eggs do we need?"
+    },
+    {
+      "type": "mistake",
+      "wrong": "How many money do you have?",
+      "right": "How much money do you have?"
+    },
+    {
+      "type": "mistake",
+      "wrong": "How much cost this?",
+      "right": "How much is this?"
     }
   ],
   "exercises": [
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Children: we can count. How many.",
+      "explanation": "Children: countable → How many.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -61,7 +124,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Rice: we cannot count. How much.",
+      "explanation": "Rice: uncountable → How much.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -109,7 +172,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Eggs: we can count. How many.",
+      "explanation": "Eggs: countable → How many.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -133,7 +196,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Apples are more than one: They're …",
+      "explanation": "Plural: They're …",
       "content": {
         "type": "mcq",
         "payload": {
@@ -147,6 +210,81 @@
             },
             {
               "text": "Two apples."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "time is uncountable: much.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I don't have ___ time.",
+          "options": [
+            {
+              "text": "many"
+            },
+            {
+              "text": "much"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Uncountable: a little.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "There is ___ milk. Just a little.",
+          "options": [
+            {
+              "text": "a few"
+            },
+            {
+              "text": "a little"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "money is uncountable.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "How many money do you have?"
+            },
+            {
+              "text": "How much money do you have?"
+            },
+            {
+              "text": "How much moneys do you have?"
             }
           ]
         },
@@ -204,6 +342,28 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "Countable small number: a few.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There are a {{1}} oranges in the bag. (3 or 4)",
+          "wordBank": [
+            "few",
+            "little"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "few"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "How much + is + this shirt?",
       "content": {
         "type": "word_order",
@@ -245,6 +405,25 @@
           "accepted": [
             "How many brothers do you have?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "apples: How many.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: How much apples do you want?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "How many apples do you want?"
+            ]
+          }
         }
       }
     }

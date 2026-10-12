@@ -2,49 +2,103 @@
   "title": "I have, she has",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "Use have with I, you, we, they."
-    },
-    {
-      "type": "text",
-      "text": "Use has with he, she, it."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
+          "person",
+          "positive",
+          "negative"
+        ],
+        [
           "I / you / we / they",
-          "have"
+          "have",
+          "don't have"
         ],
         [
           "he / she / it",
-          "has"
+          "has",
+          "doesn't have"
         ]
       ]
     },
     {
-      "type": "example",
-      "en": "I have a brother."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question",
+          "short answers"
+        ],
+        [
+          "Do you have …?",
+          "Yes, I do. / No, I don't."
+        ],
+        [
+          "Does she have …?",
+          "Yes, she does. / No, she doesn't."
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "She has two cats."
+      "type": "heading",
+      "text": "2. Use"
     },
     {
-      "type": "text",
-      "text": "Negative: don't have / doesn't have."
+      "type": "rule",
+      "title": "We use have / has for",
+      "points": [
+        "family: I have two sisters.",
+        "things you own: She has a new phone.",
+        "the body: He has blue eyes.",
+        "illnesses: I have a cold."
+      ]
     },
     {
-      "type": "example",
-      "en": "I don't have a car."
+      "type": "heading",
+      "text": "3. Rules"
     },
     {
-      "type": "example",
-      "en": "He doesn't have a sister.",
-      "note": "doesn't + have (not has)"
+      "type": "rule",
+      "title": "After does / doesn't → have",
+      "points": [
+        "She doesn't have a car. (not doesn't has)",
+        "Does he have a sister? (not Does he has)"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "British English: have got",
+      "points": [
+        "In the UK people also say: I've got a brother. She's got a car."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "She have a cat.",
+      "right": "She has a cat."
+    },
+    {
+      "type": "mistake",
+      "wrong": "He doesn't has a job.",
+      "right": "He doesn't have a job."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I have 20 years.",
+      "right": "I'm 20.",
+      "why": "Use be for age."
     }
   ],
   "exercises": [
@@ -159,7 +213,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "After doesn't use have: He doesn't have.",
+      "explanation": "After doesn't use have.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -173,6 +227,87 @@
             },
             {
               "text": "having"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Do you have …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ you have a pen? — Yes, I do.",
+          "options": [
+            {
+              "text": "Do"
+            },
+            {
+              "text": "Does"
+            },
+            {
+              "text": "Are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "No, she doesn't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Does she have a sister? — No, ___",
+          "options": [
+            {
+              "text": "she doesn't."
+            },
+            {
+              "text": "she don't."
+            },
+            {
+              "text": "she hasn't."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Use be for age.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "She has 15 years."
+            },
+            {
+              "text": "She's 15."
+            },
+            {
+              "text": "She have 15."
             }
           ]
         },
@@ -253,6 +388,28 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "Does he have …?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} your brother have a car?",
+          "wordBank": [
+            "Do",
+            "Does"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Does"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "I + don't have + a sister.",
       "content": {
         "type": "word_order",
@@ -270,6 +427,44 @@
           "accepted": [
             "I don't have a sister."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "doesn't + have.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: He doesn't has a bike."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "He doesn't have a bike."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "she → has.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My mother have a shop."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My mother has a shop."
+            ]
+          }
         }
       }
     }

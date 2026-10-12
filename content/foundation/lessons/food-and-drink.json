@@ -2,11 +2,11 @@
   "title": "Food and drink",
   "kind": "vocabulary",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
-      "type": "text",
-      "text": "Food:"
+      "type": "heading",
+      "text": "1. Food"
     },
     {
       "type": "table",
@@ -34,8 +34,8 @@
       ]
     },
     {
-      "type": "text",
-      "text": "Drinks:"
+      "type": "heading",
+      "text": "2. Drinks"
     },
     {
       "type": "table",
@@ -53,16 +53,65 @@
       ]
     },
     {
-      "type": "example",
-      "en": "I eat rice and chicken for lunch."
+      "type": "heading",
+      "text": "3. Grammar focus: countable or uncountable?"
     },
     {
-      "type": "example",
-      "en": "I drink green tea."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "countable (we can count)",
+          "uncountable (we cannot count)"
+        ],
+        [
+          "an apple, two apples",
+          "water, milk, tea"
+        ],
+        [
+          "an egg, three eggs",
+          "rice, bread, meat"
+        ],
+        [
+          "a banana, five bananas",
+          "cheese, sugar, salt"
+        ]
+      ]
     },
     {
-      "type": "tip",
-      "text": "We eat food and drink drinks."
+      "type": "rule",
+      "title": "Uncountable nouns",
+      "points": [
+        "No a / an: water (not a water)",
+        "No plural -s: rice (not rices)",
+        "Use a container to count them: a glass of water, a cup of tea, a bottle of juice, a piece of bread"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meals",
+      "points": [
+        "for breakfast / for lunch / for dinner: I eat eggs for breakfast."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "a bread",
+      "right": "some bread / a piece of bread"
+    },
+    {
+      "type": "mistake",
+      "wrong": "two rices",
+      "right": "rice"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I drink a water.",
+      "right": "I drink some water. / a glass of water."
     }
   ],
   "exercises": [
@@ -150,33 +199,6 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "Eggs come from chickens.",
-      "content": {
-        "type": "mcq",
-        "payload": {
-          "prompt": "A chicken gives us …",
-          "options": [
-            {
-              "text": "eggs"
-            },
-            {
-              "text": "milk"
-            },
-            {
-              "text": "bread"
-            }
-          ]
-        },
-        "answer": {
-          "correct": [
-            0
-          ]
-        }
-      }
-    },
-    {
-      "skill": "vocabulary",
-      "cefr": "A1",
       "explanation": "Tea and water are drinks.",
       "content": {
         "type": "mcq",
@@ -207,26 +229,113 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A1",
-      "explanation": "We eat bread and drink coffee.",
+      "explanation": "Rice is uncountable.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word is uncountable?",
+          "options": [
+            {
+              "text": "egg"
+            },
+            {
+              "text": "rice"
+            },
+            {
+              "text": "banana"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "a cup of tea.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Can I have a ___ of tea, please?",
+          "options": [
+            {
+              "text": "cup"
+            },
+            {
+              "text": "piece"
+            },
+            {
+              "text": "bottle"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "a piece of bread.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "a ___ of bread",
+          "options": [
+            {
+              "text": "glass"
+            },
+            {
+              "text": "piece"
+            },
+            {
+              "text": "cup"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Containers help us count uncountable food.",
       "content": {
         "type": "match_pairs",
         "payload": {
           "left": [
-            "bread",
-            "coffee"
+            "a glass of",
+            "a piece of",
+            "a bottle of",
+            "a bowl of"
           ],
           "right": [
-            "drink",
-            "eat"
+            "juice",
+            "cheese",
+            "soup",
+            "water"
           ],
-          "instruction": "Match the word and the verb."
+          "instruction": "Match."
         },
         "answer": {
           "pairs": [
+            3,
             1,
-            0
+            0,
+            2
           ]
         }
       }
@@ -234,11 +343,11 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "A glass of water or milk.",
+      "explanation": "A glass of water, milk or juice.",
       "content": {
         "type": "gap_fill",
         "payload": {
-          "text": "I drink a glass of {{1}} every day. It is good for you.",
+          "text": "I drink a glass of {{1}} every day.",
           "wordBank": [
             "water",
             "bread",
@@ -251,6 +360,24 @@
               "water",
               "milk",
               "juice"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "for breakfast.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I eat eggs {{1}} breakfast."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "for"
             ]
           }
         }
@@ -283,23 +410,48 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "We drink tea + after dinner.",
+      "explanation": "water is uncountable: some water.",
       "content": {
-        "type": "word_order",
+        "type": "mcq",
         "payload": {
-          "tokens": [
-            "after",
-            "drink",
-            "tea",
-            "dinner",
-            "We"
-          ],
-          "instruction": "Put the words in order."
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "I want a water."
+            },
+            {
+              "text": "I want some water."
+            },
+            {
+              "text": "I want waters."
+            }
+          ]
         },
         "answer": {
-          "accepted": [
-            "We drink tea after dinner."
+          "correct": [
+            1
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "bread is uncountable.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: We have two breads."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "We have two pieces of bread.",
+              "We have some bread.",
+              "We have two loaves of bread."
+            ]
+          }
         }
       }
     }

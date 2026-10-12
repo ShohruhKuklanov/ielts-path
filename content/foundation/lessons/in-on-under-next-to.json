@@ -2,36 +2,46 @@
   "title": "In, on, under, next to",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 7,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "These words say where something is."
+      "type": "heading",
+      "text": "1. Prepositions of place"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
-          "in",
+          "preposition",
+          "example"
+        ],
+        [
+          "in (inside)",
           "The keys are in the bag."
         ],
         [
-          "on",
-          "The book is on the table."
+          "on (on top of, touching)",
+          "The book is on the table. The picture is on the wall."
         ],
         [
-          "under",
+          "under (below)",
           "The cat is under the bed."
         ],
         [
-          "next to",
+          "next to (at the side)",
           "The lamp is next to the bed."
         ]
       ]
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
+        [
+          "preposition",
+          "example"
+        ],
         [
           "behind",
           "The garden is behind the house."
@@ -41,14 +51,55 @@
           "The car is in front of the house."
         ],
         [
-          "between",
+          "between (two things)",
           "The bank is between the shop and the café."
+        ],
+        [
+          "opposite (across from)",
+          "The school is opposite the park."
         ]
       ]
     },
     {
-      "type": "tip",
-      "text": "Between is for two things: between A and B."
+      "type": "heading",
+      "text": "2. Grammar rules"
+    },
+    {
+      "type": "rule",
+      "title": "Word order",
+      "points": [
+        "thing + be + preposition + place: The phone is on the sofa.",
+        "Where is …? — It is in / on / under …"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Fixed phrases",
+      "points": [
+        "in a city / in a country: in Tashkent, in Japan",
+        "on the floor, on the wall, on the left / right",
+        "at home, at school, at work"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "The picture is in the wall.",
+      "right": "The picture is on the wall."
+    },
+    {
+      "type": "mistake",
+      "wrong": "next the bed",
+      "right": "next to the bed"
+    },
+    {
+      "type": "mistake",
+      "wrong": "between the bank",
+      "right": "between the bank and the café",
+      "why": "between needs two things"
     }
   ],
   "exercises": [
@@ -109,7 +160,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Under the bed is below it.",
+      "explanation": "Under = below.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -136,7 +187,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Between A and B.",
+      "explanation": "between A and B.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -163,7 +214,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Next to = very near, at the side.",
+      "explanation": "next to.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -190,17 +241,73 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "In = inside, on = on top, under = below.",
+      "explanation": "in + city.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My parents live ___ Samarkand.",
+          "options": [
+            {
+              "text": "in"
+            },
+            {
+              "text": "on"
+            },
+            {
+              "text": "at"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "at home.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I am ___ home now.",
+          "options": [
+            {
+              "text": "in"
+            },
+            {
+              "text": "at"
+            },
+            {
+              "text": "on"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Meanings of prepositions.",
       "content": {
         "type": "match_pairs",
         "payload": {
           "left": [
             "in",
             "on",
-            "under"
+            "under",
+            "opposite"
           ],
           "right": [
             "inside",
+            "across from",
             "below",
             "on top of"
           ],
@@ -209,6 +316,7 @@
         "answer": {
           "pairs": [
             0,
+            3,
             2,
             1
           ]
@@ -241,7 +349,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "In front of.",
+      "explanation": "in front of.",
       "content": {
         "type": "gap_fill",
         "payload": {
@@ -251,6 +359,29 @@
           "blanks": {
             "1": [
               "front"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "opposite = across from.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "The bank is {{1}} the post office. (across the street)",
+          "wordBank": [
+            "opposite",
+            "under",
+            "in"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "opposite"
             ]
           }
         }
@@ -277,6 +408,44 @@
           "accepted": [
             "The cat is under the table."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "next to.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: The lamp is next the sofa."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "The lamp is next to the sofa."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "on the wall.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: The clock is in the wall."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "The clock is on the wall."
+            ]
+          }
         }
       }
     }

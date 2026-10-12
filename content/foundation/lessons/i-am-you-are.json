@@ -2,54 +2,132 @@
   "title": "I am, you are",
   "kind": "grammar",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "We use am with I."
-    },
-    {
-      "type": "text",
-      "text": "We use are with you."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
+          "—",
+          "long form",
+          "short form"
+        ],
+        [
           "I",
-          "am",
+          "I am",
           "I'm"
         ],
         [
           "you",
-          "are",
+          "you are",
           "you're"
         ]
       ]
     },
     {
-      "type": "example",
-      "en": "I am Aziz.",
-      "note": "I + am"
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "—",
+          "negative",
+          "short form"
+        ],
+        [
+          "I",
+          "I am not",
+          "I'm not"
+        ],
+        [
+          "you",
+          "you are not",
+          "you aren't / you're not"
+        ]
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Short forms",
+      "points": [
+        "We use short forms in speaking and in friendly writing.",
+        "The ' (apostrophe) shows a missing letter: I am → I'm."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Use"
+    },
+    {
+      "type": "text",
+      "text": "We use am / are to say who we are, where we are from, our age, our job and how we feel."
     },
     {
       "type": "example",
-      "en": "You are a student.",
-      "note": "you + are"
+      "en": "I am Aziz.",
+      "note": "name"
     },
     {
       "type": "example",
       "en": "I'm from Uzbekistan.",
-      "note": "I'm = I am"
+      "note": "country"
     },
     {
       "type": "example",
-      "en": "I'm not from Japan.",
-      "note": "I am not = I'm not"
+      "en": "You're 16.",
+      "note": "age"
     },
     {
-      "type": "tip",
-      "text": "Always write I with a big letter: I, not i."
+      "type": "example",
+      "en": "I'm a student.",
+      "note": "job"
+    },
+    {
+      "type": "example",
+      "en": "You're tired.",
+      "note": "feeling"
+    },
+    {
+      "type": "heading",
+      "text": "3. Spelling"
+    },
+    {
+      "type": "rule",
+      "title": "Capital I",
+      "points": [
+        "I is always a capital letter: I am happy. (not i am happy)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I student.",
+      "right": "I'm a student.",
+      "why": "Do not forget am."
+    },
+    {
+      "type": "mistake",
+      "wrong": "You is my friend.",
+      "right": "You are my friend.",
+      "why": "you + are"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I am have 15 years.",
+      "right": "I'm 15.",
+      "why": "Age = be + number."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I amn't tired.",
+      "right": "I'm not tired."
     }
   ],
   "exercises": [
@@ -141,7 +219,7 @@
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Which is correct?",
+          "prompt": "Which sentence is correct?",
           "options": [
             {
               "text": "You is a teacher."
@@ -151,6 +229,60 @@
             },
             {
               "text": "You am a teacher."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I am not = I'm not.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "I'm not hungry."
+            },
+            {
+              "text": "I amn't hungry."
+            },
+            {
+              "text": "I not hungry."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "We need am and a: I'm a student.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "I a student."
+            },
+            {
+              "text": "I'm a student."
+            },
+            {
+              "text": "I am student."
             }
           ]
         },
@@ -194,67 +326,23 @@
       "content": {
         "type": "match_pairs",
         "payload": {
-          "instruction": "Match the long and short forms.",
           "left": [
             "I am",
             "you are",
             "I am not"
           ],
           "right": [
-            "you're",
             "I'm",
-            "I'm not"
-          ]
+            "I'm not",
+            "you're"
+          ],
+          "instruction": "Match the long and short forms."
         },
         "answer": {
           "pairs": [
-            1,
             0,
-            2
-          ]
-        }
-      }
-    },
-    {
-      "skill": "grammar",
-      "cefr": "A0",
-      "explanation": "I + am + a student.",
-      "content": {
-        "type": "word_order",
-        "payload": {
-          "instruction": "Put the words in order.",
-          "tokens": [
-            "a",
-            "I",
-            "student",
-            "am"
-          ]
-        },
-        "answer": {
-          "accepted": [
-            "I am a student."
-          ]
-        }
-      }
-    },
-    {
-      "skill": "grammar",
-      "cefr": "A0",
-      "explanation": "You + are + from Japan.",
-      "content": {
-        "type": "word_order",
-        "payload": {
-          "instruction": "Put the words in order.",
-          "tokens": [
-            "from",
-            "are",
-            "You",
-            "Japan"
-          ]
-        },
-        "answer": {
-          "accepted": [
-            "You are from Japan."
+            2,
+            1
           ]
         }
       }
@@ -273,6 +361,131 @@
           "blanks": {
             "1": [
               "I'm"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "You are not late = you aren't late.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "You {{1}} late. You're early!",
+          "instruction": "Write the negative of are."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "aren't",
+              "are not",
+              "'re not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I am not from Russia.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I {{1}} from Russia. I'm from Kazakhstan.",
+          "instruction": "Write the negative."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "am not",
+              "'m not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I + am + a student.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "am",
+            "a",
+            "I",
+            "student"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I am a student."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "You + are + from Japan.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "Japan",
+            "from",
+            "are",
+            "You"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "You are from Japan."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I is always a capital letter.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: i am happy."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I am happy.",
+              "I'm happy."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "you + are.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: You is my teacher."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "You are my teacher.",
+              "You're my teacher."
             ]
           }
         }

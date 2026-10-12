@@ -2,11 +2,11 @@
   "title": "My home",
   "kind": "vocabulary",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
-      "type": "text",
-      "text": "Rooms:"
+      "type": "heading",
+      "text": "1. Rooms"
     },
     {
       "type": "table",
@@ -18,39 +18,87 @@
         [
           "bathroom",
           "living room"
+        ],
+        [
+          "hall",
+          "garden"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Things in a home"
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "room",
+          "things"
+        ],
+        [
+          "kitchen",
+          "fridge, cooker, sink"
+        ],
+        [
+          "bedroom",
+          "bed, wardrobe, lamp"
+        ],
+        [
+          "living room",
+          "sofa, armchair, TV"
+        ],
+        [
+          "bathroom",
+          "shower, bath, toilet"
         ]
       ]
     },
     {
       "type": "text",
-      "text": "Things in a home:"
+      "text": "Every room: door, window, wall, floor."
     },
     {
-      "type": "table",
-      "rows": [
-        [
-          "table",
-          "chair",
-          "bed"
-        ],
-        [
-          "sofa",
-          "window",
-          "door"
-        ]
+      "type": "heading",
+      "text": "3. Grammar focus"
+    },
+    {
+      "type": "rule",
+      "title": "a house / a flat",
+      "points": [
+        "A house is a building for one family. A flat (US: apartment) is part of a big building."
       ]
     },
     {
-      "type": "example",
-      "en": "I cook in the kitchen."
+      "type": "rule",
+      "title": "in the + room",
+      "points": [
+        "in the kitchen, in the bedroom",
+        "I cook in the kitchen. I sleep in the bedroom."
+      ]
     },
     {
-      "type": "example",
-      "en": "I sleep in the bedroom."
+      "type": "rule",
+      "title": "have / has for homes",
+      "points": [
+        "Our flat has two bedrooms. My house has a garden."
+      ]
     },
     {
-      "type": "tip",
-      "text": "Living room is two words."
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I sleep in bedroom.",
+      "right": "I sleep in the bedroom."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Living-room / livingroom",
+      "right": "living room",
+      "why": "two words"
     }
   ],
   "exercises": [
@@ -138,26 +186,53 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "We sit on a sofa or a chair.",
+      "explanation": "A fridge keeps food cold.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "You sit on a …",
+          "prompt": "You keep cold food in the …",
           "options": [
             {
-              "text": "window"
+              "text": "wardrobe"
+            },
+            {
+              "text": "fridge"
             },
             {
               "text": "sofa"
-            },
-            {
-              "text": "door"
             }
           ]
         },
         "answer": {
           "correct": [
             1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Clothes go in a wardrobe.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You keep clothes in a …",
+          "options": [
+            {
+              "text": "wardrobe"
+            },
+            {
+              "text": "sink"
+            },
+            {
+              "text": "cooker"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
           ]
         }
       }
@@ -240,6 +315,24 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "in the + room.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I watch TV in {{1}} living room."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "the"
+            ]
+          }
+        }
+      }
+    },
+    {
       "skill": "vocabulary",
       "cefr": "A1",
       "explanation": "My house + has + three bedrooms.",
@@ -284,6 +377,25 @@
           "accepted": [
             "We watch TV in the living room."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "in the + room.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My mother cooks in kitchen."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My mother cooks in the kitchen."
+            ]
+          }
         }
       }
     }

@@ -2,64 +2,117 @@
   "title": "My, your, his, her",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "These words show who has something."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
+          "subject",
+          "possessive",
+          "example"
+        ],
+        [
           "I",
-          "my"
+          "my",
+          "my book"
         ],
         [
           "you",
-          "your"
+          "your",
+          "your phone"
         ],
         [
           "he",
-          "his"
+          "his",
+          "his car"
         ],
         [
           "she",
-          "her"
+          "her",
+          "her bag"
         ],
         [
           "it",
-          "its"
+          "its",
+          "its name"
         ],
         [
           "we",
-          "our"
+          "our",
+          "our house"
         ],
         [
           "they",
-          "their"
+          "their",
+          "their children"
         ]
       ]
     },
     {
-      "type": "example",
-      "en": "I have a cat. My cat is white."
+      "type": "heading",
+      "text": "2. Use"
+    },
+    {
+      "type": "rule",
+      "title": "Possessive adjectives",
+      "points": [
+        "They show who has something.",
+        "They come before a noun: my sister, their teacher.",
+        "They do not change for plural: my books (not mys books)."
+      ]
     },
     {
       "type": "example",
-      "en": "Aziz has a car. His car is new."
+      "en": "Aziz has a car. His car is new.",
+      "note": "man → his"
     },
     {
       "type": "example",
-      "en": "Lola has a bag. Her bag is red."
+      "en": "Lola has a bag. Her bag is red.",
+      "note": "woman → her"
     },
     {
       "type": "example",
       "en": "They have a house. Their house is big."
     },
     {
-      "type": "tip",
-      "text": "Its (no ') = the thing's. It's = it is."
+      "type": "heading",
+      "text": "3. Words that sound the same"
+    },
+    {
+      "type": "rule",
+      "title": "Do not mix them up",
+      "points": [
+        "its = belongs to it / it's = it is",
+        "your = belongs to you / you're = you are",
+        "their = belongs to them / they're = they are / there = in that place"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "Aziza and his brother",
+      "right": "Aziza and her brother",
+      "why": "Aziza is a woman → her"
+    },
+    {
+      "type": "mistake",
+      "wrong": "The dog wants it's food.",
+      "right": "The dog wants its food."
+    },
+    {
+      "type": "mistake",
+      "wrong": "What's you name?",
+      "right": "What's your name?"
     }
   ],
   "exercises": [
@@ -228,6 +281,58 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "You are = you're.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ my best friend.",
+          "options": [
+            {
+              "text": "Your"
+            },
+            {
+              "text": "You're"
+            }
+          ],
+          "instruction": "Choose the correct word."
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Belongs to them: their.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ house is near the park.",
+          "options": [
+            {
+              "text": "Their"
+            },
+            {
+              "text": "They're"
+            },
+            {
+              "text": "There"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "Each person has its own word.",
       "content": {
         "type": "match_pairs",
@@ -262,7 +367,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Ask with your: What is your name?",
+      "explanation": "Ask with your.",
       "content": {
         "type": "gap_fill",
         "payload": {
@@ -290,6 +395,89 @@
           "blanks": {
             "1": [
               "His"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "My sister → her.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My sister loves {{1}} cat."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "her"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Sara is a woman: her.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Sara and his mother"
+            },
+            {
+              "text": "Sara and her mother"
+            },
+            {
+              "text": "Sara and she mother"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Anvar is a man: his.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: This is Anvar and her wife."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "This is Anvar and his wife."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "its (no ') = belongs to it.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: The bird is in it's nest."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "The bird is in its nest."
             ]
           }
         }

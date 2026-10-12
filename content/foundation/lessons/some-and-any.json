@@ -2,59 +2,103 @@
   "title": "Some and any",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 7,
+  "estMinutes": 9,
   "intro": [
     {
-      "type": "text",
-      "text": "We can count some nouns: an apple, two apples."
-    },
-    {
-      "type": "text",
-      "text": "We cannot count some nouns: water, rice, milk."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
+          "sentence",
+          "countable plural",
+          "uncountable"
+        ],
+        [
           "positive",
-          "some"
+          "There are some apples.",
+          "There is some milk."
         ],
         [
           "negative",
-          "any"
+          "There aren't any apples.",
+          "There isn't any milk."
         ],
         [
           "question",
-          "any"
+          "Are there any apples?",
+          "Is there any milk?"
         ]
       ]
     },
     {
-      "type": "example",
-      "en": "There are some apples."
+      "type": "heading",
+      "text": "2. Rules"
     },
     {
-      "type": "example",
-      "en": "There is some water."
+      "type": "rule",
+      "title": "some",
+      "points": [
+        "in positive sentences",
+        "with plural nouns (some eggs) and uncountable nouns (some water)",
+        "meaning: a number or amount, but we don't say exactly how much"
+      ]
     },
     {
-      "type": "example",
-      "en": "We don't have any bread."
+      "type": "rule",
+      "title": "any",
+      "points": [
+        "in negative sentences and questions",
+        "We don't have any bread. Do you have any brothers?"
+      ]
     },
     {
-      "type": "example",
-      "en": "Are there any eggs?"
+      "type": "rule",
+      "title": "a / an",
+      "points": [
+        "with ONE countable thing: an apple, a sandwich (not some apple)"
+      ]
     },
     {
-      "type": "tip",
-      "text": "Do not say \"a water\". Say \"some water\" or \"a glass of water\"."
+      "type": "heading",
+      "text": "3. Offers and requests"
+    },
+    {
+      "type": "rule",
+      "title": "some in questions",
+      "points": [
+        "When we offer or ask for something, we use some: Would you like some tea? Can I have some water?"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I don't have some money.",
+      "right": "I don't have any money."
+    },
+    {
+      "type": "mistake",
+      "wrong": "There is any milk.",
+      "right": "There is some milk."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Can I have any coffee, please?",
+      "right": "Can I have some coffee, please?",
+      "why": "requests use some"
     }
   ],
   "exercises": [
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Positive + uncountable: some milk.",
+      "explanation": "Positive + uncountable: some.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -162,20 +206,71 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Rice is uncountable.",
+      "explanation": "Offers use some.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Which noun can we NOT count?",
+          "prompt": "Would you like ___ tea?",
           "options": [
             {
-              "text": "egg"
+              "text": "some"
             },
             {
-              "text": "rice"
+              "text": "any"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Positive + plural: some.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "There are ___ students in the library.",
+          "options": [
+            {
+              "text": "some"
             },
             {
-              "text": "banana"
+              "text": "any"
+            },
+            {
+              "text": "a"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Negative: any.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "I don't have some brothers."
+            },
+            {
+              "text": "I don't have any brothers."
+            },
+            {
+              "text": "I don't have a brothers."
             }
           ]
         },
@@ -255,6 +350,47 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "Requests use some.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Can I have {{1}} water, please?",
+          "wordBank": [
+            "some",
+            "any"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "some"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "some → any in negatives.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There are some eggs. → There aren't {{1}} eggs.",
+          "instruction": "Make it negative."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "any"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "There are + some potatoes + in the bag.",
       "content": {
         "type": "word_order",
@@ -274,6 +410,44 @@
           "accepted": [
             "There are some potatoes in the bag."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Negative: any.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: We don't have some bread."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "We don't have any bread."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Positive: some.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: There is any cheese on the table."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "There is some cheese on the table."
+            ]
+          }
         }
       }
     }

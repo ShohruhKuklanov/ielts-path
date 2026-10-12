@@ -2,36 +2,58 @@
   "title": "One book, two books",
   "kind": "grammar",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "For more than one thing, we usually add -s."
-    },
-    {
-      "type": "example",
-      "en": "one book → two books"
-    },
-    {
-      "type": "example",
-      "en": "one pen → three pens"
-    },
-    {
-      "type": "text",
-      "text": "After s, x, sh, ch we add -es."
-    },
-    {
-      "type": "example",
-      "en": "one bus → two buses",
-      "note": "one box → two boxes"
-    },
-    {
-      "type": "text",
-      "text": "Some words change completely."
+      "type": "heading",
+      "text": "1. Regular plurals"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
+        [
+          "rule",
+          "examples"
+        ],
+        [
+          "most nouns + -s",
+          "book → books, pen → pens"
+        ],
+        [
+          "-s, -ss, -sh, -ch, -x + -es",
+          "bus → buses, class → classes, dish → dishes, watch → watches, box → boxes"
+        ],
+        [
+          "consonant + y → -ies",
+          "city → cities, baby → babies"
+        ],
+        [
+          "vowel + y → + s",
+          "day → days, boy → boys"
+        ]
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "More spelling",
+      "points": [
+        "Some words in -f / -fe → -ves: knife → knives, wife → wives",
+        "Some words in -o + -es: potato → potatoes, tomato → tomatoes"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Irregular plurals"
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "one",
+          "more"
+        ],
         [
           "man",
           "men"
@@ -47,12 +69,49 @@
         [
           "person",
           "people"
+        ],
+        [
+          "foot",
+          "feet"
+        ],
+        [
+          "tooth",
+          "teeth"
         ]
       ]
     },
     {
-      "type": "tip",
-      "text": "Say one person, two people. Not: two persons."
+      "type": "heading",
+      "text": "3. Use"
+    },
+    {
+      "type": "rule",
+      "title": "Singular and plural",
+      "points": [
+        "one + singular: one book",
+        "two, three, many … + plural: three books, many people",
+        "With plurals use are: The books are new."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "two persons",
+      "right": "two people"
+    },
+    {
+      "type": "mistake",
+      "wrong": "three childrens",
+      "right": "three children",
+      "why": "children is already plural"
+    },
+    {
+      "type": "mistake",
+      "wrong": "The buses is red.",
+      "right": "The buses are red."
     }
   ],
   "exercises": [
@@ -113,7 +172,61 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Child → children.",
+      "explanation": "Consonant + y → -ies: cities.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one city, two ___",
+          "options": [
+            {
+              "text": "citys"
+            },
+            {
+              "text": "cities"
+            },
+            {
+              "text": "cityes"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Vowel + y → just add -s: days.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one day, two ___",
+          "options": [
+            {
+              "text": "days"
+            },
+            {
+              "text": "daies"
+            },
+            {
+              "text": "dayes"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "child → children.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -140,7 +253,7 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Woman → women.",
+      "explanation": "woman → women.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -167,7 +280,7 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Person → people.",
+      "explanation": "person → people.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -194,30 +307,57 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Some words add -s, some add -es, some change.",
+      "explanation": "f → ves: knives.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one knife, two ___",
+          "options": [
+            {
+              "text": "knifes"
+            },
+            {
+              "text": "knives"
+            },
+            {
+              "text": "knifs"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Some add -es / -ies; some change completely.",
       "content": {
         "type": "match_pairs",
         "payload": {
           "left": [
             "man",
             "bus",
-            "apple",
-            "watch"
+            "baby",
+            "foot"
           ],
           "right": [
             "buses",
-            "apples",
-            "watches",
-            "men"
+            "feet",
+            "men",
+            "babies"
           ],
           "instruction": "Match one and more than one."
         },
         "answer": {
           "pairs": [
-            3,
+            2,
             0,
-            1,
-            2
+            3,
+            1
           ]
         }
       }
@@ -263,17 +403,74 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "man → men.",
+      "explanation": "tooth → teeth.",
       "content": {
         "type": "gap_fill",
         "payload": {
-          "text": "Four {{1}} work here. (man)",
+          "text": "I brush my {{1}} every morning. (tooth)",
           "instruction": "Write the plural."
         },
         "answer": {
           "blanks": {
             "1": [
-              "men"
+              "teeth"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "potato → potatoes.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "We need four {{1}} for the soup. (potato)",
+          "instruction": "Write the plural."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "potatoes"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "children is already plural.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: The childrens are in the park."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "The children are in the park."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Plural noun → are.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My shoes is new."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My shoes are new."
             ]
           }
         }

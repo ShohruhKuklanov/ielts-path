@@ -2,44 +2,104 @@
   "title": "She works: he, she, it + s",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 7,
+  "estMinutes": 9,
   "intro": [
     {
-      "type": "text",
-      "text": "With he, she and it, add -s to the verb."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
-      "type": "example",
-      "en": "I work → she works"
-    },
-    {
-      "type": "example",
-      "en": "I live → he lives"
-    },
-    {
-      "type": "text",
-      "text": "After o, s, sh, ch, x add -es."
-    },
-    {
-      "type": "example",
-      "en": "go → goes",
-      "note": "watch → watches"
-    },
-    {
-      "type": "text",
-      "text": "Consonant + y: change y to -ies."
-    },
-    {
-      "type": "example",
-      "en": "study → studies"
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "person",
+          "verb"
+        ],
+        [
+          "I / you / we / they",
+          "work"
+        ],
+        [
+          "he / she / it",
+          "works"
+        ]
+      ]
     },
     {
       "type": "text",
-      "text": "Have is special."
+      "text": "With he, she, it (and one person or thing: my mother, the shop) add -s."
     },
     {
-      "type": "example",
-      "en": "have → has"
+      "type": "heading",
+      "text": "2. Spelling rules"
+    },
+    {
+      "type": "rule",
+      "title": "Most verbs: + s",
+      "points": [
+        "work → works, live → lives, play → plays"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "-o, -s, -sh, -ch, -x: + es",
+      "points": [
+        "go → goes, do → does, kiss → kisses, wash → washes, watch → watches, fix → fixes"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "consonant + y: y → ies",
+      "points": [
+        "study → studies, fly → flies, carry → carries"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "vowel + y: + s",
+      "points": [
+        "play → plays, buy → buys"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "have is irregular",
+      "points": [
+        "have → has"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Pronunciation of -s"
+    },
+    {
+      "type": "rule",
+      "title": "Three sounds",
+      "points": [
+        "/s/: works, likes",
+        "/z/: plays, lives",
+        "/ɪz/: watches, washes, fixes (an extra syllable)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "She work in a shop.",
+      "right": "She works in a shop."
+    },
+    {
+      "type": "mistake",
+      "wrong": "He studys English.",
+      "right": "He studies English."
+    },
+    {
+      "type": "mistake",
+      "wrong": "My father haves a car.",
+      "right": "My father has a car."
     }
   ],
   "exercises": [
@@ -181,11 +241,38 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "vowel + y → plays.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She ___ football with her friends.",
+          "options": [
+            {
+              "text": "plaies"
+            },
+            {
+              "text": "plays"
+            },
+            {
+              "text": "playes"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "She lives here.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Which is correct?",
+          "prompt": "Which sentence is correct?",
           "options": [
             {
               "text": "I lives here."
@@ -277,6 +364,63 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "wash → washes.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My father {{1}} the car on Sunday. (wash)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "washes"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "cry → cries.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "The baby {{1}} at night. (cry)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "cries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "do → does.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Anvar {{1}} his homework after dinner. (do)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "does"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "He + drinks tea + every morning.",
       "content": {
         "type": "word_order",
@@ -294,6 +438,44 @@
           "accepted": [
             "He drinks tea every morning."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "she → studies.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My sister study medicine."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My sister studies medicine."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "watch → watches.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: He watchs films at night."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "He watches films at night."
+            ]
+          }
         }
       }
     }

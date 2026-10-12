@@ -2,19 +2,30 @@
   "title": "My family",
   "kind": "vocabulary",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
+      "type": "heading",
+      "text": "1. Family words"
+    },
+    {
       "type": "table",
+      "header": true,
       "rows": [
         [
-          "mother",
-          "father",
+          "woman / girl",
+          "man / boy",
+          "both"
+        ],
+        [
+          "mother (mum)",
+          "father (dad)",
           "parents"
         ],
         [
           "sister",
-          "brother"
+          "brother",
+          "brothers and sisters"
         ],
         [
           "daughter",
@@ -23,17 +34,15 @@
         ],
         [
           "grandmother",
-          "grandfather"
+          "grandfather",
+          "grandparents"
+        ],
+        [
+          "wife",
+          "husband",
+          "—"
         ]
       ]
-    },
-    {
-      "type": "text",
-      "text": "Parents = mother + father."
-    },
-    {
-      "type": "text",
-      "text": "Children = sons and daughters."
     },
     {
       "type": "example",
@@ -45,8 +54,44 @@
       "en": "I have one brother and two sisters."
     },
     {
-      "type": "tip",
-      "text": "Mum and dad are friendly words for mother and father."
+      "type": "heading",
+      "text": "2. Grammar focus: 's for family"
+    },
+    {
+      "type": "rule",
+      "title": "Name + 's",
+      "points": [
+        "Aziz's sister = the sister of Aziz.",
+        "My mother's name is Dilfuza.",
+        "Plural nouns: my parents' house (only ')."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "have got / have",
+      "points": [
+        "I have two brothers. She has a son."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "the sister of Aziz",
+      "right": "Aziz's sister",
+      "why": "For people we use 's."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I have two sister.",
+      "right": "I have two sisters."
+    },
+    {
+      "type": "mistake",
+      "wrong": "My mother name is Lola.",
+      "right": "My mother's name is Lola."
     }
   ],
   "exercises": [
@@ -161,6 +206,33 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
+      "explanation": "A woman's husband.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My father is my mother's …",
+          "options": [
+            {
+              "text": "husband"
+            },
+            {
+              "text": "wife"
+            },
+            {
+              "text": "son"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
       "explanation": "Each pair is a woman and a man.",
       "content": {
         "type": "match_pairs",
@@ -169,21 +241,48 @@
             "mother",
             "sister",
             "daughter",
-            "grandmother"
+            "wife"
           ],
           "right": [
-            "grandfather",
-            "father",
             "brother",
-            "son"
+            "son",
+            "husband",
+            "father"
           ],
           "instruction": "Match the woman and the man."
         },
         "answer": {
           "pairs": [
-            1,
-            2,
             3,
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "For people: Ali's brother.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "Ali's brother"
+            },
+            {
+              "text": "the brother of Ali"
+            },
+            {
+              "text": "Ali brother's"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
             0
           ]
         }
@@ -231,6 +330,25 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "mother + 's.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My {{1}} name is Malika. (mother)",
+          "instruction": "Write the word with 's."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "mother's"
+            ]
+          }
+        }
+      }
+    },
+    {
       "skill": "vocabulary",
       "cefr": "A0",
       "explanation": "This is + my sister.",
@@ -255,22 +373,61 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
-      "explanation": "I have + two brothers.",
+      "explanation": "Kamol's wife + is + a doctor.",
       "content": {
         "type": "word_order",
         "payload": {
           "tokens": [
-            "have",
-            "two",
-            "I",
-            "brothers"
+            "a",
+            "wife",
+            "doctor",
+            "is",
+            "Kamol's"
           ],
           "instruction": "Put the words in order."
         },
         "answer": {
           "accepted": [
-            "I have two brothers."
+            "Kamol's wife is a doctor."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "three + plural.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I have three brother."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I have three brothers."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Use 's for people.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: The car of my father is red."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My father's car is red."
+            ]
+          }
         }
       }
     }

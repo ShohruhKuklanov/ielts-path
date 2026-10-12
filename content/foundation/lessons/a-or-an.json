@@ -2,57 +2,97 @@
   "title": "A or an?",
   "kind": "grammar",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "We use a or an before one thing."
-    },
-    {
-      "type": "text",
-      "text": "Use an before the sounds a, e, i, o, u."
-    },
-    {
-      "type": "example",
-      "en": "a book",
-      "note": "b → a"
-    },
-    {
-      "type": "example",
-      "en": "an apple",
-      "note": "a → an"
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
           "a",
           "an"
         ],
         [
-          "a pen",
-          "an egg"
+          "before a consonant SOUND",
+          "before a vowel SOUND"
         ],
         [
-          "a bag",
-          "an orange"
-        ],
-        [
-          "a car",
-          "an umbrella"
+          "a book, a pen, a car",
+          "an apple, an egg, an umbrella"
         ]
       ]
     },
     {
-      "type": "tip",
-      "text": "Listen to the first sound. Hour starts with an o sound, so we say an hour."
+      "type": "heading",
+      "text": "2. Use"
+    },
+    {
+      "type": "rule",
+      "title": "We use a / an",
+      "points": [
+        "with ONE thing or person (singular): a bag, an orange.",
+        "to say what something is: It is a pen.",
+        "with jobs: She is a doctor. He is an engineer."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "We do NOT use a / an",
+      "points": [
+        "with plurals: books (not a books)",
+        "with uncountable things: water, rice, milk (not a water)",
+        "with names: Aziz (not an Aziz)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Sound, not letter"
+    },
+    {
+      "type": "rule",
+      "title": "Listen to the first SOUND",
+      "points": [
+        "an hour — h is silent, the sound is \"ow\".",
+        "a university, a uniform — the sound is \"you\" (a consonant sound).",
+        "an umbrella — u sounds like \"uh\" (a vowel sound)."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "a apple",
+      "right": "an apple"
+    },
+    {
+      "type": "mistake",
+      "wrong": "He is engineer.",
+      "right": "He is an engineer.",
+      "why": "Use a / an with jobs."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I have a books.",
+      "right": "I have books. / I have a book."
+    },
+    {
+      "type": "mistake",
+      "wrong": "an university",
+      "right": "a university",
+      "why": "university starts with a \"you\" sound"
     }
   ],
   "exercises": [
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Apple starts with a. Use an: an apple.",
+      "explanation": "Apple starts with a vowel sound: an apple.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -74,13 +114,13 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Pen starts with p. Use a: a pen.",
+      "explanation": "Book starts with a consonant sound: a book.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "___ pen",
+          "prompt": "___ book",
           "options": [
             {
               "text": "a"
@@ -98,9 +138,9 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Egg starts with e. Use an: an egg.",
+      "explanation": "Egg starts with a vowel sound: an egg.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -122,9 +162,57 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Umbrella starts with u. Use an: an umbrella.",
+      "explanation": "H is silent in hour. The first sound is a vowel: an hour.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ hour",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "University starts with a \"you\" sound: a university.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ university",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Umbrella starts with a vowel sound: an umbrella.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -148,31 +236,79 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Orange and ice cream start with o and i. Use an.",
+      "explanation": "Use a with jobs: a teacher.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Which TWO need an?",
+          "prompt": "She is ___ teacher.",
           "options": [
             {
-              "text": "___ orange"
+              "text": "a"
             },
             {
-              "text": "___ cat"
+              "text": "an"
             },
             {
-              "text": "___ ice cream"
-            },
-            {
-              "text": "___ dog"
+              "text": "-"
             }
-          ],
-          "multiple": true,
-          "instruction": "Choose TWO answers."
+          ]
         },
         "answer": {
           "correct": [
-            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Engineer starts with a vowel sound: an engineer.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He is ___ engineer.",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Water is uncountable: no a / an.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I drink ___ water every day.",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
             2
           ]
         }
@@ -181,24 +317,50 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "a bag (b), an orange (o).",
+      "explanation": "No a / an with plurals.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "I have a books."
+            },
+            {
+              "text": "I have books."
+            },
+            {
+              "text": "I have an books."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "an orange, a banana.",
       "content": {
         "type": "gap_fill",
         "payload": {
-          "text": "I have {{1}} bag and {{2}} orange.",
+          "text": "I have {{1}} orange and {{2}} banana.",
           "wordBank": [
             "a",
             "an"
-          ],
-          "instruction": "Write a or an."
+          ]
         },
         "answer": {
           "blanks": {
             "1": [
-              "a"
+              "an"
             ],
             "2": [
-              "an"
+              "a"
             ]
           }
         }
@@ -207,23 +369,19 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "an umbrella (u), a car (c).",
+      "explanation": "a doctor.",
       "content": {
         "type": "gap_fill",
         "payload": {
-          "text": "This is {{1}} umbrella. That is {{2}} car.",
+          "text": "My father is {{1}} doctor.",
           "wordBank": [
             "a",
             "an"
-          ],
-          "instruction": "Write a or an."
+          ]
         },
         "answer": {
           "blanks": {
             "1": [
-              "an"
-            ],
-            "2": [
               "a"
             ]
           }
@@ -233,22 +391,40 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "It + is + an egg.",
+      "explanation": "Use an with jobs that start with a vowel sound.",
       "content": {
-        "type": "word_order",
+        "type": "gap_fill",
         "payload": {
-          "instruction": "Put the words in order.",
-          "tokens": [
-            "an",
-            "is",
-            "It",
-            "egg"
-          ]
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: He is engineer."
         },
         "answer": {
-          "accepted": [
-            "It is an egg."
-          ]
+          "blanks": {
+            "1": [
+              "He is an engineer.",
+              "He's an engineer."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "apple → an.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: It is a apple."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "It is an apple.",
+              "It's an apple."
+            ]
+          }
         }
       }
     }

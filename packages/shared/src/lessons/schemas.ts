@@ -21,13 +21,27 @@ export type LessonKind = (typeof LESSON_KINDS)[number];
 
 const text = (max = 1000) => z.string().trim().min(1).max(max);
 
-/** One card of the lesson introduction. Beginners see one block per screen. */
+/**
+ * One card of the lesson introduction. Beginners see one block per screen.
+ * Grammar lessons follow a fixed teaching order, like a good grammar book:
+ * heading "Form" → tables → heading "Use" → rules + examples → "Be careful!" → mistakes.
+ */
 export const introBlockSchema = z.discriminatedUnion('type', [
+  /** Starts a section of the explanation, e.g. "1. Form", "2. When do we use it?". */
+  z.object({ type: z.literal('heading'), text: text(80) }),
   z.object({ type: z.literal('text'), text: text(600) }),
   /** A model sentence with an optional short note, e.g. "She is a doctor." / "she → is". */
   z.object({ type: z.literal('example'), en: text(300), note: text(200).optional() }),
-  /** A small table, e.g. I am / you are / he is. */
-  z.object({ type: z.literal('table'), rows: z.array(z.array(text(80)).min(1).max(4)).min(1).max(10) }),
+  /** A small table, e.g. I am / you are / he is. With header: true the first row is the column titles. */
+  z.object({
+    type: z.literal('table'),
+    rows: z.array(z.array(text(80)).min(1).max(5)).min(1).max(12),
+    header: z.boolean().optional(),
+  }),
+  /** A grammar rule with its points, e.g. title "Spelling: he/she/it" + ["work → works", "go → goes"]. */
+  z.object({ type: z.literal('rule'), title: text(100), points: z.array(text(200)).min(1).max(8) }),
+  /** A typical learner mistake and its correction. */
+  z.object({ type: z.literal('mistake'), wrong: text(200), right: text(200), why: text(200).optional() }),
   z.object({ type: z.literal('tip'), text: text(300) }),
   z.object({ type: z.literal('image'), imageId: z.uuid(), alt: text(200) }),
   z.object({ type: z.literal('audio'), audioId: z.uuid(), transcript: text(500) }),
@@ -50,8 +64,8 @@ export const lessonFileSchema = z.object({
   kind: z.enum(LESSON_KINDS),
   cefr: z.enum(CEFR_LEVELS),
   estMinutes: z.number().int().min(1).max(30),
-  intro: z.array(introBlockSchema).min(1).max(12),
-  exercises: z.array(lessonExerciseSchema).min(3).max(20),
+  intro: z.array(introBlockSchema).min(1).max(30),
+  exercises: z.array(lessonExerciseSchema).min(3).max(25),
 });
 export type LessonFile = z.infer<typeof lessonFileSchema>;
 

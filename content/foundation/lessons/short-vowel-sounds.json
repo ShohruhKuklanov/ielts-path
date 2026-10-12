@@ -2,15 +2,21 @@
   "title": "Short vowel sounds",
   "kind": "phonics",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
-      "type": "text",
-      "text": "Each vowel has a short sound."
+      "type": "heading",
+      "text": "1. The five short sounds"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
+        [
+          "vowel",
+          "word",
+          "word"
+        ],
         [
           "a",
           "cat",
@@ -39,13 +45,21 @@
       ]
     },
     {
-      "type": "text",
-      "text": "One vowel between two consonants often has a short sound."
+      "type": "heading",
+      "text": "2. The spelling pattern"
+    },
+    {
+      "type": "rule",
+      "title": "Consonant + vowel + consonant",
+      "points": [
+        "One vowel between two consonants usually has a short sound: c-a-t, b-e-d, s-i-t.",
+        "The sound is quick: say it short."
+      ]
     },
     {
       "type": "example",
-      "en": "bag — beg",
-      "note": "a and e sound different"
+      "en": "bag — beg — big — bug",
+      "note": "change one vowel, get a new word"
     },
     {
       "type": "example",
@@ -53,8 +67,32 @@
       "note": "i and o sound different"
     },
     {
-      "type": "tip",
-      "text": "Change one vowel and you get a new word: bag, beg, big, bug."
+      "type": "heading",
+      "text": "3. Grammar focus: a or an?"
+    },
+    {
+      "type": "rule",
+      "title": "a / an",
+      "points": [
+        "Use a before a consonant sound: a cat, a bag, a pen.",
+        "Use an before a vowel sound: an apple, an egg, an orange."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "a egg",
+      "right": "an egg",
+      "why": "egg starts with a vowel sound"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I sit in a ship and buy bread.",
+      "right": "I go to a shop and buy bread.",
+      "why": "A ship is a boat. A shop sells things."
     }
   ],
   "exercises": [
@@ -135,6 +173,33 @@
         "answer": {
           "correct": [
             0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Hot and dog both have short o.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word has the same vowel as hot?",
+          "options": [
+            {
+              "text": "hat"
+            },
+            {
+              "text": "dog"
+            },
+            {
+              "text": "cup"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }
@@ -233,7 +298,26 @@
     {
       "skill": "pronunciation",
       "cefr": "A0",
-      "explanation": "A shop is a place to buy things. A ship is a big boat.",
+      "explanation": "Cup has short u.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I drink tea from a c{{1}}p.",
+          "instruction": "Write the missing vowel."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "u"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "A shop sells things. A ship is a big boat.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -278,6 +362,73 @@
           "correct": [
             0
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Egg starts with a vowel sound: an egg.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I have ___ egg.",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Pen starts with a consonant sound: a pen.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I have ___ pen.",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Apple starts with a vowel sound: an apple.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I have a apple."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I have an apple."
+            ]
+          }
         }
       }
     }

@@ -2,8 +2,12 @@
   "title": "The alphabet: N to Z",
   "kind": "alphabet",
   "cefr": "A0",
-  "estMinutes": 5,
+  "estMinutes": 7,
   "intro": [
+    {
+      "type": "heading",
+      "text": "1. The letters"
+    },
     {
       "type": "text",
       "text": "Here are the last 13 letters."
@@ -35,12 +39,8 @@
       ]
     },
     {
-      "type": "text",
-      "text": "Five letters are vowels: a, e, i, o, u."
-    },
-    {
-      "type": "text",
-      "text": "The other letters are consonants."
+      "type": "heading",
+      "text": "2. The whole alphabet"
     },
     {
       "type": "example",
@@ -53,15 +53,47 @@
       "note": "second half"
     },
     {
+      "type": "rule",
+      "title": "The five vowels",
+      "points": [
+        "a, e, i, o, u",
+        "All the other 21 letters are consonants.",
+        "Y is sometimes like a vowel: my, happy."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Grammar focus: alphabetical order"
+    },
+    {
+      "type": "rule",
+      "title": "Alphabetical order (A–Z)",
+      "points": [
+        "Dictionaries and name lists use alphabetical order.",
+        "Look at the first letter: apple, book, cat.",
+        "If the first letters are the same, look at the second letter: bag, bed, bus."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "Q is alone: qeen",
+      "right": "queen",
+      "why": "In English, Q is almost always followed by u: queen, question."
+    },
+    {
       "type": "tip",
-      "text": "Q is almost always with u: queen, question."
+      "text": "Practise: say the whole alphabet A to Z without stopping."
     }
   ],
   "exercises": [
     {
       "skill": "reading",
       "cefr": "A0",
-      "explanation": "Big Q is small q. Big R is small r.",
+      "explanation": "Capital Q is small q. Capital R is small r.",
       "content": {
         "type": "match_pairs",
         "payload": {
@@ -77,7 +109,7 @@
             "q",
             "n"
           ],
-          "instruction": "Match the big and small letters."
+          "instruction": "Match the capital and small letters."
         },
         "answer": {
           "pairs": [
@@ -92,7 +124,7 @@
     {
       "skill": "reading",
       "cefr": "A0",
-      "explanation": "Big W is small w. Big Y is small y.",
+      "explanation": "Capital W is small w. Capital Y is small y.",
       "content": {
         "type": "match_pairs",
         "payload": {
@@ -108,7 +140,7 @@
             "z",
             "w"
           ],
-          "instruction": "Match the big and small letters."
+          "instruction": "Match the capital and small letters."
         },
         "answer": {
           "pairs": [
@@ -277,6 +309,33 @@
     {
       "skill": "reading",
       "cefr": "A0",
+      "explanation": "There are 26 letters.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How many letters are in the English alphabet?",
+          "options": [
+            {
+              "text": "24"
+            },
+            {
+              "text": "26"
+            },
+            {
+              "text": "33"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
       "explanation": "The order is P, Q, R, S, T.",
       "content": {
         "type": "word_order",
@@ -293,6 +352,87 @@
         "answer": {
           "accepted": [
             "P Q R S T"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "A comes before M and T.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word comes first in a dictionary?",
+          "options": [
+            {
+              "text": "tea"
+            },
+            {
+              "text": "apple"
+            },
+            {
+              "text": "milk"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Same first letter b, so look at the second letter: a, e, u.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word comes first in a dictionary?",
+          "options": [
+            {
+              "text": "bus"
+            },
+            {
+              "text": "bed"
+            },
+            {
+              "text": "bag"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Q + u: question.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which spelling is correct?",
+          "options": [
+            {
+              "text": "qestion"
+            },
+            {
+              "text": "question"
+            },
+            {
+              "text": "quesion"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }

@@ -2,8 +2,12 @@
   "title": "Numbers 1 to 20",
   "kind": "vocabulary",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
+    {
+      "type": "heading",
+      "text": "1. The numbers"
+    },
     {
       "type": "table",
       "rows": [
@@ -45,21 +49,58 @@
       ]
     },
     {
-      "type": "text",
-      "text": "13 to 19 end in -teen."
-    },
-    {
-      "type": "example",
-      "en": "I have two brothers."
-    },
-    {
-      "type": "example",
-      "en": "I am fifteen.",
-      "note": "Say your age with I am."
+      "type": "rule",
+      "title": "Spelling",
+      "points": [
+        "13 to 19 end in -teen.",
+        "Be careful: five → fifteen, three → thirteen, eight → eighteen (one t)."
+      ]
     },
     {
       "type": "tip",
       "text": "Thirteen and thirty sound different: thir-TEEN, THIR-ty."
+    },
+    {
+      "type": "heading",
+      "text": "2. Grammar focus: numbers and nouns"
+    },
+    {
+      "type": "rule",
+      "title": "One or more",
+      "points": [
+        "one + singular noun: one book, one sister.",
+        "two, three … + plural noun (-s): two books, three sisters."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Your age",
+      "points": [
+        "Use be: I am 15. / I am 15 years old.",
+        "Do not use have for age."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I have 15 years.",
+      "right": "I am 15. / I'm 15 years old.",
+      "why": "age = be, not have"
+    },
+    {
+      "type": "mistake",
+      "wrong": "three brother",
+      "right": "three brothers",
+      "why": "more than one → -s"
+    },
+    {
+      "type": "mistake",
+      "wrong": "fiveteen",
+      "right": "fifteen",
+      "why": "five → fif-"
     }
   ],
   "exercises": [
@@ -104,13 +145,13 @@
           "left": [
             "13",
             "15",
-            "19",
+            "18",
             "20"
           ],
           "right": [
-            "twenty",
+            "eighteen",
             "fifteen",
-            "nineteen",
+            "twenty",
             "thirteen"
           ],
           "instruction": "Match the number and the word."
@@ -119,8 +160,8 @@
           "pairs": [
             3,
             1,
-            2,
-            0
+            0,
+            2
           ]
         }
       }
@@ -210,6 +251,33 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
+      "explanation": "five → fifteen.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which spelling is correct?",
+          "options": [
+            {
+              "text": "fiveteen"
+            },
+            {
+              "text": "fifteen"
+            },
+            {
+              "text": "fifeteen"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
       "explanation": "One, two, three, four.",
       "content": {
         "type": "gap_fill",
@@ -268,6 +336,57 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Two → plural: sisters.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I have two ___.",
+          "options": [
+            {
+              "text": "sister"
+            },
+            {
+              "text": "sisters"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Use be for age: I am 17.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How old are you?",
+          "options": [
+            {
+              "text": "I have 17 years."
+            },
+            {
+              "text": "I'm 17."
+            },
+            {
+              "text": "I 17."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
       "skill": "vocabulary",
       "cefr": "A0",
       "explanation": "I + have + three + sisters.",
@@ -286,6 +405,32 @@
           "accepted": [
             "I have three sisters."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Use be for age.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I have 14 years."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I'm 14.",
+              "I am 14.",
+              "I'm 14 years old.",
+              "I am 14 years old.",
+              "I'm fourteen.",
+              "I am fourteen.",
+              "I'm fourteen years old.",
+              "I am fourteen years old."
+            ]
+          }
         }
       }
     }

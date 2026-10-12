@@ -2,8 +2,12 @@
   "title": "Colours and everyday things",
   "kind": "vocabulary",
   "cefr": "A0",
-  "estMinutes": 5,
+  "estMinutes": 7,
   "intro": [
+    {
+      "type": "heading",
+      "text": "1. Colours"
+    },
     {
       "type": "table",
       "rows": [
@@ -27,25 +31,75 @@
     },
     {
       "type": "text",
-      "text": "The colour comes before the thing."
+      "text": "Light blue and dark blue: light = more white, dark = more black."
+    },
+    {
+      "type": "heading",
+      "text": "2. Everyday things"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "a bag",
+          "a phone",
+          "a pen"
+        ],
+        [
+          "a key",
+          "a book",
+          "a cup"
+        ],
+        [
+          "a chair",
+          "a table",
+          "a watch"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Grammar focus: adjectives"
+    },
+    {
+      "type": "rule",
+      "title": "Where does the colour go?",
+      "points": [
+        "Before the noun: a red bag (not a bag red).",
+        "After be: The bag is red."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adjectives do not change",
+      "points": [
+        "two red bags (not two reds bags)",
+        "The cars are black. (not blacks)"
+      ]
     },
     {
       "type": "example",
-      "en": "a red bag",
-      "note": "not: a bag red"
+      "en": "What colour is it? — It's green.",
+      "note": "asking about colour"
     },
     {
-      "type": "example",
-      "en": "a white phone"
+      "type": "heading",
+      "text": "Be careful!"
     },
     {
-      "type": "example",
-      "en": "The sky is blue.",
-      "note": "colour after is"
+      "type": "mistake",
+      "wrong": "a bag red",
+      "right": "a red bag"
     },
     {
-      "type": "tip",
-      "text": "Colours do not take -s: two red bags, not two reds bags."
+      "type": "mistake",
+      "wrong": "two blacks pens",
+      "right": "two black pens"
+    },
+    {
+      "type": "mistake",
+      "wrong": "What colour it is?",
+      "right": "What colour is it?"
     }
   ],
   "exercises": [
@@ -131,7 +185,7 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
       "explanation": "The colour comes first: a red bag.",
       "content": {
@@ -158,7 +212,7 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
       "explanation": "Colours do not take -s: two black pens.",
       "content": {
@@ -180,6 +234,33 @@
         "answer": {
           "correct": [
             1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "What colour is …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ colour is your phone?",
+          "options": [
+            {
+              "text": "What"
+            },
+            {
+              "text": "How"
+            },
+            {
+              "text": "Where"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
           ]
         }
       }
@@ -236,6 +317,47 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
+      "explanation": "Black + white = grey.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My bag is {{1}}. (black + white = ?)"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "grey"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "You open a door with a key.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I need a {{1}} to open the door.",
+          "wordBank": [
+            "key",
+            "cup",
+            "pen"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "key"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
       "explanation": "I have + a green bag.",
       "content": {
         "type": "word_order",
@@ -259,22 +381,42 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
-      "explanation": "My phone + is + grey.",
+      "explanation": "What colour + is + your car?",
       "content": {
         "type": "word_order",
         "payload": {
           "tokens": [
+            "What",
             "is",
-            "My",
-            "grey",
-            "phone"
+            "your",
+            "car",
+            "colour"
           ],
           "instruction": "Put the words in order."
         },
         "answer": {
           "accepted": [
-            "My phone is grey."
+            "What colour is your car?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Adjectives have no -s.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I have two reds pens."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I have two red pens."
+            ]
+          }
         }
       }
     }

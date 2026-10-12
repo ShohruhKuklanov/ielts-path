@@ -2,40 +2,124 @@
   "title": "Do you…? Does she…?",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 7,
+  "estMinutes": 9,
   "intro": [
     {
-      "type": "text",
-      "text": "To ask a question, put do or does first."
+      "type": "heading",
+      "text": "1. Form: yes / no questions"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
+        [
+          "do / does",
+          "person",
+          "verb"
+        ],
         [
           "Do",
           "I / you / we / they",
-          "+ verb?"
+          "work?"
         ],
         [
           "Does",
           "he / she / it",
-          "+ verb?"
+          "work?"
         ]
       ]
     },
     {
-      "type": "example",
-      "en": "Do you like tea?",
-      "note": "Yes, I do. / No, I don't."
+      "type": "heading",
+      "text": "2. Short answers"
     },
     {
-      "type": "example",
-      "en": "Does she work here?",
-      "note": "Yes, she does. / No, she doesn't."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question",
+          "yes",
+          "no"
+        ],
+        [
+          "Do you like tea?",
+          "Yes, I do.",
+          "No, I don't."
+        ],
+        [
+          "Does she work here?",
+          "Yes, she does.",
+          "No, she doesn't."
+        ],
+        [
+          "Do they live here?",
+          "Yes, they do.",
+          "No, they don't."
+        ]
+      ]
     },
     {
-      "type": "tip",
-      "text": "After does, the verb has no -s: Does he play? Not: Does he plays?"
+      "type": "heading",
+      "text": "3. Questions with question words"
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question word",
+          "do / does",
+          "person",
+          "verb"
+        ],
+        [
+          "Where",
+          "do",
+          "you",
+          "live?"
+        ],
+        [
+          "What",
+          "does",
+          "she",
+          "do?"
+        ],
+        [
+          "When",
+          "do",
+          "they",
+          "start?"
+        ]
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Rules",
+      "points": [
+        "After does, the verb has NO -s: Does he play? (not Does he plays?)",
+        "Answer with do / does, not the main verb: Yes, I do. (not Yes, I like.)",
+        "Questions with be have no do: Are you tired? (not Do you tired?)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "You like coffee?",
+      "right": "Do you like coffee?"
+    },
+    {
+      "type": "mistake",
+      "wrong": "Does he plays football?",
+      "right": "Does he play football?"
+    },
+    {
+      "type": "mistake",
+      "wrong": "Where you live?",
+      "right": "Where do you live?"
     }
   ],
   "exercises": [
@@ -96,7 +180,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "After does use the base verb: play.",
+      "explanation": "After does: base verb.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -123,7 +207,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "The short answer is Yes, I do.",
+      "explanation": "Yes, I do.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -170,6 +254,60 @@
         "answer": {
           "correct": [
             0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "tired is an adjective: Are you tired?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ you tired?",
+          "options": [
+            {
+              "text": "Do"
+            },
+            {
+              "text": "Are"
+            },
+            {
+              "text": "Does"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Where + do + you + live?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Where you live?"
+            },
+            {
+              "text": "Where do you live?"
+            },
+            {
+              "text": "Where does you live?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }
@@ -226,6 +364,43 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "What does he do?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "What {{1}} your father do? — He is a pilot."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "does"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Does she like tea?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "She likes tea. → {{1}} she like tea?",
+          "instruction": "Make a question."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Does"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "Do + you + like coffee?",
       "content": {
         "type": "word_order",
@@ -248,23 +423,61 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Does + your brother + play tennis?",
+      "explanation": "Where + does + your brother + work?",
       "content": {
         "type": "word_order",
         "payload": {
           "tokens": [
             "your",
-            "tennis",
-            "play",
-            "Does",
-            "brother"
+            "Where",
+            "work",
+            "brother",
+            "does"
           ],
           "instruction": "Put the words in order."
         },
         "answer": {
           "accepted": [
-            "Does your brother play tennis?"
+            "Where does your brother work?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "After does: base verb.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: Does he works here?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Does he work here?"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Question word + do + you + verb.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: Where you study?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Where do you study?"
+            ]
+          }
         }
       }
     }

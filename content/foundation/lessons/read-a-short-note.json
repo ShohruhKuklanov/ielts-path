@@ -2,40 +2,66 @@
   "title": "Read a short note",
   "kind": "reading",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "Notes and messages are short. Read them quickly first."
+      "type": "heading",
+      "text": "1. How to read a note"
     },
     {
-      "type": "text",
-      "text": "Then read again and look for the information you need: who, what, when, where."
+      "type": "rule",
+      "title": "Two steps",
+      "points": [
+        "1. Read quickly: who is it from? who is it to? what is it about?",
+        "2. Read again slowly and find the exact information: times, places, names."
+      ]
     },
     {
       "type": "example",
       "en": "Hi Kamila, I'm at the library. Meet me at 4. Jasur",
-      "note": "who: Jasur / where: library / when: 4"
+      "note": "from Jasur / to Kamila / where: library / when: 4"
     },
     {
-      "type": "tip",
-      "text": "Names, times and places often answer the questions."
+      "type": "heading",
+      "text": "2. True, false or not given?"
+    },
+    {
+      "type": "rule",
+      "title": "Decide carefully",
+      "points": [
+        "TRUE = the text says the same thing.",
+        "FALSE = the text says the opposite.",
+        "NOT GIVEN = the text does not say this. Do not guess!"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Grammar focus: language in notes"
+    },
+    {
+      "type": "rule",
+      "title": "Notes use",
+      "points": [
+        "present continuous for now: I'm doing my homework.",
+        "can for requests: Can we have pizza?",
+        "imperatives (orders) for instructions: Meet me at 4. Call me."
+      ]
     }
   ],
   "exercises": [
     {
       "skill": "reading",
       "cefr": "A1",
-      "explanation": "Malika is at Dilnoza's house. She comes home at 7. The text does not say what Dilnoza likes.",
+      "explanation": "Malika is at Dilnoza's house. The text does not say what Dilnoza likes.",
       "content": {
         "type": "tfng",
         "payload": {
           "instruction": "Read. Is it true, false, or not given?",
-          "passage": "Hi Mum,\nI'm at Dilnoza's house. We're doing our homework. I'm home at 7 o'clock. Can we have pizza for dinner?\nLove, Malika",
+          "passage": "Hi Mum,\nI'm at Dilnoza's house. We're doing our homework. I'll be home at 7 o'clock. Can we have pizza for dinner?\nLove, Malika",
           "statements": [
             "Malika is at home now.",
             "Malika and Dilnoza are doing homework.",
-            "Malika is home at 7 o'clock.",
+            "Malika will be home at 7 o'clock.",
             "Dilnoza likes pizza."
           ]
         },
@@ -80,7 +106,7 @@
     {
       "skill": "reading",
       "cefr": "A1",
-      "explanation": "She asks: \"Can we have pizza for dinner?\"",
+      "explanation": "\"Can we have pizza for dinner?\"",
       "content": {
         "type": "mcq",
         "payload": {
@@ -108,17 +134,18 @@
     {
       "skill": "reading",
       "cefr": "A1",
-      "explanation": "The class is in Room 12, not 5. The note does not say who the teacher is.",
+      "explanation": "Room 12, not 5. The note does not say who the teacher is.",
       "content": {
         "type": "tfng",
         "payload": {
           "instruction": "Read. Is it true, false, or not given?",
-          "passage": "Dear Mr Karimov,\nThe English class on Tuesday is in Room 12, not Room 5. The class starts at 10 a.m.\nThank you,\nSchool office",
+          "passage": "Dear Mr Karimov,\nThe English class on Tuesday is in Room 12, not Room 5. The class starts at 10 a.m. Please bring your dictionary.\nThank you,\nSchool office",
           "statements": [
             "The class is on Tuesday.",
             "The class is in Room 5.",
             "The class starts at 10 a.m.",
-            "Mr Karimov is the teacher."
+            "Mr Karimov is the teacher.",
+            "Students need a dictionary."
           ]
         },
         "answer": {
@@ -126,7 +153,8 @@
             "true",
             "false",
             "true",
-            "not_given"
+            "not_given",
+            "true"
           ]
         }
       }
@@ -160,6 +188,33 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Bring is an imperative: an instruction.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "\"Please bring your dictionary.\" This sentence is …",
+          "options": [
+            {
+              "text": "a question"
+            },
+            {
+              "text": "an instruction"
+            },
+            {
+              "text": "a past event"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
       "skill": "reading",
       "cefr": "A1",
       "explanation": "Tom writes: meet me at the station.",
@@ -175,6 +230,33 @@
               "station"
             ]
           }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "Not given = no information in the text.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A sentence is NOT GIVEN when …",
+          "options": [
+            {
+              "text": "the text says the opposite"
+            },
+            {
+              "text": "the text does not say it"
+            },
+            {
+              "text": "the text says the same thing"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
         }
       }
     }

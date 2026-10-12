@@ -2,27 +2,51 @@
   "title": "Is it? Are you? Questions with be",
   "kind": "grammar",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "To make a question, put am, is or are first."
-    },
-    {
-      "type": "example",
-      "en": "You are a student. → Are you a student?"
-    },
-    {
-      "type": "example",
-      "en": "It is a cat. → Is it a cat?"
+      "type": "heading",
+      "text": "1. Form: questions"
     },
     {
       "type": "text",
-      "text": "Short answers:"
+      "text": "To make a question, put am / is / are BEFORE the person or thing."
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
+        [
+          "positive",
+          "question"
+        ],
+        [
+          "You are a student.",
+          "Are you a student?"
+        ],
+        [
+          "It is a cat.",
+          "Is it a cat?"
+        ],
+        [
+          "I am late.",
+          "Am I late?"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Short answers"
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question",
+          "yes",
+          "no"
+        ],
         [
           "Are you …?",
           "Yes, I am.",
@@ -32,12 +56,58 @@
           "Is it …?",
           "Yes, it is.",
           "No, it isn't."
+        ],
+        [
+          "Am I …?",
+          "Yes, you are.",
+          "No, you aren't."
         ]
       ]
     },
     {
-      "type": "tip",
-      "text": "Don't say \"Yes, I'm.\" Say \"Yes, I am.\""
+      "type": "rule",
+      "title": "Short answers",
+      "points": [
+        "Answer with the same verb: Are you …? → Yes, I am.",
+        "In positive short answers, do not use the short form: Yes, I am. (not Yes, I'm.)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Questions with question words"
+    },
+    {
+      "type": "example",
+      "en": "Where are you from?",
+      "note": "question word + be + person"
+    },
+    {
+      "type": "example",
+      "en": "How old are you?"
+    },
+    {
+      "type": "example",
+      "en": "What is it? / What's it?"
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "You are a student?",
+      "right": "Are you a student?",
+      "why": "Put are first."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Yes, I'm.",
+      "right": "Yes, I am."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Where you are from?",
+      "right": "Where are you from?"
     }
   ],
   "exercises": [
@@ -179,6 +249,60 @@
     {
       "skill": "grammar",
       "cefr": "A0",
+      "explanation": "Question word + are + you.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Where you are from?"
+            },
+            {
+              "text": "Where are you from?"
+            },
+            {
+              "text": "Where from are you?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Put are first: Are you hungry?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "You are hungry?"
+            },
+            {
+              "text": "Are you hungry?"
+            },
+            {
+              "text": "Are hungry you?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
       "explanation": "Are you a student? Yes, I am.",
       "content": {
         "type": "gap_fill",
@@ -227,6 +351,43 @@
     {
       "skill": "grammar",
       "cefr": "A0",
+      "explanation": "How old are you?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "How old {{1}} you?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "are"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Are you from Bukhara?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "You are from Bukhara. → {{1}} from Bukhara?",
+          "instruction": "Make a question."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Are you"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
       "explanation": "Are + you + from Kazakhstan?",
       "content": {
         "type": "word_order",
@@ -266,6 +427,45 @@
           "accepted": [
             "Is it a good book?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Put are first in a question.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: You are a doctor?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Are you a doctor?"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Positive short answers use the long form.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: Are you happy? — Yes, I'm."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Yes, I am.",
+              "Are you happy? — Yes, I am."
+            ]
+          }
         }
       }
     }

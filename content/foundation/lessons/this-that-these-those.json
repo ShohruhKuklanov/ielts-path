@@ -2,23 +2,20 @@
   "title": "This, that, these, those",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "Use this and these for things near you."
-    },
-    {
-      "type": "text",
-      "text": "Use that and those for things far from you."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
           "how many?",
-          "near",
-          "far"
+          "near (here)",
+          "far (there)"
         ],
         [
           "one",
@@ -26,11 +23,15 @@
           "that"
         ],
         [
-          "more",
+          "more than one",
           "these",
           "those"
         ]
       ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Use"
     },
     {
       "type": "example",
@@ -51,6 +52,48 @@
       "type": "example",
       "en": "Those are my friends.",
       "note": "more, far"
+    },
+    {
+      "type": "rule",
+      "title": "With a noun or alone",
+      "points": [
+        "With a noun: this phone, those shoes.",
+        "Alone: This is nice. What is that?"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Verb",
+      "points": [
+        "this / that + is",
+        "these / those + are"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Introducing people",
+      "points": [
+        "On the phone and when you introduce someone, use this: This is my brother, Ali."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "This are my keys.",
+      "right": "These are my keys."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Those book is old.",
+      "right": "That book is old. / Those books are old."
+    },
+    {
+      "type": "mistake",
+      "wrong": "These is my sister.",
+      "right": "This is my sister."
     }
   ],
   "exercises": [
@@ -219,6 +262,60 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "To introduce one person: this is …",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "(introducing) Anna, ___ is my friend Lola.",
+          "options": [
+            {
+              "text": "this"
+            },
+            {
+              "text": "these"
+            },
+            {
+              "text": "it"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "those + plural noun + are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Those shoes are nice."
+            },
+            {
+              "text": "Those shoe are nice."
+            },
+            {
+              "text": "That shoes are nice."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "More than one, near: these.",
       "content": {
         "type": "gap_fill",
@@ -265,6 +362,48 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "More than one, far: those.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Are {{1}} your children over there?",
+          "wordBank": [
+            "these",
+            "those",
+            "that"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "those"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "this → these.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "This is my book. → {{1}} are my books.",
+          "instruction": "Make it plural."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "These"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "Those + are + my parents.",
       "content": {
         "type": "word_order",
@@ -281,6 +420,25 @@
           "accepted": [
             "Those are my parents."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "More than one: these + are.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: This are my friends."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "These are my friends."
+            ]
+          }
         }
       }
     }

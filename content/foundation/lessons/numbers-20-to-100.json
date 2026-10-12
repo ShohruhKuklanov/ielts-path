@@ -2,8 +2,12 @@
   "title": "Numbers 20 to 100",
   "kind": "vocabulary",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
+    {
+      "type": "heading",
+      "text": "1. Tens"
+    },
     {
       "type": "table",
       "rows": [
@@ -25,25 +29,87 @@
       ]
     },
     {
-      "type": "text",
-      "text": "Tens end in -ty."
+      "type": "rule",
+      "title": "Spelling",
+      "points": [
+        "Tens end in -ty.",
+        "four → forty (no u)",
+        "five → fifty, three → thirty, eight → eighty"
+      ]
     },
     {
-      "type": "example",
-      "en": "34 = thirty-four",
-      "note": "tens + number"
+      "type": "heading",
+      "text": "2. Numbers like 34"
     },
     {
-      "type": "example",
-      "en": "99 = ninety-nine"
+      "type": "rule",
+      "title": "Tens + number",
+      "points": [
+        "Write a hyphen (-) between them: 34 = thirty-four, 99 = ninety-nine.",
+        "100 = one hundred or a hundred."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. -teen or -ty?"
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "-teen",
+          "-ty"
+        ],
+        [
+          "13 thirteen",
+          "30 thirty"
+        ],
+        [
+          "14 fourteen",
+          "40 forty"
+        ],
+        [
+          "15 fifteen",
+          "50 fifty"
+        ]
+      ]
     },
     {
       "type": "tip",
-      "text": "Forty has no u: four → forty."
+      "text": "Stress: thir-TEEN, but THIR-ty."
     },
     {
-      "type": "tip",
-      "text": "Fifteen (15) and fifty (50) are different numbers."
+      "type": "heading",
+      "text": "4. Grammar focus"
+    },
+    {
+      "type": "rule",
+      "title": "Plural nouns and prices",
+      "points": [
+        "After numbers use a plural noun: 25 students, 60 minutes.",
+        "Prices: 40 dollars, 75 cents."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "fourty",
+      "right": "forty"
+    },
+    {
+      "type": "mistake",
+      "wrong": "thirty four",
+      "right": "thirty-four",
+      "why": "Use a hyphen."
+    },
+    {
+      "type": "mistake",
+      "wrong": "one hundred student",
+      "right": "one hundred students"
     }
   ],
   "exercises": [
@@ -190,6 +256,33 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
+      "explanation": "Use a hyphen: twenty-five.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is written correctly?",
+          "options": [
+            {
+              "text": "twenty five"
+            },
+            {
+              "text": "twenty-five"
+            },
+            {
+              "text": "twentyfive"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
       "explanation": "Twenty, thirty, forty, fifty.",
       "content": {
         "type": "gap_fill",
@@ -244,6 +337,25 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "After a number: plural.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There are 30 {{1}} in my class. (student)",
+          "instruction": "Write the correct form."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "students"
+            ]
+          }
+        }
+      }
+    },
+    {
       "skill": "vocabulary",
       "cefr": "A1",
       "explanation": "My grandmother + is + seventy-two.",
@@ -262,6 +374,26 @@
           "accepted": [
             "My grandmother is seventy-two."
           ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "forty has no u.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My father is fourty-five."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My father is forty-five.",
+              "My father's forty-five."
+            ]
+          }
         }
       }
     }

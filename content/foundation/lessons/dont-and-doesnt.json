@@ -2,26 +2,27 @@
   "title": "Don't and doesn't",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "Use don't with I, you, we, they."
-    },
-    {
-      "type": "text",
-      "text": "Use doesn't with he, she, it."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
+          "person",
+          "negative"
+        ],
+        [
           "I / you / we / they",
-          "don't + verb"
+          "don't (do not) + verb"
         ],
         [
           "he / she / it",
-          "doesn't + verb"
+          "doesn't (does not) + verb"
         ]
       ]
     },
@@ -31,12 +32,53 @@
     },
     {
       "type": "example",
-      "en": "She doesn't like coffee.",
-      "note": "no -s after doesn't"
+      "en": "She doesn't like coffee."
     },
     {
-      "type": "tip",
-      "text": "Don't = do not. Doesn't = does not."
+      "type": "heading",
+      "text": "2. The important rule"
+    },
+    {
+      "type": "rule",
+      "title": "After don't / doesn't: the base verb",
+      "points": [
+        "She doesn't like (not likes)",
+        "He doesn't go (not goes)",
+        "It doesn't have (not has)",
+        "The -s is already in doesn't."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Don't mix with be"
+    },
+    {
+      "type": "rule",
+      "title": "be has its own negative",
+      "points": [
+        "I'm not, he isn't, they aren't — no do!",
+        "She isn't tired. (not She doesn't tired)",
+        "She doesn't work. (not She isn't work)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "He don't like fish.",
+      "right": "He doesn't like fish."
+    },
+    {
+      "type": "mistake",
+      "wrong": "She doesn't works here.",
+      "right": "She doesn't work here."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I don't am hungry.",
+      "right": "I'm not hungry."
     }
   ],
   "exercises": [
@@ -151,11 +193,38 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "With an adjective use be: isn't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My brother ___ tall. He is short.",
+          "options": [
+            {
+              "text": "isn't"
+            },
+            {
+              "text": "doesn't"
+            },
+            {
+              "text": "don't"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "He doesn't play tennis.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Which is correct?",
+          "prompt": "Which sentence is correct?",
           "options": [
             {
               "text": "He don't play tennis."
@@ -171,6 +240,33 @@
         "answer": {
           "correct": [
             2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "like is a verb: I don't like.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "I'm not like coffee."
+            },
+            {
+              "text": "I don't like coffee."
+            },
+            {
+              "text": "I doesn't like coffee."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }
@@ -243,6 +339,46 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "She doesn't play.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "She plays the piano. → She {{1}} the piano.",
+          "instruction": "Make it negative."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "doesn't play",
+              "does not play"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We don't like.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "We like pizza. → We {{1}} pizza.",
+          "instruction": "Make it negative."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "don't like",
+              "do not like"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "I + don't drink + coffee.",
       "content": {
         "type": "word_order",
@@ -259,6 +395,44 @@
           "accepted": [
             "I don't drink coffee."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "doesn't + base verb.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: She doesn't goes to school."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "She doesn't go to school."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "he → doesn't.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: He don't work here."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "He doesn't work here."
+            ]
+          }
         }
       }
     }

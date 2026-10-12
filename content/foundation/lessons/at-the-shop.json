@@ -2,39 +2,109 @@
   "title": "At the shop",
   "kind": "speaking",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "Useful phrases in a shop:"
+      "type": "heading",
+      "text": "1. Useful phrases"
     },
     {
-      "type": "example",
-      "en": "Can I have a bottle of water, please?",
-      "note": "to ask for something"
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "you want to …",
+          "you say"
+        ],
+        [
+          "ask for something",
+          "Can I have a bottle of water, please?"
+        ],
+        [
+          "ask the price",
+          "How much is it? / How much are they?"
+        ],
+        [
+          "ask about size or colour",
+          "Do you have this in blue / in a bigger size?"
+        ],
+        [
+          "decide",
+          "I'll take it."
+        ],
+        [
+          "say thank you",
+          "Thank you. / Thanks."
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "How much is it?",
-      "note": "to ask the price"
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "the shop assistant says",
+          "meaning"
+        ],
+        [
+          "Can I help you?",
+          "Do you need anything?"
+        ],
+        [
+          "That's 12 dollars.",
+          "the price"
+        ],
+        [
+          "Here you are.",
+          "Take this."
+        ],
+        [
+          "Here is your change.",
+          "money back"
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "It's two dollars.",
-      "note": "the price"
+      "type": "heading",
+      "text": "2. Grammar focus: polite requests"
     },
     {
-      "type": "example",
-      "en": "Here you are.",
-      "note": "when you give something"
+      "type": "rule",
+      "title": "Asking politely",
+      "points": [
+        "Can I have …, please?",
+        "Could I have …, please? (more polite)",
+        "I'd like … (= I would like): I'd like a coffee, please."
+      ]
     },
     {
-      "type": "example",
-      "en": "Thank you. / Thanks."
+      "type": "rule",
+      "title": "this / these, it / they",
+      "points": [
+        "How much is this shirt? — It's 15 dollars.",
+        "How much are these shoes? — They're 40 dollars."
+      ]
     },
     {
-      "type": "tip",
-      "text": "Please and thank you make you sound polite."
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "Give me water.",
+      "right": "Can I have some water, please?",
+      "why": "Sounds rude without please / can I."
+    },
+    {
+      "type": "mistake",
+      "wrong": "How much are this?",
+      "right": "How much is this?"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I like a coffee, please.",
+      "right": "I'd like a coffee, please.",
+      "why": "I like = I enjoy; I'd like = I want"
     }
   ],
   "exercises": [
@@ -120,28 +190,76 @@
       }
     },
     {
-      "skill": "speaking",
+      "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Say thank you.",
+      "explanation": "Could I have …, please? is very polite.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "You get your change. You say:",
+          "prompt": "Which is the most polite?",
           "options": [
             {
-              "text": "Here you are."
+              "text": "Give me a tea."
             },
             {
-              "text": "Thank you."
+              "text": "I want tea."
             },
             {
-              "text": "How much?"
+              "text": "Could I have a tea, please?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "these socks → are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How much ___ these socks?",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
             }
           ]
         },
         "answer": {
           "correct": [
             1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I'd like = I want.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I ___ a sandwich, please.",
+          "options": [
+            {
+              "text": "'d like"
+            },
+            {
+              "text": "like"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
           ]
         }
       }
@@ -193,12 +311,12 @@
     {
       "skill": "reading",
       "cefr": "A1",
-      "explanation": "Read the conversation again: a small coffee, two dollars. Milk is not in the text.",
+      "explanation": "A small coffee for two dollars. Milk is not in the text.",
       "content": {
         "type": "tfng",
         "payload": {
           "instruction": "Read. Is it true, false, or not given?",
-          "passage": "Customer: Hello. Can I have a coffee, please?\nAssistant: Sure. Big or small?\nCustomer: Small, please. How much is it?\nAssistant: It's two dollars.\nCustomer: Here you are. Thank you!",
+          "passage": "Assistant: Hello! Can I help you?\nCustomer: Yes, I'd like a coffee, please.\nAssistant: Sure. Big or small?\nCustomer: Small, please. How much is it?\nAssistant: It's two dollars.\nCustomer: Here you are. Thank you!",
           "statements": [
             "The customer wants a coffee.",
             "The customer wants a big coffee.",
@@ -237,6 +355,49 @@
           "accepted": [
             "Can I have a sandwich, please?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "speaking",
+      "cefr": "A1",
+      "explanation": "I'd like + a bottle of water.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "like",
+            "water",
+            "a",
+            "of",
+            "bottle",
+            "I'd"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I'd like a bottle of water."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "this bag → is.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: How much are this bag?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "How much is this bag?"
+            ]
+          }
         }
       }
     }

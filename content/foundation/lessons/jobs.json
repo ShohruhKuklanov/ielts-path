@@ -2,8 +2,12 @@
   "title": "Jobs",
   "kind": "vocabulary",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
+    {
+      "type": "heading",
+      "text": "1. Jobs"
+    },
     {
       "type": "table",
       "rows": [
@@ -23,22 +27,22 @@
           "police officer"
         ],
         [
-          "shop assistant"
+          "shop assistant",
+          "pilot",
+          "builder"
         ]
       ]
     },
     {
-      "type": "text",
-      "text": "Use a or an before a job."
+      "type": "rule",
+      "title": "Jobs with -er / -or",
+      "points": [
+        "teach → teacher, drive → driver, build → builder, act → actor"
+      ]
     },
     {
-      "type": "example",
-      "en": "She is a doctor."
-    },
-    {
-      "type": "example",
-      "en": "I'm an engineer.",
-      "note": "an before a vowel sound"
+      "type": "heading",
+      "text": "2. Talking about jobs"
     },
     {
       "type": "example",
@@ -46,8 +50,44 @@
       "note": "This question asks about your job."
     },
     {
-      "type": "tip",
-      "text": "Say \"I'm a student\", not \"I'm student\"."
+      "type": "example",
+      "en": "I'm a nurse. I work in a hospital."
+    },
+    {
+      "type": "example",
+      "en": "What does she do? — She is an engineer."
+    },
+    {
+      "type": "heading",
+      "text": "3. Grammar focus: a / an with jobs"
+    },
+    {
+      "type": "rule",
+      "title": "a / an + job",
+      "points": [
+        "Always use a / an with one person's job: She is a doctor.",
+        "an before a vowel sound: an engineer, an artist.",
+        "Plural: no a / an: They are doctors."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I'm student.",
+      "right": "I'm a student."
+    },
+    {
+      "type": "mistake",
+      "wrong": "She is a engineer.",
+      "right": "She is an engineer."
+    },
+    {
+      "type": "mistake",
+      "wrong": "They are a teachers.",
+      "right": "They are teachers."
     }
   ],
   "exercises": [
@@ -135,6 +175,33 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
+      "explanation": "A pilot flies planes.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A ___ flies a plane.",
+          "options": [
+            {
+              "text": "pilot"
+            },
+            {
+              "text": "builder"
+            },
+            {
+              "text": "nurse"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "Engineer starts with a vowel sound: an engineer.",
       "content": {
         "type": "mcq",
@@ -160,7 +227,34 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "No a / an with plurals.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "They are ___ doctors.",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
       "cefr": "A1",
       "explanation": "Use a before a job: I'm a student.",
       "content": {
@@ -238,6 +332,24 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
+      "explanation": "build → builder.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "He builds houses. He is a {{1}}."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "builder"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
       "explanation": "My father + is + a police officer.",
       "content": {
         "type": "word_order",
@@ -278,6 +390,44 @@
           "accepted": [
             "What do you do?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "a + job.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My mother is doctor."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My mother is a doctor."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "No an with plurals.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: They are an engineers."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "They are engineers."
+            ]
+          }
         }
       }
     }

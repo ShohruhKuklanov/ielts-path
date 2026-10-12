@@ -2,40 +2,109 @@
   "title": "What time is it?",
   "kind": "vocabulary",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
+      "type": "heading",
+      "text": "1. Asking the time"
+    },
+    {
       "type": "example",
-      "en": "What time is it?",
-      "note": "the question"
+      "en": "What time is it? / What's the time?"
     },
     {
       "type": "example",
       "en": "It's three o'clock.",
-      "note": "3:00"
+      "note": "3:00 — o'clock only for full hours"
     },
     {
-      "type": "example",
-      "en": "It's half past three.",
-      "note": "3:30"
+      "type": "heading",
+      "text": "2. Past and to"
     },
     {
-      "type": "example",
-      "en": "It's quarter past three.",
-      "note": "3:15"
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "time",
+          "we say"
+        ],
+        [
+          "3:15",
+          "quarter past three"
+        ],
+        [
+          "3:30",
+          "half past three"
+        ],
+        [
+          "3:45",
+          "quarter to four"
+        ],
+        [
+          "3:10",
+          "ten past three"
+        ],
+        [
+          "3:50",
+          "ten to four"
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "It's quarter to four.",
-      "note": "3:45"
+      "type": "rule",
+      "title": "past or to?",
+      "points": [
+        "Minutes 1–30: past the hour (ten past three).",
+        "Minutes 31–59: to the NEXT hour (ten to four)."
+      ]
     },
     {
-      "type": "text",
-      "text": "Past = after the hour. To = before the next hour."
+      "type": "rule",
+      "title": "Digital way (also correct)",
+      "points": [
+        "3:15 = three fifteen, 3:45 = three forty-five",
+        "9:05 = nine oh five"
+      ]
     },
     {
-      "type": "tip",
-      "text": "You can also say the numbers: 3:15 = three fifteen."
+      "type": "heading",
+      "text": "3. Grammar focus: at + time"
+    },
+    {
+      "type": "rule",
+      "title": "Prepositions of time",
+      "points": [
+        "at + clock time: at 7 o'clock, at half past six",
+        "in + parts of the day: in the morning, in the afternoon, in the evening",
+        "at night"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "a.m. / p.m.",
+      "points": [
+        "a.m. = before 12 noon, p.m. = after 12 noon: 8 a.m., 8 p.m."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "It's three o'clock and a half.",
+      "right": "It's half past three."
+    },
+    {
+      "type": "mistake",
+      "wrong": "in 7 o'clock",
+      "right": "at 7 o'clock"
+    },
+    {
+      "type": "mistake",
+      "wrong": "in the night",
+      "right": "at night"
     }
   ],
   "exercises": [
@@ -126,7 +195,7 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": ":45 is quarter to the next hour: quarter to six.",
+      "explanation": ":45 is quarter to the next hour.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -140,6 +209,34 @@
             },
             {
               "text": "It's quarter to five."
+            }
+          ],
+          "instruction": "What time is it?"
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "50 minutes = 10 minutes to the next hour.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "2:50",
+          "options": [
+            {
+              "text": "ten past two"
+            },
+            {
+              "text": "ten to three"
+            },
+            {
+              "text": "ten to two"
             }
           ],
           "instruction": "What time is it?"
@@ -178,6 +275,84 @@
             0,
             1,
             2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "at + clock time.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The film starts ___ 8 p.m.",
+          "options": [
+            {
+              "text": "in"
+            },
+            {
+              "text": "at"
+            },
+            {
+              "text": "on"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "in the evening.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I study ___ the evening.",
+          "options": [
+            {
+              "text": "in"
+            },
+            {
+              "text": "at"
+            },
+            {
+              "text": "on"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "at night.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I sleep ___ night.",
+          "options": [
+            {
+              "text": "in"
+            },
+            {
+              "text": "at"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }
@@ -230,8 +405,7 @@
         "answer": {
           "blanks": {
             "1": [
-              "o'clock",
-              "o’clock"
+              "o'clock"
             ]
           }
         }
@@ -256,6 +430,25 @@
           "accepted": [
             "What time is it?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "at + clock time.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: The lesson starts in 9 o'clock."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "The lesson starts at 9 o'clock."
+            ]
+          }
         }
       }
     }

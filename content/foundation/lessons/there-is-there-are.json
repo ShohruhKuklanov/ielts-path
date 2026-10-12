@@ -2,45 +2,111 @@
   "title": "There is, there are",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 9,
   "intro": [
     {
-      "type": "text",
-      "text": "Use there is and there are to say what is in a place."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
+          "—",
+          "positive",
+          "negative",
+          "question"
+        ],
+        [
           "one thing",
-          "There is (There's)"
+          "There is (There's) a …",
+          "There isn't a …",
+          "Is there a …?"
         ],
         [
           "more things",
-          "There are"
+          "There are some …",
+          "There aren't any …",
+          "Are there any …?"
         ]
       ]
     },
     {
-      "type": "example",
-      "en": "There is a bed in my room."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question",
+          "short answers"
+        ],
+        [
+          "Is there a bank?",
+          "Yes, there is. / No, there isn't."
+        ],
+        [
+          "Are there any shops?",
+          "Yes, there are. / No, there aren't."
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "There are two windows."
+      "type": "heading",
+      "text": "2. Use"
     },
     {
-      "type": "text",
-      "text": "Negative:"
+      "type": "rule",
+      "title": "there is / there are",
+      "points": [
+        "We use it to say that something exists or is in a place.",
+        "We usually say WHERE: There is a park near my house.",
+        "There + is/are comes first; the thing comes after."
+      ]
     },
     {
-      "type": "example",
-      "en": "There isn't a TV.",
-      "note": "There aren't any chairs."
+      "type": "rule",
+      "title": "With a list",
+      "points": [
+        "Use is if the first thing is singular: There is a table and two chairs."
+      ]
     },
     {
-      "type": "tip",
-      "text": "Questions: Is there a …? / Are there any …?"
+      "type": "rule",
+      "title": "How many …?",
+      "points": [
+        "How many rooms are there? — There are four."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. there is or it is?"
+    },
+    {
+      "type": "rule",
+      "title": "Different meanings",
+      "points": [
+        "There is a cat in the garden. (new information: a cat exists there)",
+        "It is black. (we already know the cat)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "Is a bank near here.",
+      "right": "There is a bank near here."
+    },
+    {
+      "type": "mistake",
+      "wrong": "There is three chairs.",
+      "right": "There are three chairs."
+    },
+    {
+      "type": "mistake",
+      "wrong": "In my room there have a bed.",
+      "right": "There is a bed in my room."
     }
   ],
   "exercises": [
@@ -101,7 +167,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Shops = more than one: there aren't.",
+      "explanation": "Shops = plural: aren't.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -182,6 +248,84 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "We already know the cat: it is.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "There is a cat in the garden. ___ black.",
+          "options": [
+            {
+              "text": "It's"
+            },
+            {
+              "text": "There's"
+            },
+            {
+              "text": "They're"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "The first thing is singular: there is.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "There ___ a sofa and two armchairs.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "There is + singular.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Is a hospital in my town."
+            },
+            {
+              "text": "There is a hospital in my town."
+            },
+            {
+              "text": "There are a hospital in my town."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "One window: there is.",
       "content": {
         "type": "gap_fill",
@@ -249,6 +393,24 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "How many … are there?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "How many people {{1}} there in your family?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "are"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "There are + four people + in my family.",
       "content": {
         "type": "word_order",
@@ -268,6 +430,45 @@
           "accepted": [
             "There are four people in my family."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Start with There is.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: Is a big supermarket near my house."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "There is a big supermarket near my house.",
+              "There's a big supermarket near my house."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Plural: there are.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: There is five students in the class."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "There are five students in the class."
+            ]
+          }
         }
       }
     }

@@ -2,31 +2,46 @@
   "title": "Review: My family and me",
   "kind": "review",
   "cefr": "A1",
-  "estMinutes": 7,
+  "estMinutes": 9,
   "intro": [
     {
-      "type": "text",
-      "text": "Let's review the module."
+      "type": "heading",
+      "text": "Module review"
     },
     {
       "type": "example",
       "en": "This is my mother. She is a nurse.",
-      "note": "family and jobs"
+      "note": "family and jobs: a + job"
     },
     {
       "type": "example",
       "en": "Her name is Dilfuza. His name is Rustam.",
-      "note": "my, your, his, her"
+      "note": "his (man) / her (woman)"
+    },
+    {
+      "type": "example",
+      "en": "My brother's car is old.",
+      "note": "'s for people"
     },
     {
       "type": "example",
       "en": "My brother is tall and friendly.",
-      "note": "describing people"
+      "note": "adjectives"
     },
     {
       "type": "example",
       "en": "We have a dog. It doesn't have a name!",
       "note": "have / has"
+    },
+    {
+      "type": "rule",
+      "title": "Remember",
+      "points": [
+        "a / an with one job: I'm a student.",
+        "his for a man, her for a woman, its for a thing.",
+        "he / she / it + has; doesn't + have.",
+        "Adjectives: before a noun, never plural."
+      ]
     }
   ],
   "exercises": [
@@ -87,7 +102,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Use is with a job: He is a doctor.",
+      "explanation": "Use is with a job.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -193,6 +208,33 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "'s for people; a + job.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Ali's sister is a teacher."
+            },
+            {
+              "text": "The sister of Ali is teacher."
+            },
+            {
+              "text": "Ali sister is a teacher."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
       "skill": "vocabulary",
       "cefr": "A1",
       "explanation": "Opposites and pairs.",
@@ -202,20 +244,20 @@
           "left": [
             "young",
             "tall",
-            "mother"
+            "wife"
           ],
           "right": [
-            "father",
+            "short",
             "old",
-            "short"
+            "husband"
           ],
           "instruction": "Match."
         },
         "answer": {
           "pairs": [
             1,
-            2,
-            0
+            0,
+            2
           ]
         }
       }
@@ -276,6 +318,44 @@
           "accepted": [
             "Their grandmother is very friendly."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "an + job; she has.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: She is engineer and she have two children."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "She is an engineer and she has two children."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Bobur is a man: his.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: This is Bobur and her sister."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "This is Bobur and his sister."
+            ]
+          }
         }
       }
     }

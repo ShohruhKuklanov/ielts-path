@@ -2,38 +2,97 @@
   "title": "He is, she is, it is",
   "kind": "grammar",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "Use he for a man or a boy."
-    },
-    {
-      "type": "text",
-      "text": "Use she for a woman or a girl."
-    },
-    {
-      "type": "text",
-      "text": "Use it for a thing or an animal."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
+          "person",
+          "positive",
+          "short form"
+        ],
+        [
           "he",
-          "is",
+          "he is",
           "he's"
         ],
         [
           "she",
-          "is",
+          "she is",
           "she's"
         ],
         [
           "it",
-          "is",
+          "it is",
           "it's"
         ]
+      ]
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "person",
+          "negative",
+          "short form"
+        ],
+        [
+          "he",
+          "he is not",
+          "he isn't / he's not"
+        ],
+        [
+          "she",
+          "she is not",
+          "she isn't / she's not"
+        ],
+        [
+          "it",
+          "it is not",
+          "it isn't / it's not"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question",
+          "short answers"
+        ],
+        [
+          "Is he …?",
+          "Yes, he is. / No, he isn't."
+        ],
+        [
+          "Is she …?",
+          "Yes, she is. / No, she isn't."
+        ],
+        [
+          "Is it …?",
+          "Yes, it is. / No, it isn't."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Use"
+    },
+    {
+      "type": "rule",
+      "title": "he / she / it",
+      "points": [
+        "he = a man or a boy: Bobur → he",
+        "she = a woman or a girl: Madina → she",
+        "it = a thing, an animal, the weather, the time: It is cold. It is 5 o'clock."
       ]
     },
     {
@@ -49,15 +108,42 @@
       "en": "This is my cat. It's black."
     },
     {
-      "type": "tip",
-      "text": "It's = it is. Its (no ') is different: we learn it later."
+      "type": "heading",
+      "text": "3. Names and nouns"
+    },
+    {
+      "type": "rule",
+      "title": "Do not repeat the subject",
+      "points": [
+        "Say: My mother is a nurse. (not My mother she is a nurse.)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "My sister he is a teacher.",
+      "right": "My sister is a teacher."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Is cold today.",
+      "right": "It is cold today.",
+      "why": "English sentences need a subject: it."
+    },
+    {
+      "type": "mistake",
+      "wrong": "He's isn't here.",
+      "right": "He isn't here."
     }
   ],
   "exercises": [
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Sardor is a man, so we use he.",
+      "explanation": "Sardor is a man: he.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -84,7 +170,7 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Nigora is a woman, so we use she.",
+      "explanation": "Nigora is a woman: she.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -111,7 +197,7 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "A phone is a thing, so we use it.",
+      "explanation": "A phone is a thing: it.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -131,6 +217,33 @@
         "answer": {
           "correct": [
             2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "For the weather we use it.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ is very hot today.",
+          "options": [
+            {
+              "text": "He"
+            },
+            {
+              "text": "It"
+            },
+            {
+              "text": "Is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }
@@ -165,27 +278,84 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "He is = he's. She is = she's. It is = it's.",
+      "explanation": "No, he isn't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Is he your brother? — No, ___",
+          "options": [
+            {
+              "text": "he isn't."
+            },
+            {
+              "text": "he not."
+            },
+            {
+              "text": "he aren't."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Don't repeat the subject; use a with jobs.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "My father he is a driver."
+            },
+            {
+              "text": "My father is a driver."
+            },
+            {
+              "text": "My father is driver."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "He is = he's. Is not = isn't.",
       "content": {
         "type": "match_pairs",
         "payload": {
           "left": [
             "he is",
             "she is",
-            "it is"
+            "it is",
+            "is not"
           ],
           "right": [
-            "it's",
             "he's",
-            "she's"
+            "she's",
+            "isn't",
+            "it's"
           ],
           "instruction": "Match the long and short forms."
         },
         "answer": {
           "pairs": [
+            0,
             1,
-            2,
-            0
+            3,
+            2
           ]
         }
       }
@@ -237,6 +407,45 @@
     {
       "skill": "grammar",
       "cefr": "A0",
+      "explanation": "The book is not interesting.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "The book {{1}} interesting. It's boring.",
+          "instruction": "Write the negative."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "isn't",
+              "is not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Is she a teacher?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "She is a teacher. → {{1}} a teacher?",
+          "instruction": "Make a question."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Is she"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
       "explanation": "She + is + from Tashkent.",
       "content": {
         "type": "word_order",
@@ -259,22 +468,39 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "It's + a big city.",
+      "explanation": "We need the subject it.",
       "content": {
-        "type": "word_order",
+        "type": "gap_fill",
         "payload": {
-          "tokens": [
-            "It's",
-            "big",
-            "a",
-            "city"
-          ],
-          "instruction": "Put the words in order."
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: Is raining today."
         },
         "answer": {
-          "accepted": [
-            "It's a big city."
-          ]
+          "blanks": {
+            "1": [
+              "It is raining today.",
+              "It's raining today."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Don't repeat the subject.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My brother he is tall."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My brother is tall."
+            ]
+          }
         }
       }
     }

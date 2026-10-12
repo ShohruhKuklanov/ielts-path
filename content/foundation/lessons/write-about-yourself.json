@@ -2,35 +2,105 @@
   "title": "Write about yourself",
   "kind": "writing",
   "cefr": "A1",
-  "estMinutes": 7,
+  "estMinutes": 9,
   "intro": [
     {
-      "type": "text",
-      "text": "You can write about yourself in 4 or 5 short sentences."
+      "type": "heading",
+      "text": "1. What to write"
+    },
+    {
+      "type": "rule",
+      "title": "A short text about you (5–6 sentences)",
+      "points": [
+        "1. name and age",
+        "2. where you are from and where you live",
+        "3. family",
+        "4. job or studies",
+        "5. likes and hobbies"
+      ]
     },
     {
       "type": "example",
-      "en": "My name is Otabek. I am 17.",
-      "note": "name and age"
+      "en": "My name is Otabek and I am 17."
     },
     {
       "type": "example",
-      "en": "I am from Fergana.",
-      "note": "where you are from"
+      "en": "I am from Fergana, but I live in Tashkent."
     },
     {
       "type": "example",
-      "en": "I am a student and I like football.",
-      "note": "and joins two ideas"
+      "en": "I am a student. I like football and music."
     },
     {
-      "type": "example",
-      "en": "I like English but it is difficult.",
-      "note": "but shows a difference"
+      "type": "heading",
+      "text": "2. Grammar focus: joining ideas"
     },
     {
-      "type": "tip",
-      "text": "Check every sentence: a capital letter at the start, a full stop at the end."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "word",
+          "use",
+          "example"
+        ],
+        [
+          "and",
+          "adds a similar idea",
+          "I am a student and I love music."
+        ],
+        [
+          "but",
+          "shows a difference",
+          "I like English but it is difficult."
+        ],
+        [
+          "because",
+          "gives a reason",
+          "I study English because I want to go abroad."
+        ]
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Also / too",
+      "points": [
+        "also goes before the main verb: I also like tennis.",
+        "too goes at the end: I like tennis, too."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Check your writing"
+    },
+    {
+      "type": "rule",
+      "title": "Checklist",
+      "points": [
+        "capital letters and full stops in every sentence",
+        "he / she + -s: My brother works …",
+        "a / an with jobs: I am a student.",
+        "and / but / because to join short sentences"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I like football, I like music.",
+      "right": "I like football and music."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I am student.",
+      "right": "I am a student."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I too like tennis.",
+      "right": "I also like tennis. / I like tennis, too."
     }
   ],
   "exercises": [
@@ -48,6 +118,9 @@
             },
             {
               "text": "but"
+            },
+            {
+              "text": "because"
             }
           ]
         },
@@ -72,6 +145,9 @@
             },
             {
               "text": "but"
+            },
+            {
+              "text": "because"
             }
           ]
         },
@@ -85,7 +161,34 @@
     {
       "skill": "writing",
       "cefr": "A1",
-      "explanation": "Tall vs short is a difference: but.",
+      "explanation": "A reason: because.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I study English ___ I want to work in London.",
+          "options": [
+            {
+              "text": "and"
+            },
+            {
+              "text": "but"
+            },
+            {
+              "text": "because"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Tall vs short: but.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -96,6 +199,9 @@
             },
             {
               "text": "but"
+            },
+            {
+              "text": "because"
             }
           ]
         },
@@ -107,19 +213,43 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "also before the main verb.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I ___ like tennis.",
+          "options": [
+            {
+              "text": "also"
+            },
+            {
+              "text": "too"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
       "skill": "writing",
       "cefr": "A1",
-      "explanation": "Start with your name: My name is …",
+      "explanation": "Name and age.",
       "content": {
         "type": "mcq",
         "payload": {
           "prompt": "Which is the best first sentence?",
           "options": [
             {
-              "text": "My name is Rustam."
+              "text": "My name is Rustam and I am 18."
             },
             {
-              "text": "name Rustam"
+              "text": "name Rustam 18"
             },
             {
               "text": "I Rustam."
@@ -143,7 +273,8 @@
           "text": "I am 16 {{1}} I live in Andijan.",
           "wordBank": [
             "and",
-            "but"
+            "but",
+            "because"
           ]
         },
         "answer": {
@@ -158,20 +289,44 @@
     {
       "skill": "writing",
       "cefr": "A1",
-      "explanation": "Have vs don't have: but.",
+      "explanation": "have vs don't have: but.",
       "content": {
         "type": "gap_fill",
         "payload": {
           "text": "I have a sister {{1}} I don't have a brother.",
           "wordBank": [
             "and",
-            "but"
+            "but",
+            "because"
           ]
         },
         "answer": {
           "blanks": {
             "1": [
               "but"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "A reason: because.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I love Saturdays {{1}} I can sleep late.",
+          "wordBank": [
+            "and",
+            "but",
+            "because"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "because"
             ]
           }
         }
@@ -235,7 +390,7 @@
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Which text is correct?",
+          "prompt": "Which sentence is correct?",
           "options": [
             {
               "text": "my name is lola. i am 15."
@@ -252,6 +407,44 @@
           "correct": [
             1
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "he → works.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My father work in a bank."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My father works in a bank."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "a + job.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I am student and I like music."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I am a student and I like music."
+            ]
+          }
         }
       }
     }

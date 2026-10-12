@@ -2,33 +2,98 @@
   "title": "I can swim: can and can't",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "Use can to say you are able to do something."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
-      "type": "example",
-      "en": "I can swim."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "positive",
+          "negative",
+          "question"
+        ],
+        [
+          "I / you / he / she / we / they can swim.",
+          "… can't (cannot) swim.",
+          "Can you swim?"
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "She can't drive.",
-      "note": "can't = cannot"
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question",
+          "short answers"
+        ],
+        [
+          "Can you drive?",
+          "Yes, I can. / No, I can't."
+        ],
+        [
+          "Can she cook?",
+          "Yes, she can. / No, she can't."
+        ]
+      ]
     },
     {
-      "type": "text",
-      "text": "Can is the same for everyone. The verb has no -s."
+      "type": "heading",
+      "text": "2. Rules"
     },
     {
-      "type": "example",
-      "en": "He can cook.",
-      "note": "not: He can cooks. Not: He cans cook."
+      "type": "rule",
+      "title": "can is special",
+      "points": [
+        "It is the same for every person: he can (not he cans).",
+        "The next verb has no to and no -s: She can swim. (not can to swim / can swims)",
+        "No do in questions: Can you swim? (not Do you can swim?)"
+      ]
     },
     {
-      "type": "example",
-      "en": "Can you speak English? — Yes, I can. / No, I can't."
+      "type": "heading",
+      "text": "3. Use"
+    },
+    {
+      "type": "rule",
+      "title": "We use can for",
+      "points": [
+        "ability: I can speak three languages.",
+        "possibility: You can buy tickets online.",
+        "asking for permission: Can I open the window? — Yes, you can."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Pronunciation",
+      "points": [
+        "can is usually short /kən/: I can swim.",
+        "can't is long /kɑːnt/: I can't swim."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "She cans drive.",
+      "right": "She can drive."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I can to speak English.",
+      "right": "I can speak English."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Do you can cook?",
+      "right": "Can you cook?"
     }
   ],
   "exercises": [
@@ -89,7 +154,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "can + base verb: play.",
+      "explanation": "can + base verb.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -170,6 +235,87 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "Permission: Can I …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ I use your phone? — Yes, of course.",
+          "options": [
+            {
+              "text": "Can"
+            },
+            {
+              "text": "Do"
+            },
+            {
+              "text": "Am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "can + base verb, no -s.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "My brother cans cook."
+            },
+            {
+              "text": "My brother can cook."
+            },
+            {
+              "text": "My brother can cooks."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Can you + verb?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Do you can drive?"
+            },
+            {
+              "text": "Can you drive?"
+            },
+            {
+              "text": "Can you to drive?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "She is good: can.",
       "content": {
         "type": "gap_fill",
@@ -207,6 +353,25 @@
             "1": [
               "can't",
               "cannot"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Can she dance?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "She can dance. → {{1}} she dance?",
+          "instruction": "Make a question."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Can"
             ]
           }
         }
@@ -253,6 +418,44 @@
           "accepted": [
             "My brother can't cook."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "No to after can.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: He can to swim very well."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "He can swim very well."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "can never takes -s.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: She cans play the guitar."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "She can play the guitar."
+            ]
+          }
         }
       }
     }

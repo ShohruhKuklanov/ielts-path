@@ -2,15 +2,19 @@
   "title": "Capital letters and full stops",
   "kind": "writing",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "A sentence starts with a capital (big) letter."
+      "type": "heading",
+      "text": "1. Sentences"
     },
     {
-      "type": "text",
-      "text": "A sentence ends with a full stop (.) or a question mark (?)."
+      "type": "rule",
+      "title": "Every sentence",
+      "points": [
+        "starts with a capital letter: My …",
+        "ends with a full stop (.), a question mark (?) or an exclamation mark (!)"
+      ]
     },
     {
       "type": "example",
@@ -21,18 +25,27 @@
       "en": "Where are you from?"
     },
     {
-      "type": "text",
-      "text": "Always use capital letters for:"
+      "type": "example",
+      "en": "What a beautiful day!"
+    },
+    {
+      "type": "heading",
+      "text": "2. Capital letters for names"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
+        [
+          "use a capital for",
+          "examples"
+        ],
         [
           "I",
           "I am happy."
         ],
         [
-          "names",
+          "people",
           "Aziz, Maria"
         ],
         [
@@ -40,21 +53,64 @@
           "Uzbekistan, Bukhara"
         ],
         [
+          "nationalities and languages",
+          "Uzbek, English"
+        ],
+        [
           "days and months",
           "Monday, May"
+        ],
+        [
+          "streets and places",
+          "Navoi Street, Chorsu Bazaar"
         ]
       ]
     },
     {
-      "type": "tip",
-      "text": "Languages and nationalities too: English, Uzbek."
+      "type": "rule",
+      "title": "No capital for",
+      "points": [
+        "seasons: summer, winter",
+        "jobs and school subjects (usually): teacher, maths"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Commas"
+    },
+    {
+      "type": "rule",
+      "title": "The comma (,)",
+      "points": [
+        "in lists: I speak Uzbek, Russian and English. (no comma before and)",
+        "after Hello / Hi in messages: Hi Kamila,"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "i live in tashkent",
+      "right": "I live in Tashkent."
+    },
+    {
+      "type": "mistake",
+      "wrong": "My birthday is in Summer.",
+      "right": "My birthday is in summer."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Where do you work.",
+      "right": "Where do you work?"
     }
   ],
   "exercises": [
     {
       "skill": "writing",
       "cefr": "A1",
-      "explanation": "Capital M at the start, capital A for the name, full stop at the end.",
+      "explanation": "Capital M, capital A for the name, full stop.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -135,7 +191,7 @@
     {
       "skill": "writing",
       "cefr": "A1",
-      "explanation": "Days and languages start with a capital: Monday, English.",
+      "explanation": "Days and languages: Monday, English.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -167,7 +223,34 @@
     {
       "skill": "writing",
       "cefr": "A1",
-      "explanation": "Capital W, capital letters for languages, full stop.",
+      "explanation": "Seasons have no capital: winter.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word does NOT need a capital letter?",
+          "options": [
+            {
+              "text": "june"
+            },
+            {
+              "text": "winter"
+            },
+            {
+              "text": "friday"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Capital W, capitals for languages, full stop.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -181,6 +264,33 @@
             },
             {
               "text": "we speak Uzbek and English"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Commas in a list, no comma before and.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "I like apples, bananas and oranges."
+            },
+            {
+              "text": "I like apples bananas and oranges."
+            },
+            {
+              "text": "I like apples, bananas, and, oranges."
             }
           ]
         },
@@ -251,6 +361,25 @@
     {
       "skill": "writing",
       "cefr": "A1",
+      "explanation": "Seasons: no capital.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I love {{1}}. It is warm. (summer)",
+          "instruction": "Write the word correctly."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "summer"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
       "explanation": "Capital M, capital L, full stop.",
       "content": {
         "type": "word_order",
@@ -268,6 +397,44 @@
           "accepted": [
             "My friend lives in London."
           ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Capital M, capital S, full stop.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: my brother works in samarkand"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My brother works in Samarkand."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Capital D, capital E, question mark.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: do you speak english."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Do you speak English?"
+            ]
+          }
         }
       }
     }

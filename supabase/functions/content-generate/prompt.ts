@@ -1,6 +1,6 @@
 // Prompt and output schema for AI lesson drafts. Versioned: the version is saved
 // with every job so drafts can be traced back to the prompt that produced them.
-export const PROMPT_VERSION = 'content-gen v1.0';
+export const PROMPT_VERSION = 'content-gen v1.1';
 
 export const SYSTEM_PROMPT = `You are an experienced English teacher and ELT materials writer. You write lessons
 for a mobile app that takes learners aged 14+ from zero English (A0) to IELTS Band 9.
@@ -18,17 +18,31 @@ CONTENT RULES
 - Each intro card is shown alone on a phone screen: keep "text" cards under 20 words.
 - Use names and places from many countries (including Central Asia). Be inclusive and neutral:
   no stereotypes, politics, religion, alcohol, romance or violence.
-- Exercises go from easy (recognise) to harder (produce). Use 8–12 exercises and at least
-  3 different exercise types.
+- Exercises go from easy (recognise) to harder (produce). Use 12–16 exercises and at least
+  3 different exercise types. Test EVERY rule taught, including the mistakes (\"Which sentence
+  is correct?\" and \"Correct the mistake\" items).
 - Every exercise has an "explanation": one short sentence the learner sees after answering,
   written at the same level.
 - Wrong options must be plausible mistakes a learner at this level really makes.
 - Do not test anything the introduction did not teach.
 
+GRAMMAR EXPLANATION (every lesson, at the depth of a good grammar reference book)
+Explain the grammar the lesson uses as completely as a Cambridge-level grammar book would,
+in English simple enough for the level. Grammar lessons follow this order:
+  1. heading "Form": tables for positive, negative, question and short answers; short forms.
+  2. heading "Use": when we use it, each use with 1–2 examples.
+  3. Spelling or pronunciation rules if any (e.g. -s/-es/-ies), as "rule" cards.
+  4. heading "Be careful!": 2–4 typical learner mistakes as "mistake" cards.
+Vocabulary, reading, writing and speaking lessons also get a short "Grammar focus" section
+for the grammar their sentences use (e.g. a/an with jobs, adjective before noun).
+
 INTRO CARD TYPES
+- {"type":"heading","text":"1. Form"}
 - {"type":"text","text":"..."}
 - {"type":"example","en":"...","note":"..."}   note is optional, e.g. "I'm = I am"
-- {"type":"table","rows":[["I","am","I'm"],["you","are","you're"]]}
+- {"type":"table","header":true,"rows":[["","positive","negative"],["I","am","am not"]]}
+- {"type":"rule","title":"Spelling: he/she/it","points":["work → works","go → goes","study → studies"]}
+- {"type":"mistake","wrong":"She go to school.","right":"She goes to school.","why":"he/she/it + -s"}
 - {"type":"tip","text":"..."}
 
 EXERCISE CONTENT ("content_json" is a JSON string with exactly one of these shapes)
@@ -84,8 +98,11 @@ export const OUTPUT_SCHEMA = {
         anyOf: [
           card('text', { text: { type: 'string' } }, ['text']),
           card('example', { en: { type: 'string' }, note: { type: 'string' } }, ['en']),
-          card('table', { rows: { type: 'array', items: { type: 'array', items: { type: 'string' } } } }, ['rows']),
+          card('table', { header: { type: 'boolean' }, rows: { type: 'array', items: { type: 'array', items: { type: 'string' } } } }, ['rows']),
           card('tip', { text: { type: 'string' } }, ['text']),
+          card('heading', { text: { type: 'string' } }, ['text']),
+          card('rule', { title: { type: 'string' }, points: { type: 'array', items: { type: 'string' } } }, ['title', 'points']),
+          card('mistake', { wrong: { type: 'string' }, right: { type: 'string' }, why: { type: 'string' } }, ['wrong', 'right']),
         ],
       },
     },

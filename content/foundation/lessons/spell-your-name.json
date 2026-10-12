@@ -2,25 +2,20 @@
   "title": "Spell your name",
   "kind": "alphabet",
   "cefr": "A0",
-  "estMinutes": 5,
+  "estMinutes": 7,
   "intro": [
     {
-      "type": "text",
-      "text": "To spell a word, say each letter."
-    },
-    {
-      "type": "example",
-      "en": "Aziz: A - Z - I - Z"
+      "type": "heading",
+      "text": "1. Asking and answering"
     },
     {
       "type": "example",
       "en": "What's your name?",
-      "note": "a question"
+      "note": "What's = What is"
     },
     {
       "type": "example",
-      "en": "My name is Laylo.",
-      "note": "the answer"
+      "en": "My name is Laylo. / I'm Laylo."
     },
     {
       "type": "example",
@@ -33,13 +28,73 @@
       "note": "Say the letters one by one."
     },
     {
-      "type": "tip",
-      "text": "Two letters the same? You can say \"double\": A - double N - A."
+      "type": "heading",
+      "text": "2. Spelling rules"
+    },
+    {
+      "type": "rule",
+      "title": "Saying the letters",
+      "points": [
+        "Say each letter clearly: B - E - N.",
+        "Two letters the same together: say \"double\": A - double N - A (Anna).",
+        "Names always start with a capital letter."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Grammar focus: my and your"
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "person",
+          "word",
+          "example"
+        ],
+        [
+          "I",
+          "my",
+          "My name is Aziz."
+        ],
+        [
+          "you",
+          "your",
+          "What is your name?"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "We ask with your. We answer with my."
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "What's you name?",
+      "right": "What's your name?",
+      "why": "you → your"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I name is Timur.",
+      "right": "My name is Timur.",
+      "why": "I → my"
+    },
+    {
+      "type": "mistake",
+      "wrong": "How you spell that?",
+      "right": "How do you spell that?",
+      "why": "Questions with spell need do."
     }
   ],
   "exercises": [
     {
-      "skill": "speaking",
+      "skill": "grammar",
       "cefr": "A0",
       "explanation": "We say: My name is Timur.",
       "content": {
@@ -72,7 +127,7 @@
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Someone says their name. You want the letters. What do you ask?",
+          "prompt": "Someone says their name. You want the letters. You ask:",
           "options": [
             {
               "text": "How do you spell that?"
@@ -88,6 +143,60 @@
         "answer": {
           "correct": [
             0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Ask with your: What is your name?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "What's ___ name?",
+          "options": [
+            {
+              "text": "you"
+            },
+            {
+              "text": "your"
+            },
+            {
+              "text": "my"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "What's = What is.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "What's your name? — What's is short for …",
+          "options": [
+            {
+              "text": "What does"
+            },
+            {
+              "text": "What is"
+            },
+            {
+              "text": "What are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }
@@ -216,6 +325,33 @@
     {
       "skill": "reading",
       "cefr": "A0",
+      "explanation": "Billy: B - I - double L - Y.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How do you spell Billy?",
+          "options": [
+            {
+              "text": "B - I - double L - Y"
+            },
+            {
+              "text": "B - I - L - Y"
+            },
+            {
+              "text": "B - E - double L - Y"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
       "explanation": "How + do + you + spell + that?",
       "content": {
         "type": "word_order",
@@ -255,6 +391,47 @@
           "accepted": [
             "My name is Kamola."
           ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "you → your.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: What's you name?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "What's your name?",
+              "What is your name?"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "I → my.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I name is Aziz."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My name is Aziz.",
+              "I'm Aziz.",
+              "I am Aziz."
+            ]
+          }
         }
       }
     }

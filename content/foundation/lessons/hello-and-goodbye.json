@@ -2,59 +2,111 @@
   "title": "Hello and goodbye",
   "kind": "vocabulary",
   "cefr": "A0",
-  "estMinutes": 5,
+  "estMinutes": 7,
   "intro": [
     {
-      "type": "example",
-      "en": "Hello!",
-      "note": "for everyone"
-    },
-    {
-      "type": "example",
-      "en": "Hi!",
-      "note": "for friends"
-    },
-    {
-      "type": "text",
-      "text": "The time of day changes the greeting."
+      "type": "heading",
+      "text": "1. Saying hello"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
-          "morning",
+          "when?",
+          "we say"
+        ],
+        [
+          "any time",
+          "Hello! / Hi!"
+        ],
+        [
+          "before 12:00",
           "Good morning!"
         ],
         [
-          "afternoon",
+          "12:00 – 18:00",
           "Good afternoon!"
         ],
         [
-          "evening",
+          "after 18:00",
           "Good evening!"
         ]
       ]
     },
     {
-      "type": "example",
-      "en": "Nice to meet you.",
-      "note": "when you meet someone new"
+      "type": "text",
+      "text": "Hi is friendly: use it with friends and family."
+    },
+    {
+      "type": "heading",
+      "text": "2. Meeting someone new"
     },
     {
       "type": "example",
-      "en": "Goodbye! / Bye!",
-      "note": "when you leave"
+      "en": "A: Hello, I'm Aziz. Nice to meet you."
     },
     {
-      "type": "tip",
-      "text": "Good night is only for when you go to bed, not for hello."
+      "type": "example",
+      "en": "B: Nice to meet you, too.",
+      "note": "answer with too"
+    },
+    {
+      "type": "example",
+      "en": "How are you? — I'm fine, thanks. And you?"
+    },
+    {
+      "type": "heading",
+      "text": "3. Saying goodbye"
+    },
+    {
+      "type": "rule",
+      "title": "Goodbye",
+      "points": [
+        "Goodbye! / Bye! / See you!",
+        "Good night! = only when you go to bed or leave at night."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "4. Grammar focus: I'm and you're"
+    },
+    {
+      "type": "rule",
+      "title": "Short forms",
+      "points": [
+        "I am → I'm: I'm fine.",
+        "you are → you're",
+        "We use short forms when we speak."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "Good night! (when you meet someone)",
+      "right": "Good evening!",
+      "why": "Good night is for goodbye, not hello."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Nice to meet you, also.",
+      "right": "Nice to meet you, too."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I fine.",
+      "right": "I'm fine.",
+      "why": "Do not forget am."
     }
   ],
   "exercises": [
     {
       "skill": "vocabulary",
       "cefr": "A0",
-      "explanation": "In the morning we say Good morning.",
+      "explanation": "Before 12 we say Good morning.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -81,7 +133,7 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
-      "explanation": "After 12 o'clock we say Good afternoon.",
+      "explanation": "After 12 we say Good afternoon.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -187,25 +239,27 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Hi = hello. Bye = goodbye.",
+      "explanation": "Answer: I'm fine, thanks.",
       "content": {
-        "type": "match_pairs",
+        "type": "mcq",
         "payload": {
-          "left": [
-            "Hello!",
-            "Goodbye!"
-          ],
-          "right": [
-            "Bye!",
-            "Hi!"
-          ],
-          "instruction": "Match the words with the same meaning."
+          "prompt": "How are you? — ___",
+          "options": [
+            {
+              "text": "I'm fine, thanks."
+            },
+            {
+              "text": "I fine."
+            },
+            {
+              "text": "I have fine."
+            }
+          ]
         },
         "answer": {
-          "pairs": [
-            1,
+          "correct": [
             0
           ]
         }
@@ -214,14 +268,43 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
-      "explanation": "In the evening we say Good evening.",
+      "explanation": "Hi = hello. Bye = goodbye. I'm = I am.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "Hello!",
+            "Goodbye!",
+            "I am"
+          ],
+          "right": [
+            "Bye!",
+            "I'm",
+            "Hi!"
+          ],
+          "instruction": "Match the words with the same meaning."
+        },
+        "answer": {
+          "pairs": [
+            2,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "After 6 p.m. we say Good evening.",
       "content": {
         "type": "gap_fill",
         "payload": {
           "text": "Good {{1}}! It is 7 p.m.",
           "wordBank": [
             "morning",
-            "evening"
+            "evening",
+            "night"
           ]
         },
         "answer": {
@@ -240,12 +323,31 @@
       "content": {
         "type": "gap_fill",
         "payload": {
-          "text": "A: Nice to meet you. B: Nice to {{1}} you, too."
+          "text": "A: Nice to meet you. B: Nice to meet you, {{1}}."
         },
         "answer": {
           "blanks": {
             "1": [
-              "meet"
+              "too"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I'm fine.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "A: How are you? B: {{1}} fine, thanks."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I'm",
+              "I am"
             ]
           }
         }
@@ -270,6 +372,71 @@
           "accepted": [
             "Nice to meet you."
           ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "How + are + you?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "are",
+            "you",
+            "How"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "How are you?"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Good night is only for goodbye.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Good night, Anna! How are you?"
+            },
+            {
+              "text": "Good evening, Anna! How are you?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Use am: I am fine.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I fine, thank you."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I'm fine, thank you.",
+              "I am fine, thank you."
+            ]
+          }
         }
       }
     }

@@ -2,11 +2,11 @@
   "title": "Review: Hello!",
   "kind": "review",
   "cefr": "A0",
-  "estMinutes": 7,
+  "estMinutes": 9,
   "intro": [
     {
-      "type": "text",
-      "text": "Let's review the module."
+      "type": "heading",
+      "text": "Module review"
     },
     {
       "type": "example",
@@ -15,18 +15,28 @@
     },
     {
       "type": "example",
-      "en": "I'm Aziz. You're my friend.",
-      "note": "I am, you are"
+      "en": "I'm Aziz. You're my friend. I'm not tired.",
+      "note": "I am / you are + negative"
     },
     {
       "type": "example",
-      "en": "Where are you from? — I'm from Japan.",
-      "note": "countries"
+      "en": "Where are you from? — I'm from the UK.",
+      "note": "countries + the"
     },
     {
       "type": "example",
       "en": "Are you 20? — No, I'm not. I'm twenty-five.",
-      "note": "questions and numbers"
+      "note": "questions, short answers, numbers"
+    },
+    {
+      "type": "rule",
+      "title": "Remember",
+      "points": [
+        "I am / you are — never \"I is\" or \"you is\".",
+        "Questions: Are you …? Is it …?",
+        "Short answers: Yes, I am. No, I'm not.",
+        "Numbers: twenty-five (hyphen), forty (no u)."
+      ]
     }
   ],
   "exercises": [
@@ -168,6 +178,33 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
+      "explanation": "the UK",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I'm from ___ UK.",
+          "options": [
+            {
+              "text": "the"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
       "explanation": "19 is nineteen.",
       "content": {
         "type": "gap_fill",
@@ -252,29 +289,66 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Lola: L - O - L - A.",
+      "explanation": "Question word + are + you.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "How do you spell Lola?",
+          "prompt": "Which sentence is correct?",
           "options": [
             {
-              "text": "L - O - L - A"
+              "text": "Where you are from?"
             },
             {
-              "text": "L - A - L - O"
-            },
-            {
-              "text": "L - O - L - L - A"
+              "text": "Where are you from?"
             }
           ]
         },
         "answer": {
           "correct": [
-            0
+            1
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "am + a + capital K.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I student from korea."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I'm a student from Korea.",
+              "I am a student from Korea."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Question: Are you …?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: You is 30?"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Are you 30?",
+              "Are you thirty?"
+            ]
+          }
         }
       }
     }

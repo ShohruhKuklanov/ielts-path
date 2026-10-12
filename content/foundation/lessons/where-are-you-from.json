@@ -2,17 +2,11 @@
   "title": "Where are you from?",
   "kind": "vocabulary",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
-      "type": "example",
-      "en": "Where are you from?",
-      "note": "the question"
-    },
-    {
-      "type": "example",
-      "en": "I'm from Uzbekistan.",
-      "note": "I am from + country"
+      "type": "heading",
+      "text": "1. Countries"
     },
     {
       "type": "table",
@@ -38,17 +32,70 @@
       ]
     },
     {
-      "type": "text",
-      "text": "Countries start with a big letter."
+      "type": "heading",
+      "text": "2. Asking and answering"
     },
     {
       "type": "example",
-      "en": "I'm from the UK.",
-      "note": "We say the UK and the USA."
+      "en": "Where are you from?",
+      "note": "the question"
     },
     {
-      "type": "tip",
-      "text": "Use from after be: I am from Japan. Not: I from Japan."
+      "type": "example",
+      "en": "I'm from Uzbekistan.",
+      "note": "I am + from + country"
+    },
+    {
+      "type": "example",
+      "en": "Where is he from? — He is from India."
+    },
+    {
+      "type": "heading",
+      "text": "3. Grammar focus"
+    },
+    {
+      "type": "rule",
+      "title": "be + from",
+      "points": [
+        "I am from …, You are from …, He / She is from …",
+        "Do not forget be: I am from Japan. (not I from Japan)"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "the with some countries",
+      "points": [
+        "We say the UK and the USA (they are groups of states).",
+        "Most countries have no the: Japan, China, Turkey."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Capital letters",
+      "points": [
+        "Countries and cities always start with a capital letter: India, Samarkand."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I from Turkey.",
+      "right": "I'm from Turkey.",
+      "why": "Do not forget am."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I am from USA.",
+      "right": "I am from the USA."
+    },
+    {
+      "type": "mistake",
+      "wrong": "She is from china.",
+      "right": "She is from China.",
+      "why": "capital letter"
     }
   ],
   "exercises": [
@@ -82,7 +129,7 @@
     {
       "skill": "vocabulary",
       "cefr": "A0",
-      "explanation": "Countries start with a big letter: India.",
+      "explanation": "Countries start with a capital letter: India.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -107,7 +154,7 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
       "explanation": "We say the USA and the UK.",
       "content": {
@@ -118,6 +165,30 @@
             {
               "text": "a"
             },
+            {
+              "text": "the"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "No the with Japan.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He's from ___ Japan.",
+          "options": [
             {
               "text": "the"
             },
@@ -170,6 +241,24 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Where is she from?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Where {{1}} she from? — She is from Korea."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "is"
+            ]
+          }
+        }
+      }
+    },
+    {
       "skill": "vocabulary",
       "cefr": "A0",
       "explanation": "Tokyo is in Japan. Tashkent is in Uzbekistan.",
@@ -195,6 +284,33 @@
             2,
             3,
             1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Istanbul is in Turkey.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Ali is from Istanbul. He is from …",
+          "options": [
+            {
+              "text": "Turkey"
+            },
+            {
+              "text": "India"
+            },
+            {
+              "text": "China"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
             0
           ]
         }
@@ -244,29 +360,42 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Istanbul is in Turkey.",
+      "explanation": "Do not forget am.",
       "content": {
-        "type": "mcq",
+        "type": "gap_fill",
         "payload": {
-          "prompt": "Ali is from Istanbul. He is from …",
-          "options": [
-            {
-              "text": "Turkey"
-            },
-            {
-              "text": "India"
-            },
-            {
-              "text": "China"
-            }
-          ]
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I from India."
         },
         "answer": {
-          "correct": [
-            0
-          ]
+          "blanks": {
+            "1": [
+              "I'm from India.",
+              "I am from India."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "No the with Turkey.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: He is from the Turkey."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "He is from Turkey.",
+              "He's from Turkey."
+            ]
+          }
         }
       }
     }

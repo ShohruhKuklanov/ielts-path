@@ -2,19 +2,25 @@
   "title": "Long vowel sounds",
   "kind": "phonics",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
-      "type": "text",
-      "text": "Vowels can also have a long sound."
+      "type": "heading",
+      "text": "1. Long sounds"
     },
     {
       "type": "text",
-      "text": "Two letters together often make one long sound."
+      "text": "Vowels can also have a long sound. Two letters together often make one long sound."
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
+        [
+          "letters",
+          "word",
+          "word"
+        ],
         [
           "ee",
           "see",
@@ -28,7 +34,7 @@
         [
           "oo",
           "food",
-          "blue"
+          "school"
         ],
         [
           "or",
@@ -43,18 +49,53 @@
       ]
     },
     {
-      "type": "example",
-      "en": "ship — sheep",
-      "note": "short i — long ee"
+      "type": "heading",
+      "text": "2. Short or long?"
     },
     {
-      "type": "example",
-      "en": "full — fool",
-      "note": "short u — long oo"
+      "type": "rule",
+      "title": "Pairs to listen for",
+      "points": [
+        "ship (short i) — sheep (long ee)",
+        "full (short u) — fool (long oo)",
+        "Long sounds are longer: sheeeep. Short sounds are quick: ship."
+      ]
     },
     {
-      "type": "tip",
-      "text": "Make long sounds longer: sheeeep. Make short sounds quick: ship."
+      "type": "rule",
+      "title": "Silent e",
+      "points": [
+        "An e at the end often makes the vowel say its name.",
+        "cap → cape, kit → kite, hop → hope, cut → cute"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Grammar focus: plural -s"
+    },
+    {
+      "type": "rule",
+      "title": "One and more than one",
+      "points": [
+        "Most words add -s for more than one: one car, two cars; one bird, three birds.",
+        "A few words do not change: one sheep, two sheep."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "two sheeps",
+      "right": "two sheep",
+      "why": "sheep does not change"
+    },
+    {
+      "type": "mistake",
+      "wrong": "a ship eats grass",
+      "right": "a sheep eats grass",
+      "why": "ship = boat, sheep = animal"
     }
   ],
   "exercises": [
@@ -115,14 +156,14 @@
     {
       "skill": "pronunciation",
       "cefr": "A0",
-      "explanation": "Food and blue have the long oo sound.",
+      "explanation": "Food and school have the long oo sound.",
       "content": {
         "type": "mcq",
         "payload": {
           "prompt": "Which word has the same sound as food?",
           "options": [
             {
-              "text": "blue"
+              "text": "school"
             },
             {
               "text": "full"
@@ -241,6 +282,25 @@
     {
       "skill": "pronunciation",
       "cefr": "A0",
+      "explanation": "School has oo.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I go to sch{{1}}l every day.",
+          "instruction": "Write the missing letters."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "oo"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
       "explanation": "A sheep is an animal. A ship is a boat.",
       "content": {
         "type": "mcq",
@@ -265,7 +325,7 @@
     {
       "skill": "pronunciation",
       "cefr": "A0",
-      "explanation": "Full means there is no space. It has a short sound.",
+      "explanation": "Full means there is no space.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -282,6 +342,87 @@
         "answer": {
           "correct": [
             0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "kit + e = kite. Now i says its name.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Add a silent e to kit. What is the new word?",
+          "options": [
+            {
+              "text": "kite"
+            },
+            {
+              "text": "kitt"
+            },
+            {
+              "text": "keet"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Sheep does not change.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one sheep, two ___",
+          "options": [
+            {
+              "text": "sheeps"
+            },
+            {
+              "text": "sheep"
+            },
+            {
+              "text": "sheepes"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Add -s: cars.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one car, two ___",
+          "options": [
+            {
+              "text": "car"
+            },
+            {
+              "text": "cars"
+            },
+            {
+              "text": "cares"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }

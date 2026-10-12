@@ -2,42 +2,82 @@
   "title": "Read about someone's day",
   "kind": "reading",
   "cefr": "A1",
-  "estMinutes": 7,
+  "estMinutes": 9,
   "intro": [
     {
-      "type": "text",
-      "text": "When you read about a day, look for times and actions."
+      "type": "heading",
+      "text": "1. How to read about a day"
     },
     {
-      "type": "example",
-      "en": "at 7 o'clock",
-      "note": "a time"
+      "type": "rule",
+      "title": "Look for",
+      "points": [
+        "times: at 7 o'clock, in the evening",
+        "actions (verbs): gets up, goes, has lunch",
+        "order words: first, then, after that, finally"
+      ]
     },
     {
-      "type": "example",
-      "en": "he gets up / she goes to work",
-      "note": "actions"
+      "type": "heading",
+      "text": "2. Grammar focus: the story of a day"
     },
     {
-      "type": "tip",
-      "text": "Words like then, after that and in the evening tell you the order."
+      "type": "rule",
+      "title": "Present simple for routines",
+      "points": [
+        "he / she + -s: He gets up. She goes. He has.",
+        "adverbs of frequency go before the main verb: She usually walks. He never drinks coffee.",
+        "but after be: He is always tired."
+      ]
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "100%",
+          "—",
+          "—",
+          "—",
+          "0%"
+        ],
+        [
+          "always",
+          "usually",
+          "often",
+          "sometimes",
+          "never"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. Answering questions"
+    },
+    {
+      "type": "rule",
+      "title": "Find the key word",
+      "points": [
+        "Question: What time does Kamol start work? → look for \"start\" and a time.",
+        "The answer uses the words of the text."
+      ]
     }
   ],
   "exercises": [
     {
       "skill": "reading",
       "cefr": "A1",
-      "explanation": "He is a bus driver and has breakfast with his wife. The text does not say how many children he has.",
+      "explanation": "He is a bus driver and has breakfast with his wife. The number of children is not given.",
       "content": {
         "type": "tfng",
         "payload": {
           "instruction": "Read. Is it true, false, or not given?",
-          "passage": "Kamol is a bus driver in Tashkent. He gets up at 5 o'clock every day. He has breakfast with his wife. Then he goes to work. He starts work at 6. He has lunch at 12 at a small café. He comes home at 4. In the evening he plays with his children and watches TV. He goes to bed at 10.",
+          "passage": "Kamol is a bus driver in Tashkent. He always gets up at 5 o'clock. He has breakfast with his wife. Then he goes to work. He starts work at 6. He usually has lunch at 12 at a small café. He comes home at 4. In the evening he plays with his children and watches TV. He never goes to bed late.",
           "statements": [
             "Kamol is a taxi driver.",
             "He gets up at 5.",
             "He has breakfast alone.",
-            "He has lunch at a café.",
+            "He usually has lunch at a café.",
             "He has three children."
           ]
         },
@@ -116,12 +156,12 @@
         "type": "tfng",
         "payload": {
           "instruction": "Read. Is it true, false, or not given?",
-          "passage": "Anna is a student. She gets up at 8 and has a quick breakfast. Her classes start at 9. After classes she goes to the library. She doesn't like cooking, so she eats dinner with her friends at a café. At night she reads books.",
+          "passage": "Anna is a student. She usually gets up at 8 and has a quick breakfast. Her classes start at 9. After classes she often goes to the library. She doesn't like cooking, so she eats dinner with her friends at a café. At night she sometimes reads books.",
           "statements": [
             "Anna gets up at 8.",
             "Her classes start at 10.",
             "She likes cooking.",
-            "She reads at night."
+            "She sometimes reads at night."
           ]
         },
         "answer": {
@@ -137,11 +177,11 @@
     {
       "skill": "reading",
       "cefr": "A1",
-      "explanation": "\"After classes she goes to the library.\"",
+      "explanation": "\"After classes she often goes to the library.\"",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Where does Anna go after classes?",
+          "prompt": "Where does Anna often go after classes?",
           "options": [
             {
               "text": "to the café"
@@ -176,6 +216,79 @@
           "blanks": {
             "1": [
               "friends"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Adverb before the main verb; she + goes.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "She goes usually to the library."
+            },
+            {
+              "text": "She usually goes to the library."
+            },
+            {
+              "text": "Usually she go to the library."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "never = 0%, before the verb.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He ___ late. (0%)",
+          "options": [
+            {
+              "text": "never goes to bed"
+            },
+            {
+              "text": "goes never to bed"
+            },
+            {
+              "text": "always goes to bed"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "After be: is always.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: He is tired always."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "He is always tired."
             ]
           }
         }

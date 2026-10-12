@@ -100,8 +100,28 @@ export function IntroPreview({ blocks }: { blocks: Any[] }) {
           case 'table':
             return (
               <table key={i} style={{ width: 'auto' }}>
-                <tbody>{b.rows.map((r: string[], j: number) => <tr key={j}>{r.map((c, k) => <td key={k}>{c}</td>)}</tr>)}</tbody>
+                <tbody>
+                  {b.rows.map((r: string[], j: number) => (
+                    <tr key={j}>{r.map((c, k) => (b.header && j === 0 ? <th key={k}>{c}</th> : <td key={k}>{c}</td>))}</tr>
+                  ))}
+                </tbody>
               </table>
+            );
+          case 'heading':
+            return <h3 key={i} style={{ margin: '12px 0 0' }}>{b.text}</h3>;
+          case 'rule':
+            return (
+              <div key={i}>
+                <b>{b.title}</b>
+                <ul style={{ margin: '2px 0' }}>{b.points.map((p: string, j: number) => <li key={j}>{p}</li>)}</ul>
+              </div>
+            );
+          case 'mistake':
+            return (
+              <div key={i}>
+                <span className="error">✗ {b.wrong}</span> → <span className="answer">✓ {b.right}</span>
+                {b.why && <span className="muted"> — {b.why}</span>}
+              </div>
             );
           default:
             return <div key={i} className="muted">[{b.type}]</div>;

@@ -2,35 +2,61 @@
   "title": "Review: Foundation",
   "kind": "review",
   "cefr": "A1",
-  "estMinutes": 10,
+  "estMinutes": 12,
   "intro": [
     {
-      "type": "text",
-      "text": "You finished the Foundation stage. Well done!"
+      "type": "heading",
+      "text": "Foundation: the big picture"
     },
     {
-      "type": "text",
-      "text": "This review mixes everything. Then you can take the stage test."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "grammar",
+          "example"
+        ],
+        [
+          "be",
+          "I'm Javohir. She isn't here. Are you ready?"
+        ],
+        [
+          "present simple",
+          "She gets up at 7. He doesn't work. Do you like tea?"
+        ],
+        [
+          "there is / are",
+          "There are some books, but there isn't any milk."
+        ],
+        [
+          "can",
+          "I can swim, but I can't drive."
+        ],
+        [
+          "a / an / some / any",
+          "an apple, some water, any eggs?"
+        ],
+        [
+          "possessives",
+          "my, your, his, her, our, their, Aziz's"
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "I'm Javohir. I'm from Uzbekistan. I'm a student.",
-      "note": "be"
+      "type": "rule",
+      "title": "The 6 most common mistakes",
+      "points": [
+        "He work → He works",
+        "I am work → I work",
+        "She doesn't likes → She doesn't like",
+        "You are from? → Where are you from?",
+        "a water → some water",
+        "I have 15 years → I am 15"
+      ]
     },
     {
-      "type": "example",
-      "en": "She gets up at seven and goes to work.",
-      "note": "present simple"
-    },
-    {
-      "type": "example",
-      "en": "There are some books on the table, but there isn't any milk.",
-      "note": "there is / some / any"
-    },
-    {
-      "type": "example",
-      "en": "I can swim, but I can't drive.",
-      "note": "can"
+      "type": "tip",
+      "text": "Do the stage test when you get 80% or more here."
     }
   ],
   "exercises": [
@@ -250,6 +276,33 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "can + base verb.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She can ___ three languages.",
+          "options": [
+            {
+              "text": "speaks"
+            },
+            {
+              "text": "speak"
+            },
+            {
+              "text": "to speak"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "He doesn't drink coffee.",
       "content": {
         "type": "gap_fill",
@@ -288,7 +341,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "On the table.",
+      "explanation": "on the table.",
       "content": {
         "type": "gap_fill",
         "payload": {
@@ -303,6 +356,28 @@
           "blanks": {
             "1": [
               "on"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Negative: any.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "We don't have {{1}} bread.",
+          "wordBank": [
+            "some",
+            "any"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "any"
             ]
           }
         }
@@ -327,6 +402,68 @@
           "accepted": [
             "Can you speak English?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "he → works.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: He work in a hospital."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "He works in a hospital."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Age: be.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I have 16 years."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I'm 16.",
+              "I am 16.",
+              "I'm 16 years old.",
+              "I am 16 years old.",
+              "I'm sixteen.",
+              "I am sixteen."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "doesn't + base verb.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: She doesn't likes coffee."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "She doesn't like coffee."
+            ]
+          }
         }
       }
     }

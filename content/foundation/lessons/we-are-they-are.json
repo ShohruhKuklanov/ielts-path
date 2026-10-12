@@ -2,25 +2,61 @@
   "title": "We are, they are",
   "kind": "grammar",
   "cefr": "A0",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "text",
-      "text": "Use we for you and me. Use they for other people or things."
+      "type": "heading",
+      "text": "1. Form"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
+          "person",
+          "positive",
+          "negative"
+        ],
+        [
           "we",
-          "are",
-          "we're"
+          "we are / we're",
+          "we are not / we aren't"
         ],
         [
           "they",
-          "are",
-          "they're"
+          "they are / they're",
+          "they are not / they aren't"
         ]
+      ]
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "question",
+          "short answers"
+        ],
+        [
+          "Are we …?",
+          "Yes, we are. / No, we aren't."
+        ],
+        [
+          "Are they …?",
+          "Yes, they are. / No, they aren't."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Use"
+    },
+    {
+      "type": "rule",
+      "title": "we / they",
+      "points": [
+        "we = me + other people: My friend and I → we",
+        "they = other people or things (plural): Ali and Bek → they; the books → they"
       ]
     },
     {
@@ -32,40 +68,68 @@
       "en": "Ali and Bek are brothers. They are from Namangan."
     },
     {
-      "type": "text",
-      "text": "For the negative, add not."
+      "type": "example",
+      "en": "The shops are closed. They aren't open on Sunday."
+    },
+    {
+      "type": "heading",
+      "text": "3. The whole verb be"
     },
     {
       "type": "table",
+      "header": true,
       "rows": [
         [
-          "is not",
-          "isn't"
+          "person",
+          "be"
         ],
         [
-          "are not",
-          "aren't"
+          "I",
+          "am"
         ],
         [
-          "am not",
-          "I'm not"
+          "he / she / it",
+          "is"
+        ],
+        [
+          "you / we / they",
+          "are"
         ]
       ]
     },
     {
-      "type": "example",
-      "en": "They aren't at home."
+      "type": "rule",
+      "title": "Negative short forms",
+      "points": [
+        "is not → isn't, are not → aren't",
+        "am not → 'm not (there is no amn't)"
+      ]
     },
     {
-      "type": "example",
-      "en": "He isn't a teacher."
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "They is my friends.",
+      "right": "They are my friends."
+    },
+    {
+      "type": "mistake",
+      "wrong": "My friend and me are students.",
+      "right": "My friend and I are students."
+    },
+    {
+      "type": "mistake",
+      "wrong": "We aren't no tired.",
+      "right": "We aren't tired."
     }
   ],
   "exercises": [
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "My friend and I = we. We are.",
+      "explanation": "My friend and I = we: we are.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -92,7 +156,7 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "Lola and Dina = they. They are.",
+      "explanation": "Lola and Dina = they: they are.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -119,7 +183,7 @@
     {
       "skill": "grammar",
       "cefr": "A0",
-      "explanation": "The books = they. They are.",
+      "explanation": "The books = they: they are.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -193,6 +257,60 @@
         "answer": {
           "correct": [
             0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "No, they aren't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Are they at home? — No, ___",
+          "options": [
+            {
+              "text": "they aren't."
+            },
+            {
+              "text": "they isn't."
+            },
+            {
+              "text": "they not."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "they + are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "They is from China."
+            },
+            {
+              "text": "They are from China."
+            },
+            {
+              "text": "They am from China."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
           ]
         }
       }
@@ -277,6 +395,45 @@
     {
       "skill": "grammar",
       "cefr": "A0",
+      "explanation": "Are they at school?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "They are at school. → {{1}} at school?",
+          "instruction": "Make a question."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Are they"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I am not hungry.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I {{1}} hungry. I am thirsty.",
+          "instruction": "Write the negative."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "'m not",
+              "am not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
       "explanation": "We're + from Uzbekistan.",
       "content": {
         "type": "word_order",
@@ -292,6 +449,45 @@
           "accepted": [
             "We're from Uzbekistan."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Use I in the subject: my brother and I.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My brother and me are tall."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My brother and I are tall."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "they + are.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: They is very friendly."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "They are very friendly.",
+              "They're very friendly."
+            ]
+          }
         }
       }
     }

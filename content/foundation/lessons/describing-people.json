@@ -2,45 +2,93 @@
   "title": "Describing people",
   "kind": "vocabulary",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
+      "type": "heading",
+      "text": "1. Adjectives for people"
+    },
+    {
       "type": "table",
+      "header": true,
       "rows": [
         [
-          "tall",
-          "short"
+          "about the body",
+          "about age",
+          "about feelings / character"
         ],
         [
-          "young",
-          "old"
+          "tall ↔ short",
+          "young ↔ old",
+          "happy ↔ sad"
         ],
         [
-          "happy",
-          "tired"
+          "thin ↔ fat*",
+          "middle-aged",
+          "friendly, kind, funny"
         ],
         [
-          "friendly"
+          "beautiful, handsome",
+          "—",
+          "tired, busy"
         ]
       ]
     },
     {
-      "type": "text",
-      "text": "Tall and short are opposites. Young and old are opposites."
-    },
-    {
-      "type": "example",
-      "en": "My brother is tall.",
-      "note": "adjective after is"
-    },
-    {
-      "type": "example",
-      "en": "She is a friendly girl.",
-      "note": "adjective before the person"
-    },
-    {
       "type": "tip",
-      "text": "Adjectives do not take -s: two tall men, not two talls men."
+      "text": "*Fat can be rude. Say \"a bit big\" or don't talk about weight."
+    },
+    {
+      "type": "heading",
+      "text": "2. Grammar focus: adjectives"
+    },
+    {
+      "type": "rule",
+      "title": "Adjective position",
+      "points": [
+        "After be: My brother is tall.",
+        "Before a noun: a tall man, a friendly girl."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adjectives never change",
+      "points": [
+        "two tall men (not talls)",
+        "She is tall. They are tall."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "very / quite",
+      "points": [
+        "very = more: He is very tall.",
+        "quite = a little more than normal: She is quite young."
+      ]
+    },
+    {
+      "type": "example",
+      "en": "What does she look like? — She is tall and young.",
+      "note": "asking about appearance"
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "He is a man tall.",
+      "right": "He is a tall man."
+    },
+    {
+      "type": "mistake",
+      "wrong": "They are talls.",
+      "right": "They are tall."
+    },
+    {
+      "type": "mistake",
+      "wrong": "She is very much tall.",
+      "right": "She is very tall."
     }
   ],
   "exercises": [
@@ -74,7 +122,7 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "Tall ↔ short.",
+      "explanation": "tall ↔ short.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -101,7 +149,7 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "Young ↔ old.",
+      "explanation": "young ↔ old.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -153,7 +201,7 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A1",
       "explanation": "The adjective comes first: a tall man.",
       "content": {
@@ -180,6 +228,33 @@
       }
     },
     {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Adjectives do not change; we need are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "My sisters are tall."
+            },
+            {
+              "text": "My sisters are talls."
+            },
+            {
+              "text": "My sisters tall."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
       "skill": "vocabulary",
       "cefr": "A1",
       "explanation": "These words are opposites.",
@@ -189,20 +264,23 @@
           "left": [
             "tall",
             "young",
-            "happy"
+            "happy",
+            "thin"
           ],
           "right": [
+            "old",
             "sad",
-            "short",
-            "old"
+            "fat",
+            "short"
           ],
           "instruction": "Match the opposites."
         },
         "answer": {
           "pairs": [
+            3,
+            0,
             1,
-            2,
-            0
+            2
           ]
         }
       }
@@ -225,7 +303,26 @@
           "blanks": {
             "1": [
               "friendly",
-              "happy"
+              "happy",
+              "kind"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "What does he look like?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "What does he look {{1}}? — He is short and thin."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "like"
             ]
           }
         }
@@ -257,22 +354,61 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "My sister + is + short.",
+      "explanation": "My sister + is + very kind.",
       "content": {
         "type": "word_order",
         "payload": {
           "tokens": [
-            "My",
+            "kind",
             "is",
-            "short",
-            "sister"
+            "sister",
+            "very",
+            "My"
           ],
           "instruction": "Put the words in order."
         },
         "answer": {
           "accepted": [
-            "My sister is short."
+            "My sister is very kind."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Adjective before the noun.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: She is a girl friendly."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "She is a friendly girl."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Adjectives have no -s.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My brothers are talls."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My brothers are tall."
+            ]
+          }
         }
       }
     }

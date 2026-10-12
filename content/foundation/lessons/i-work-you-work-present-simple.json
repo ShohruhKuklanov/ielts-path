@@ -2,40 +2,99 @@
   "title": "I work, you work: present simple",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
+      "type": "heading",
+      "text": "1. Form"
+    },
+    {
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "person",
+          "verb"
+        ],
+        [
+          "I",
+          "work"
+        ],
+        [
+          "you",
+          "work"
+        ],
+        [
+          "we",
+          "work"
+        ],
+        [
+          "they",
+          "work"
+        ]
+      ]
+    },
+    {
       "type": "text",
-      "text": "Use the present simple for things you do often."
+      "text": "With I, you, we and they, the verb does not change. (He / she / it is the next lesson.)"
     },
     {
-      "type": "example",
-      "en": "I work in a bank."
+      "type": "heading",
+      "text": "2. Use"
     },
     {
-      "type": "example",
-      "en": "We live in Tashkent."
+      "type": "rule",
+      "title": "We use the present simple for",
+      "points": [
+        "habits and routines: I drink coffee every morning.",
+        "things that are true for a long time: We live in Tashkent.",
+        "facts: Cats eat fish."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Time words",
+      "points": [
+        "every day / every week / every Monday",
+        "in the morning / at night / at the weekend",
+        "They usually go at the END of the sentence."
+      ]
     },
     {
       "type": "example",
       "en": "They study English every day."
     },
     {
-      "type": "table",
-      "rows": [
-        [
-          "I / you / we / they",
-          "work, live, study, play"
-        ]
+      "type": "heading",
+      "text": "3. Present simple or am / is / are?"
+    },
+    {
+      "type": "rule",
+      "title": "Be and other verbs",
+      "points": [
+        "Use am / is / are with adjectives, nouns, places: I am tired. I am a student.",
+        "Use the present simple for actions: I work. I study.",
+        "Do not use both: I work (not I am work)."
       ]
     },
     {
-      "type": "text",
-      "text": "Time words: every day, every week, in the morning, at night."
+      "type": "heading",
+      "text": "Be careful!"
     },
     {
-      "type": "tip",
-      "text": "Time words often go at the end: I drink tea every morning."
+      "type": "mistake",
+      "wrong": "I am work in a bank.",
+      "right": "I work in a bank."
+    },
+    {
+      "type": "mistake",
+      "wrong": "Every day I tea drink.",
+      "right": "I drink tea every day."
+    },
+    {
+      "type": "mistake",
+      "wrong": "We lives in Samarkand.",
+      "right": "We live in Samarkand."
     }
   ],
   "exercises": [
@@ -123,11 +182,38 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "I drink tea every day.",
+      "explanation": "With a noun use be: I am a student.",
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "Which is correct?",
+          "prompt": "I ___ a student.",
+          "options": [
+            {
+              "text": "am"
+            },
+            {
+              "text": "study"
+            },
+            {
+              "text": "is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Subject + verb + object + time.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
           "options": [
             {
               "text": "Every day I tea drink."
@@ -137,6 +223,33 @@
             },
             {
               "text": "I every day drink tea."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Do not use am with the present simple.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "I am live in Bukhara."
+            },
+            {
+              "text": "I live in Bukhara."
+            },
+            {
+              "text": "I living in Bukhara."
             }
           ]
         },
@@ -207,6 +320,48 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "They work.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "They {{1}} in an office. (work)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "work"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "every Saturday.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "We play tennis {{1}} Saturday.",
+          "wordBank": [
+            "every",
+            "all",
+            "in"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "every"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "We + watch TV + in the evening.",
       "content": {
         "type": "word_order",
@@ -247,6 +402,44 @@
           "accepted": [
             "They live in Samarkand."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "No am with the present simple.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I am work at a school."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I work at a school."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They → live.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My parents lives in Andijan."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My parents live in Andijan."
+            ]
+          }
         }
       }
     }

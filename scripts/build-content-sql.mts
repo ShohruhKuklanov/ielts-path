@@ -1,10 +1,12 @@
 // Turns the reviewed content files (content/<stage>/syllabus.json + lessons/*.json)
 // into idempotent SQL: supabase/seed.sql. Safe to run again and again:
-// existing modules and lessons are kept, and a lesson's intro and exercises are
-// only filled in while the lesson is still an empty draft.
+// existing modules and lessons are kept. When a lesson FILE changes, its intro and
+// exercises are replaced and it goes back to the review queue, unless learners have
+// already answered its exercises (then it is left alone, so no history is lost).
 //
 //   pnpm content:build   → validate files + write supabase/seed.sql
 //   pnpm content:load    → the same, then load it into the local database
+import { createHash } from 'node:crypto';
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -78,22 +80,26 @@ for (const stage of stages) {
       if (!file) return;
       writtenCount++;
       const lessonRef = `(select id from public.lessons where module_id = ${moduleRef} and order_index = ${l})`;
-      out.push(
-        `-- written lesson: fill it only while it is still an empty draft`,
-        `update public.lessons set intro = ${json(file.intro)}, est_minutes = ${file.estMinutes}, cefr = ${q(file.cefr)}, status = 'in_review', source = 'human'`,
-        `where id = ${lessonRef} and status = 'draft' and not exists (select 1 from public.exercises e where e.lesson_id = ${lessonRef});`,
-      );
+      const hash = createHash('sha256').update(JSON.stringify(file)).digest('hex').slice(0, 16);
+      // Replace content only if the file changed and nobody has answered this lesson's exercises yet.
+      const canReplace = `exists (select 1 from public.lessons x where x.id = ${lessonRef} and x.content_hash is distinct from ${q(hash)}
+        and not exists (select 1 from public.exercise_attempts a join public.exercises e on e.id = a.exercise_id where e.lesson_id = x.id))`;
       const rows = file.exercises.map((ex, ei) => {
         exerciseCount++;
         return `  (${ei + 1}, ${q(ex.content.type)}, ${q(ex.skill)}::public.skill, ${q(ex.cefr)}::public.cefr, ${ex.questionTypeTag ? q(ex.questionTypeTag) : 'null'}, ${json(ex.content.payload)}, ${json(ex.content.answer)}, ${ex.explanation ? q(ex.explanation) : 'null'})`;
       });
       out.push(
+        `-- written lesson (version ${hash})`,
+        `delete from public.exercises where lesson_id = ${lessonRef} and ${canReplace};`,
         `insert into public.exercises (lesson_id, order_index, type, skill, cefr, question_type_tag, payload, answer, explanation, status, source)`,
         `select ${lessonRef}, v.ord, v.type, v.skill, v.cefr, v.tag, v.payload, v.answer, v.expl, 'in_review', 'human'`,
         `from (values`,
         rows.join(',\n'),
         `) as v(ord, type, skill, cefr, tag, payload, answer, expl)`,
-        `where not exists (select 1 from public.exercises e where e.lesson_id = ${lessonRef});`,
+        `where ${canReplace};`,
+        `update public.lessons set intro = ${json(file.intro)}, est_minutes = ${file.estMinutes}, cefr = ${q(file.cefr)},`,
+        `  status = 'in_review', source = 'human', review_notes = null, content_hash = ${q(hash)}`,
+        `where id = ${lessonRef} and ${canReplace};`,
       );
     });
   });

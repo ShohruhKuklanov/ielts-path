@@ -2,49 +2,91 @@
   "title": "Daily routines",
   "kind": "vocabulary",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
     {
-      "type": "text",
-      "text": "Things we do every day:"
+      "type": "heading",
+      "text": "1. Things we do every day"
     },
     {
       "type": "table",
       "rows": [
         [
           "get up",
-          "have breakfast"
+          "have a shower",
+          "get dressed"
         ],
         [
-          "go to work",
-          "go to school"
+          "have breakfast",
+          "go to work / school",
+          "have lunch"
         ],
         [
-          "have lunch",
-          "come home"
+          "come home",
+          "do homework",
+          "have dinner"
         ],
         [
-          "have dinner",
-          "go to bed"
+          "watch TV",
+          "go to bed",
+          "sleep"
         ]
       ]
     },
     {
       "type": "example",
-      "en": "I get up at 7 o'clock.",
-      "note": "at + time"
-    },
-    {
-      "type": "example",
-      "en": "I have breakfast at home."
+      "en": "I get up at 7 o'clock."
     },
     {
       "type": "example",
       "en": "I go to bed at 11."
     },
     {
-      "type": "tip",
-      "text": "We say go to school and go to work, with no the."
+      "type": "heading",
+      "text": "2. Grammar focus: collocations"
+    },
+    {
+      "type": "rule",
+      "title": "have + meals and some actions",
+      "points": [
+        "have breakfast / lunch / dinner",
+        "have a shower",
+        "(not eat breakfast usually, not take breakfast)"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "go to …",
+      "points": [
+        "go to school / go to work / go to bed — no the",
+        "go home — no to: I go home at 6."
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Order words",
+      "points": [
+        "first, then, after that, finally: First I get up. Then I have breakfast."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I go to the school.",
+      "right": "I go to school."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I go to home.",
+      "right": "I go home."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I take breakfast.",
+      "right": "I have breakfast."
     }
   ],
   "exercises": [
@@ -82,7 +124,7 @@
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "At night I ___ .",
+          "prompt": "At night I ___.",
           "options": [
             {
               "text": "have breakfast"
@@ -109,7 +151,7 @@
       "content": {
         "type": "mcq",
         "payload": {
-          "prompt": "At 1 p.m. I ___ .",
+          "prompt": "At 1 p.m. I ___.",
           "options": [
             {
               "text": "have lunch"
@@ -130,7 +172,7 @@
       }
     },
     {
-      "skill": "vocabulary",
+      "skill": "grammar",
       "cefr": "A1",
       "explanation": "We say go to school.",
       "content": {
@@ -152,6 +194,60 @@
         "answer": {
           "correct": [
             1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "go home — no to.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "I go to home at 5."
+            },
+            {
+              "text": "I go home at 5."
+            },
+            {
+              "text": "I go the home at 5."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "have a shower.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I ___ a shower every morning.",
+          "options": [
+            {
+              "text": "have"
+            },
+            {
+              "text": "do"
+            },
+            {
+              "text": "make"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
           ]
         }
       }
@@ -187,7 +283,7 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "Come home = arrive at home.",
+      "explanation": "come home = arrive at home.",
       "content": {
         "type": "gap_fill",
         "payload": {
@@ -225,6 +321,29 @@
           "blanks": {
             "1": [
               "go"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "First … Then …",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "First I get up. {{1}} I have breakfast.",
+          "wordBank": [
+            "Then",
+            "First",
+            "Finally"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Then"
             ]
           }
         }
@@ -273,6 +392,25 @@
           "accepted": [
             "We have dinner at eight."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We say have breakfast.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I take breakfast at 7."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I have breakfast at 7."
+            ]
+          }
         }
       }
     }

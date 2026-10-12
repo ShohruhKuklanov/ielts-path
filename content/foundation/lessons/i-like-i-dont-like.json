@@ -2,46 +2,107 @@
   "title": "I like, I don't like",
   "kind": "grammar",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 8,
   "intro": [
     {
-      "type": "example",
-      "en": "I like apples.",
-      "note": "like + thing"
+      "type": "heading",
+      "text": "1. Form"
     },
     {
-      "type": "example",
-      "en": "I love music.",
-      "note": "love = like very much"
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "person",
+          "positive",
+          "negative",
+          "question"
+        ],
+        [
+          "I / you / we / they",
+          "like",
+          "don't like",
+          "Do you like …?"
+        ],
+        [
+          "he / she / it",
+          "likes",
+          "doesn't like",
+          "Does she like …?"
+        ]
+      ]
     },
     {
-      "type": "example",
-      "en": "I don't like coffee."
+      "type": "heading",
+      "text": "2. like + noun / like + -ing"
     },
     {
-      "type": "text",
-      "text": "After like, a verb takes -ing."
+      "type": "rule",
+      "title": "Two patterns",
+      "points": [
+        "like + noun: I like apples. She likes music.",
+        "like + verb-ing: I like reading. He likes swimming.",
+        "Countable nouns are plural after like: I like cats. (not I like cat)"
+      ]
     },
     {
-      "type": "example",
-      "en": "I like reading.",
-      "note": "read → reading"
+      "type": "rule",
+      "title": "Spelling of -ing",
+      "points": [
+        "most verbs: read → reading, play → playing",
+        "e at the end: dance → dancing, write → writing",
+        "short verbs (one vowel + one consonant): swim → swimming, run → running"
+      ]
     },
     {
-      "type": "example",
-      "en": "She likes swimming.",
-      "note": "he/she likes"
+      "type": "heading",
+      "text": "3. Stronger and weaker"
     },
     {
-      "type": "tip",
-      "text": "Ask: Do you like …? — Yes, I do. / No, I don't."
+      "type": "table",
+      "header": true,
+      "rows": [
+        [
+          "😍",
+          "🙂",
+          "😐",
+          "🙁",
+          "😡"
+        ],
+        [
+          "love",
+          "like",
+          "don't mind",
+          "don't like",
+          "hate"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "I like swim.",
+      "right": "I like swimming."
+    },
+    {
+      "type": "mistake",
+      "wrong": "She don't like coffee.",
+      "right": "She doesn't like coffee."
+    },
+    {
+      "type": "mistake",
+      "wrong": "I like dog.",
+      "right": "I like dogs."
     }
   ],
   "exercises": [
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "like + -ing: playing.",
+      "explanation": "like + -ing.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -149,7 +210,7 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "Love = like very much.",
+      "explanation": "love = like very much.",
       "content": {
         "type": "mcq",
         "payload": {
@@ -159,10 +220,91 @@
               "text": "love"
             },
             {
-              "text": "don't like"
+              "text": "don't mind"
             },
             {
               "text": "hate"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Countable nouns are plural after like.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I like ___.",
+          "options": [
+            {
+              "text": "cat"
+            },
+            {
+              "text": "cats"
+            },
+            {
+              "text": "a cats"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Double the m: swimming.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "swim → ___",
+          "options": [
+            {
+              "text": "swiming"
+            },
+            {
+              "text": "swimming"
+            },
+            {
+              "text": "swimeing"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Drop the e: writing.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "write → ___",
+          "options": [
+            {
+              "text": "writing"
+            },
+            {
+              "text": "writeing"
+            },
+            {
+              "text": "writting"
             }
           ]
         },
@@ -195,17 +337,17 @@
     {
       "skill": "grammar",
       "cefr": "A1",
-      "explanation": "love + cooking.",
+      "explanation": "dance → dancing.",
       "content": {
         "type": "gap_fill",
         "payload": {
-          "text": "I love {{1}} with my friends. (cook)",
+          "text": "I love {{1}} with my friends. (dance)",
           "instruction": "Write the verb."
         },
         "answer": {
           "blanks": {
             "1": [
-              "cooking"
+              "dancing"
             ]
           }
         }
@@ -237,6 +379,25 @@
     {
       "skill": "grammar",
       "cefr": "A1",
+      "explanation": "run → running.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Does your sister like {{1}}? (run)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "running"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
       "explanation": "I like + listening to music.",
       "content": {
         "type": "word_order",
@@ -254,6 +415,44 @@
           "accepted": [
             "I like listening to music."
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "like + -ing.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: I like play computer games."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I like playing computer games."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "she → doesn't.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My mother don't like cats."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My mother doesn't like cats."
+            ]
+          }
         }
       }
     }

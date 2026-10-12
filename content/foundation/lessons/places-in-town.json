@@ -2,8 +2,12 @@
   "title": "Places in town",
   "kind": "vocabulary",
   "cefr": "A1",
-  "estMinutes": 6,
+  "estMinutes": 7,
   "intro": [
+    {
+      "type": "heading",
+      "text": "1. Places"
+    },
     {
       "type": "table",
       "rows": [
@@ -14,11 +18,13 @@
         ],
         [
           "hospital",
-          "pharmacy"
+          "pharmacy",
+          "post office"
         ],
         [
           "school",
-          "library"
+          "library",
+          "museum"
         ],
         [
           "park",
@@ -36,13 +42,57 @@
       "en": "I read books in the library."
     },
     {
-      "type": "example",
-      "en": "Where's the station? — It's next to the park.",
-      "note": "ask and answer"
+      "type": "heading",
+      "text": "2. Asking for places"
     },
     {
-      "type": "tip",
-      "text": "Where is → Where's."
+      "type": "example",
+      "en": "Excuse me, where's the station?",
+      "note": "polite question"
+    },
+    {
+      "type": "example",
+      "en": "It's next to the park. / It's on Navoi Street.",
+      "note": "answer"
+    },
+    {
+      "type": "example",
+      "en": "Is there a bank near here? — Yes, there is. It's opposite the hotel."
+    },
+    {
+      "type": "heading",
+      "text": "3. Grammar focus"
+    },
+    {
+      "type": "rule",
+      "title": "Prepositions with places",
+      "points": [
+        "on + street: on Navoi Street",
+        "at the bank / at the station (the place where you do something)",
+        "in the park / in the library (inside an area or building)"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "the with places",
+      "points": [
+        "Use the for a place both people know: Where is the station?",
+        "Use a / an for any one: Is there a pharmacy near here?"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Be careful!"
+    },
+    {
+      "type": "mistake",
+      "wrong": "Where is station?",
+      "right": "Where is the station?"
+    },
+    {
+      "type": "mistake",
+      "wrong": "in Navoi Street",
+      "right": "on Navoi Street"
     }
   ],
   "exercises": [
@@ -157,6 +207,33 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
+      "explanation": "A museum has old, famous things.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You see old and famous things in a …",
+          "options": [
+            {
+              "text": "museum"
+            },
+            {
+              "text": "pharmacy"
+            },
+            {
+              "text": "bank"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
       "explanation": "People and things in town.",
       "content": {
         "type": "match_pairs",
@@ -165,22 +242,73 @@
             "doctor",
             "teacher",
             "coffee",
-            "fruit and vegetables"
+            "letters"
           ],
           "right": [
+            "post office",
             "café",
-            "school",
             "hospital",
-            "market"
+            "school"
           ],
           "instruction": "Match."
         },
         "answer": {
           "pairs": [
             2,
+            3,
             1,
-            0,
-            3
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "on + street.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The museum is ___ Amir Temur Street.",
+          "options": [
+            {
+              "text": "on"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "at"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "any one pharmacy: a.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Excuse me, is there ___ pharmacy near here?",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "the"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
           ]
         }
       }
@@ -255,21 +383,42 @@
     {
       "skill": "vocabulary",
       "cefr": "A1",
-      "explanation": "Where's + the station?",
+      "explanation": "Excuse me, + where's + the station?",
       "content": {
         "type": "word_order",
         "payload": {
           "tokens": [
             "station",
-            "Where's",
-            "the"
+            "me,",
+            "the",
+            "where's",
+            "Excuse"
           ],
           "instruction": "Put the words in order."
         },
         "answer": {
           "accepted": [
-            "Where's the station?"
+            "Excuse me, where's the station?"
           ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "on + street.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}}",
+          "instruction": "Correct the mistake: My school is in Navoi Street."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "My school is on Navoi Street."
+            ]
+          }
         }
       }
     }
