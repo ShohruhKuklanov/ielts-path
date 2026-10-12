@@ -1,0 +1,288 @@
+{
+  "title": "This, that, these, those",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Use this and these for things near you."
+    },
+    {
+      "type": "text",
+      "text": "Use that and those for things far from you."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "how many?",
+          "near",
+          "far"
+        ],
+        [
+          "one",
+          "this",
+          "that"
+        ],
+        [
+          "more",
+          "these",
+          "those"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "This is my bag.",
+      "note": "one, near"
+    },
+    {
+      "type": "example",
+      "en": "These are my books.",
+      "note": "more, near"
+    },
+    {
+      "type": "example",
+      "en": "That is a bus.",
+      "note": "one, far"
+    },
+    {
+      "type": "example",
+      "en": "Those are my friends.",
+      "note": "more, far"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "One thing, near: this.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "(The phone is in my hand.) ___ is my phone.",
+          "options": [
+            {
+              "text": "This"
+            },
+            {
+              "text": "That"
+            },
+            {
+              "text": "These"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "One thing, far: that.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "(The car is far away.) ___ is my car.",
+          "options": [
+            {
+              "text": "This"
+            },
+            {
+              "text": "That"
+            },
+            {
+              "text": "Those"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "More than one, near: these.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "(The keys are in my hand.) ___ are my keys.",
+          "options": [
+            {
+              "text": "This"
+            },
+            {
+              "text": "These"
+            },
+            {
+              "text": "Those"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "More than one, far: those.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "(The birds are in the sky.) ___ are birds.",
+          "options": [
+            {
+              "text": "These"
+            },
+            {
+              "text": "This"
+            },
+            {
+              "text": "Those"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "These are …",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "These ___ my pens.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "That is …",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "That ___ my school.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "More than one, near: these.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} are my shoes. (near)",
+          "wordBank": [
+            "This",
+            "These",
+            "Those"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "These"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "One thing, far: that.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Look at {{1}} mountain over there!",
+          "wordBank": [
+            "this",
+            "that",
+            "those"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "that"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Those + are + my parents.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "are",
+            "my",
+            "parents",
+            "Those"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Those are my parents."
+          ]
+        }
+      }
+    }
+  ]
+}

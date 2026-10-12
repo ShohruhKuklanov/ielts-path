@@ -1,0 +1,283 @@
+{
+  "title": "Review: My family and me",
+  "kind": "review",
+  "cefr": "A1",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Let's review the module."
+    },
+    {
+      "type": "example",
+      "en": "This is my mother. She is a nurse.",
+      "note": "family and jobs"
+    },
+    {
+      "type": "example",
+      "en": "Her name is Dilfuza. His name is Rustam.",
+      "note": "my, your, his, her"
+    },
+    {
+      "type": "example",
+      "en": "My brother is tall and friendly.",
+      "note": "describing people"
+    },
+    {
+      "type": "example",
+      "en": "We have a dog. It doesn't have a name!",
+      "note": "have / has"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Your mother's father is your grandfather.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My mother's father is my …",
+          "options": [
+            {
+              "text": "grandfather"
+            },
+            {
+              "text": "brother"
+            },
+            {
+              "text": "son"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Lola → her.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Lola is a student. ___ school is near.",
+          "options": [
+            {
+              "text": "His"
+            },
+            {
+              "text": "Her"
+            },
+            {
+              "text": "Their"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Use is with a job: He is a doctor.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He ___ a doctor.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "has"
+            },
+            {
+              "text": "have"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They have.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My parents ___ a shop.",
+          "options": [
+            {
+              "text": "has"
+            },
+            {
+              "text": "have"
+            },
+            {
+              "text": "is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "doesn't + have.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She doesn't ___ a bike.",
+          "options": [
+            {
+              "text": "have"
+            },
+            {
+              "text": "has"
+            },
+            {
+              "text": "is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "A driver drives.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A ___ drives a bus.",
+          "options": [
+            {
+              "text": "cook"
+            },
+            {
+              "text": "driver"
+            },
+            {
+              "text": "nurse"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Opposites and pairs.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "young",
+            "tall",
+            "mother"
+          ],
+          "right": [
+            "father",
+            "old",
+            "short"
+          ],
+          "instruction": "Match."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            2,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We → our.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "We have a cat. {{1}} cat is grey."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Our"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "He has.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My brother {{1}} two sons."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "has"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Their grandmother + is + very friendly.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "very",
+            "is",
+            "friendly",
+            "Their",
+            "grandmother"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Their grandmother is very friendly."
+          ]
+        }
+      }
+    }
+  ]
+}

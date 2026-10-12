@@ -1,0 +1,266 @@
+{
+  "title": "Don't and doesn't",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Use don't with I, you, we, they."
+    },
+    {
+      "type": "text",
+      "text": "Use doesn't with he, she, it."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "I / you / we / they",
+          "don't + verb"
+        ],
+        [
+          "he / she / it",
+          "doesn't + verb"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "I don't eat meat."
+    },
+    {
+      "type": "example",
+      "en": "She doesn't like coffee.",
+      "note": "no -s after doesn't"
+    },
+    {
+      "type": "tip",
+      "text": "Don't = do not. Doesn't = does not."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I don't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I ___ like rain.",
+          "options": [
+            {
+              "text": "don't"
+            },
+            {
+              "text": "doesn't"
+            },
+            {
+              "text": "not"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "He doesn't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He ___ work on Sunday.",
+          "options": [
+            {
+              "text": "don't"
+            },
+            {
+              "text": "doesn't"
+            },
+            {
+              "text": "isn't"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We don't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "We ___ live in the city.",
+          "options": [
+            {
+              "text": "don't"
+            },
+            {
+              "text": "doesn't"
+            },
+            {
+              "text": "aren't"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "After doesn't use the base verb: eat.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She doesn't ___ fish.",
+          "options": [
+            {
+              "text": "eats"
+            },
+            {
+              "text": "eat"
+            },
+            {
+              "text": "eating"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "He doesn't play tennis.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "He don't play tennis."
+            },
+            {
+              "text": "He doesn't plays tennis."
+            },
+            {
+              "text": "He doesn't play tennis."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They don't.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My parents {{1}} speak English.",
+          "wordBank": [
+            "don't",
+            "doesn't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "don't",
+              "do not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "It doesn't.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "The bus {{1}} stop here.",
+          "wordBank": [
+            "don't",
+            "doesn't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "doesn't",
+              "does not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "doesn't + have.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Bekzod doesn't {{1}} a car. (have)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "have"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I + don't drink + coffee.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "coffee",
+            "drink",
+            "don't",
+            "I"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I don't drink coffee."
+          ]
+        }
+      }
+    }
+  ]
+}

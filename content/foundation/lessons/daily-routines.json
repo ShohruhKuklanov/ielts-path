@@ -1,0 +1,280 @@
+{
+  "title": "Daily routines",
+  "kind": "vocabulary",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Things we do every day:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "get up",
+          "have breakfast"
+        ],
+        [
+          "go to work",
+          "go to school"
+        ],
+        [
+          "have lunch",
+          "come home"
+        ],
+        [
+          "have dinner",
+          "go to bed"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "I get up at 7 o'clock.",
+      "note": "at + time"
+    },
+    {
+      "type": "example",
+      "en": "I have breakfast at home."
+    },
+    {
+      "type": "example",
+      "en": "I go to bed at 11."
+    },
+    {
+      "type": "tip",
+      "text": "We say go to school and go to work, with no the."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "In the morning you get up.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "In the morning I ___ at 6:30.",
+          "options": [
+            {
+              "text": "get up"
+            },
+            {
+              "text": "go to bed"
+            },
+            {
+              "text": "have dinner"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "At night you go to bed.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "At night I ___ .",
+          "options": [
+            {
+              "text": "have breakfast"
+            },
+            {
+              "text": "go to bed"
+            },
+            {
+              "text": "get up"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "At midday we have lunch.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "At 1 p.m. I ___ .",
+          "options": [
+            {
+              "text": "have lunch"
+            },
+            {
+              "text": "have breakfast"
+            },
+            {
+              "text": "get up"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We say go to school.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "I go to the school."
+            },
+            {
+              "text": "I go to school."
+            },
+            {
+              "text": "I go school."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Breakfast, lunch, dinner.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "morning",
+            "afternoon",
+            "evening"
+          ],
+          "right": [
+            "have lunch",
+            "have dinner",
+            "have breakfast"
+          ],
+          "instruction": "Match the time of day and the meal."
+        },
+        "answer": {
+          "pairs": [
+            2,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Come home = arrive at home.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I {{1}} home at 6 p.m.",
+          "wordBank": [
+            "come",
+            "get",
+            "have"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "come"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "I go to work.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I {{1}} to work by bus.",
+          "wordBank": [
+            "go",
+            "get",
+            "have"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "go"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "I + get up + at seven.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "I",
+            "get",
+            "seven",
+            "up",
+            "at"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I get up at seven."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We + have dinner + at eight.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "dinner",
+            "We",
+            "have",
+            "eight",
+            "at"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "We have dinner at eight."
+          ]
+        }
+      }
+    }
+  ]
+}

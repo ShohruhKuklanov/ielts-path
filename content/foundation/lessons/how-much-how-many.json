@@ -1,0 +1,252 @@
+{
+  "title": "How much? How many?",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "How many + things we can count."
+    },
+    {
+      "type": "example",
+      "en": "How many apples do you want?"
+    },
+    {
+      "type": "text",
+      "text": "How much + things we cannot count."
+    },
+    {
+      "type": "example",
+      "en": "How much water do you drink?"
+    },
+    {
+      "type": "text",
+      "text": "We also use How much for prices."
+    },
+    {
+      "type": "example",
+      "en": "How much is it? — It's five dollars."
+    },
+    {
+      "type": "example",
+      "en": "How much are the shoes? — They're thirty dollars."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Children: we can count. How many.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How ___ children do you have?",
+          "options": [
+            {
+              "text": "much"
+            },
+            {
+              "text": "many"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Rice: we cannot count. How much.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How ___ rice do we need?",
+          "options": [
+            {
+              "text": "much"
+            },
+            {
+              "text": "many"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Price: How much.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How ___ is this bag? — It's 20 dollars.",
+          "options": [
+            {
+              "text": "much"
+            },
+            {
+              "text": "many"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Eggs: we can count. How many.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How ___ eggs are there?",
+          "options": [
+            {
+              "text": "much"
+            },
+            {
+              "text": "many"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Apples are more than one: They're …",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How much are these apples?",
+          "options": [
+            {
+              "text": "It's two dollars."
+            },
+            {
+              "text": "They're two dollars."
+            },
+            {
+              "text": "Two apples."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Milk: How much.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "How {{1}} milk is in the fridge?",
+          "wordBank": [
+            "much",
+            "many"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "much"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Students: How many.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "How {{1}} students are in your class?",
+          "wordBank": [
+            "much",
+            "many"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "many"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "How much + is + this shirt?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "shirt",
+            "How",
+            "much",
+            "this",
+            "is"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "How much is this shirt?"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "How many brothers + do you have?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "have",
+            "do",
+            "How",
+            "brothers",
+            "many",
+            "you"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "How many brothers do you have?"
+          ]
+        }
+      }
+    }
+  ]
+}

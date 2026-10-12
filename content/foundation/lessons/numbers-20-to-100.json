@@ -1,0 +1,269 @@
+{
+  "title": "Numbers 20 to 100",
+  "kind": "vocabulary",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "table",
+      "rows": [
+        [
+          "20 twenty",
+          "30 thirty",
+          "40 forty"
+        ],
+        [
+          "50 fifty",
+          "60 sixty",
+          "70 seventy"
+        ],
+        [
+          "80 eighty",
+          "90 ninety",
+          "100 one hundred"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Tens end in -ty."
+    },
+    {
+      "type": "example",
+      "en": "34 = thirty-four",
+      "note": "tens + number"
+    },
+    {
+      "type": "example",
+      "en": "99 = ninety-nine"
+    },
+    {
+      "type": "tip",
+      "text": "Forty has no u: four → forty."
+    },
+    {
+      "type": "tip",
+      "text": "Fifteen (15) and fifty (50) are different numbers."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Tens end in -ty.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "30",
+            "40",
+            "50",
+            "80"
+          ],
+          "right": [
+            "forty",
+            "fifty",
+            "eighty",
+            "thirty"
+          ],
+          "instruction": "Match the number and the word."
+        },
+        "answer": {
+          "pairs": [
+            3,
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "50 is fifty. 15 is fifteen.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is 50?",
+          "options": [
+            {
+              "text": "fifteen"
+            },
+            {
+              "text": "fifty"
+            },
+            {
+              "text": "five"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Forty has no u.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is spelled correctly?",
+          "options": [
+            {
+              "text": "fourty"
+            },
+            {
+              "text": "forty"
+            },
+            {
+              "text": "forthy"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "67 is sixty-seven.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "67",
+          "options": [
+            {
+              "text": "sixty-seven"
+            },
+            {
+              "text": "seventy-six"
+            },
+            {
+              "text": "sixteen-seven"
+            }
+          ],
+          "instruction": "Choose the words."
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "10 + 10 + 10 = 30, thirty.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Ten + ten + ten = ___",
+          "options": [
+            {
+              "text": "thirteen"
+            },
+            {
+              "text": "thirty"
+            },
+            {
+              "text": "three"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Twenty, thirty, forty, fifty.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "20, 30, {{1}}, 50",
+          "instruction": "Write the missing number."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "forty",
+              "40"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "45 is forty-five.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "45 = forty-{{1}}"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "five"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "100 is one hundred.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "100 = one {{1}}"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "hundred"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "My grandmother + is + seventy-two.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "grandmother",
+            "My",
+            "seventy-two",
+            "is"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "My grandmother is seventy-two."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "title": "We are, they are",
+  "kind": "grammar",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Use we for you and me. Use they for other people or things."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "we",
+          "are",
+          "we're"
+        ],
+        [
+          "they",
+          "are",
+          "they're"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "We're students."
+    },
+    {
+      "type": "example",
+      "en": "Ali and Bek are brothers. They are from Namangan."
+    },
+    {
+      "type": "text",
+      "text": "For the negative, add not."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "is not",
+          "isn't"
+        ],
+        [
+          "are not",
+          "aren't"
+        ],
+        [
+          "am not",
+          "I'm not"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "They aren't at home."
+    },
+    {
+      "type": "example",
+      "en": "He isn't a teacher."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "My friend and I = we. We are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My friend and I ___ in the park.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Lola and Dina = they. They are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Lola and Dina ___ sisters.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "The books = they. They are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The books ___ on the table.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "He is not = he isn't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He ___ from Russia. He is from Turkey.",
+          "options": [
+            {
+              "text": "aren't"
+            },
+            {
+              "text": "isn't"
+            },
+            {
+              "text": "not"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "We are not = we aren't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "We ___ tired. We are happy!",
+          "options": [
+            {
+              "text": "aren't"
+            },
+            {
+              "text": "isn't"
+            },
+            {
+              "text": "amn't"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "These short forms are common.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "we are",
+            "they are",
+            "is not",
+            "are not"
+          ],
+          "right": [
+            "isn't",
+            "aren't",
+            "they're",
+            "we're"
+          ],
+          "instruction": "Match the long and short forms."
+        },
+        "answer": {
+          "pairs": [
+            3,
+            2,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "They are not doctors: aren't.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My parents {{1}} doctors. They are teachers.",
+          "wordBank": [
+            "isn't",
+            "aren't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "aren't",
+              "are not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "It is not cold: isn't.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "It {{1}} cold today. It is hot.",
+          "wordBank": [
+            "isn't",
+            "aren't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "isn't",
+              "is not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "We're + from Uzbekistan.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "We're",
+            "Uzbekistan",
+            "from"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "We're from Uzbekistan."
+          ]
+        }
+      }
+    }
+  ]
+}

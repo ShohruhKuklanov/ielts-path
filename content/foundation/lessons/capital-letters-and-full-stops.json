@@ -1,0 +1,275 @@
+{
+  "title": "Capital letters and full stops",
+  "kind": "writing",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "A sentence starts with a capital (big) letter."
+    },
+    {
+      "type": "text",
+      "text": "A sentence ends with a full stop (.) or a question mark (?)."
+    },
+    {
+      "type": "example",
+      "en": "My name is Jasur."
+    },
+    {
+      "type": "example",
+      "en": "Where are you from?"
+    },
+    {
+      "type": "text",
+      "text": "Always use capital letters for:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "I",
+          "I am happy."
+        ],
+        [
+          "names",
+          "Aziz, Maria"
+        ],
+        [
+          "countries and cities",
+          "Uzbekistan, Bukhara"
+        ],
+        [
+          "days and months",
+          "Monday, May"
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Languages and nationalities too: English, Uzbek."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Capital M at the start, capital A for the name, full stop at the end.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "my name is anna."
+            },
+            {
+              "text": "My name is Anna."
+            },
+            {
+              "text": "My Name Is Anna"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Capital I and capital T for the city.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "i live in tashkent."
+            },
+            {
+              "text": "I live in tashkent."
+            },
+            {
+              "text": "I live in Tashkent."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "A question ends with a question mark.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "Where do you live."
+            },
+            {
+              "text": "Where do you live?"
+            },
+            {
+              "text": "where do you live?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Days and languages start with a capital: Monday, English.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which words need a capital letter? Choose TWO.",
+          "options": [
+            {
+              "text": "monday"
+            },
+            {
+              "text": "apple"
+            },
+            {
+              "text": "english"
+            },
+            {
+              "text": "table"
+            }
+          ],
+          "multiple": true
+        },
+        "answer": {
+          "correct": [
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Capital W, capital letters for languages, full stop.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which sentence is correct?",
+          "options": [
+            {
+              "text": "We speak Uzbek and English."
+            },
+            {
+              "text": "We speak uzbek and english."
+            },
+            {
+              "text": "we speak Uzbek and English"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "I is always a capital letter.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} am a student. (i)",
+          "instruction": "Write the word correctly."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Months start with a capital letter.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My birthday is in {{1}}. (june)",
+          "instruction": "Write the word correctly."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "June"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Countries start with a capital letter.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Sara is from {{1}}. (turkey)",
+          "instruction": "Write the word correctly."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Turkey"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Capital M, capital L, full stop.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "in",
+            "London",
+            "friend",
+            "My",
+            "lives"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "My friend lives in London."
+          ]
+        }
+      }
+    }
+  ]
+}

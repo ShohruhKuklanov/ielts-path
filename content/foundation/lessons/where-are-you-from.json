@@ -1,0 +1,274 @@
+{
+  "title": "Where are you from?",
+  "kind": "vocabulary",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "example",
+      "en": "Where are you from?",
+      "note": "the question"
+    },
+    {
+      "type": "example",
+      "en": "I'm from Uzbekistan.",
+      "note": "I am from + country"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Uzbekistan",
+          "Kazakhstan",
+          "Russia"
+        ],
+        [
+          "Turkey",
+          "China",
+          "India"
+        ],
+        [
+          "the UK",
+          "the USA",
+          "Japan"
+        ],
+        [
+          "Korea"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Countries start with a big letter."
+    },
+    {
+      "type": "example",
+      "en": "I'm from the UK.",
+      "note": "We say the UK and the USA."
+    },
+    {
+      "type": "tip",
+      "text": "Use from after be: I am from Japan. Not: I from Japan."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "We say: I am from + country.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Where are you from?",
+          "options": [
+            {
+              "text": "I'm from Turkey."
+            },
+            {
+              "text": "I'm Turkey from."
+            },
+            {
+              "text": "I from Turkey."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Countries start with a big letter: India.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is written correctly?",
+          "options": [
+            {
+              "text": "india"
+            },
+            {
+              "text": "India"
+            },
+            {
+              "text": "INDIA"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "We say the USA and the UK.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I'm from ___ USA.",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "the"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Where are you from?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "A: Where {{1}} you from? B: I'm from China."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "are"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "I am from Kazakhstan.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I'm {{1}} Kazakhstan."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "from"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Tokyo is in Japan. Tashkent is in Uzbekistan.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "Tokyo",
+            "Tashkent",
+            "Moscow",
+            "London"
+          ],
+          "right": [
+            "the UK",
+            "Russia",
+            "Japan",
+            "Uzbekistan"
+          ],
+          "instruction": "Match the city and the country."
+        },
+        "answer": {
+          "pairs": [
+            2,
+            3,
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Where + are + you + from?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "from",
+            "you",
+            "Where",
+            "are"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Where are you from?"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "I'm + from + Korea.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "from",
+            "I'm",
+            "Korea"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I'm from Korea."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Istanbul is in Turkey.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Ali is from Istanbul. He is from …",
+          "options": [
+            {
+              "text": "Turkey"
+            },
+            {
+              "text": "India"
+            },
+            {
+              "text": "China"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    }
+  ]
+}

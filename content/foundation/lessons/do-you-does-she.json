@@ -1,0 +1,272 @@
+{
+  "title": "Do you…? Does she…?",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "To ask a question, put do or does first."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Do",
+          "I / you / we / they",
+          "+ verb?"
+        ],
+        [
+          "Does",
+          "he / she / it",
+          "+ verb?"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "Do you like tea?",
+      "note": "Yes, I do. / No, I don't."
+    },
+    {
+      "type": "example",
+      "en": "Does she work here?",
+      "note": "Yes, she does. / No, she doesn't."
+    },
+    {
+      "type": "tip",
+      "text": "After does, the verb has no -s: Does he play? Not: Does he plays?"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Do you …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ you speak Russian?",
+          "options": [
+            {
+              "text": "Do"
+            },
+            {
+              "text": "Does"
+            },
+            {
+              "text": "Are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Your sister = she: Does she …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ your sister live in Tashkent?",
+          "options": [
+            {
+              "text": "Do"
+            },
+            {
+              "text": "Does"
+            },
+            {
+              "text": "Is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "After does use the base verb: play.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Does he ___ football?",
+          "options": [
+            {
+              "text": "plays"
+            },
+            {
+              "text": "play"
+            },
+            {
+              "text": "playing"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "The short answer is Yes, I do.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Do you like music? — Yes, ___",
+          "options": [
+            {
+              "text": "I like."
+            },
+            {
+              "text": "I do."
+            },
+            {
+              "text": "I am."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "No, she doesn't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Does she have a car? — No, ___",
+          "options": [
+            {
+              "text": "she doesn't."
+            },
+            {
+              "text": "she don't."
+            },
+            {
+              "text": "she isn't."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Do they …? Yes, they do.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} they work on Saturday? — Yes, they {{2}}.",
+          "wordBank": [
+            "Do",
+            "Does",
+            "do",
+            "does"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Do"
+            ],
+            "2": [
+              "do"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Does it …? No, it doesn't.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} the shop open at 8? — No, it {{2}}."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Does"
+            ],
+            "2": [
+              "doesn't",
+              "does not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Do + you + like coffee?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "like",
+            "Do",
+            "coffee",
+            "you"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Do you like coffee?"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Does + your brother + play tennis?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "your",
+            "tennis",
+            "play",
+            "Does",
+            "brother"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Does your brother play tennis?"
+          ]
+        }
+      }
+    }
+  ]
+}

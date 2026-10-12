@@ -1,0 +1,263 @@
+{
+  "title": "What time is it?",
+  "kind": "vocabulary",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "example",
+      "en": "What time is it?",
+      "note": "the question"
+    },
+    {
+      "type": "example",
+      "en": "It's three o'clock.",
+      "note": "3:00"
+    },
+    {
+      "type": "example",
+      "en": "It's half past three.",
+      "note": "3:30"
+    },
+    {
+      "type": "example",
+      "en": "It's quarter past three.",
+      "note": "3:15"
+    },
+    {
+      "type": "example",
+      "en": "It's quarter to four.",
+      "note": "3:45"
+    },
+    {
+      "type": "text",
+      "text": "Past = after the hour. To = before the next hour."
+    },
+    {
+      "type": "tip",
+      "text": "You can also say the numbers: 3:15 = three fifteen."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": ":00 is o'clock.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "7:00",
+          "options": [
+            {
+              "text": "It's seven o'clock."
+            },
+            {
+              "text": "It's half past seven."
+            },
+            {
+              "text": "It's quarter to seven."
+            }
+          ],
+          "instruction": "What time is it?"
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": ":30 is half past.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "9:30",
+          "options": [
+            {
+              "text": "It's quarter past nine."
+            },
+            {
+              "text": "It's half past nine."
+            },
+            {
+              "text": "It's half past ten."
+            }
+          ],
+          "instruction": "What time is it?"
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": ":15 is quarter past.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "4:15",
+          "options": [
+            {
+              "text": "It's quarter past four."
+            },
+            {
+              "text": "It's quarter to four."
+            },
+            {
+              "text": "It's four o'clock."
+            }
+          ],
+          "instruction": "What time is it?"
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": ":45 is quarter to the next hour: quarter to six.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "5:45",
+          "options": [
+            {
+              "text": "It's quarter past five."
+            },
+            {
+              "text": "It's quarter to six."
+            },
+            {
+              "text": "It's quarter to five."
+            }
+          ],
+          "instruction": "What time is it?"
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Past is after the hour, to is before it.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "2:00",
+            "2:30",
+            "2:15",
+            "1:45"
+          ],
+          "right": [
+            "half past two",
+            "quarter past two",
+            "quarter to two",
+            "two o'clock"
+          ],
+          "instruction": "Match the times."
+        },
+        "answer": {
+          "pairs": [
+            3,
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "8:30 is half past eight.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "It's half {{1}} eight. (8:30)"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "past"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "9:45 is quarter to ten.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "It's quarter {{1}} ten. (9:45)"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "to"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "11:00 is eleven o'clock.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "It's eleven {{1}}. (11:00)"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "o'clock",
+              "o’clock"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "What time + is + it?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "What",
+            "it",
+            "is",
+            "time"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "What time is it?"
+          ]
+        }
+      }
+    }
+  ]
+}

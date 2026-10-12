@@ -1,0 +1,296 @@
+{
+  "title": "The alphabet: A to M",
+  "kind": "alphabet",
+  "cefr": "A0",
+  "estMinutes": 5,
+  "intro": [
+    {
+      "type": "text",
+      "text": "English has 26 letters."
+    },
+    {
+      "type": "text",
+      "text": "Here are the first 13."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "A a",
+          "B b",
+          "C c",
+          "D d"
+        ],
+        [
+          "E e",
+          "F f",
+          "G g",
+          "H h"
+        ],
+        [
+          "I i",
+          "J j",
+          "K k",
+          "L l"
+        ],
+        [
+          "M m"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Every letter has a big form and a small form."
+    },
+    {
+      "type": "example",
+      "en": "A → a",
+      "note": "big A, small a"
+    },
+    {
+      "type": "example",
+      "en": "Anna, Bobur, Malika",
+      "note": "Names start with a big letter."
+    },
+    {
+      "type": "tip",
+      "text": "Say the letters in order every day: A, B, C, D …"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Big A is small a. Big D is small d.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "A",
+            "B",
+            "D",
+            "E"
+          ],
+          "right": [
+            "a",
+            "e",
+            "b",
+            "d"
+          ],
+          "instruction": "Match the big and small letters."
+        },
+        "answer": {
+          "pairs": [
+            0,
+            2,
+            3,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Big G is small g. Big L is small l.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "G",
+            "H",
+            "J",
+            "L"
+          ],
+          "right": [
+            "l",
+            "g",
+            "h",
+            "j"
+          ],
+          "instruction": "Match the big and small letters."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            2,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "After B comes C: A, B, C.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A, B, ___",
+          "options": [
+            {
+              "text": "C"
+            },
+            {
+              "text": "D"
+            },
+            {
+              "text": "E"
+            }
+          ],
+          "instruction": "What comes next?"
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Big M is small m.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is the small form of M?",
+          "options": [
+            {
+              "text": "n"
+            },
+            {
+              "text": "m"
+            },
+            {
+              "text": "w"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Small f is big F.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is the big form of f?",
+          "options": [
+            {
+              "text": "E"
+            },
+            {
+              "text": "T"
+            },
+            {
+              "text": "F"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "H, I, J, K.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "H, I, {{1}}, K",
+          "instruction": "Write the missing letter."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "J",
+              "j"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "E, F, G, H.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "E, F, {{1}}, H",
+          "instruction": "Write the missing letter."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "G",
+              "g"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "The order is A, B, C, D, E.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "E",
+            "A",
+            "C",
+            "B",
+            "D"
+          ],
+          "instruction": "Put the letters in order."
+        },
+        "answer": {
+          "accepted": [
+            "A B C D E"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "A name starts with a big letter: Malika.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which name is written correctly?",
+          "options": [
+            {
+              "text": "malika"
+            },
+            {
+              "text": "Malika"
+            },
+            {
+              "text": "mALIKA"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

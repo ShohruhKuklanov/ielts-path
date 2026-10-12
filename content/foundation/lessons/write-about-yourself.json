@@ -1,0 +1,259 @@
+{
+  "title": "Write about yourself",
+  "kind": "writing",
+  "cefr": "A1",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "You can write about yourself in 4 or 5 short sentences."
+    },
+    {
+      "type": "example",
+      "en": "My name is Otabek. I am 17.",
+      "note": "name and age"
+    },
+    {
+      "type": "example",
+      "en": "I am from Fergana.",
+      "note": "where you are from"
+    },
+    {
+      "type": "example",
+      "en": "I am a student and I like football.",
+      "note": "and joins two ideas"
+    },
+    {
+      "type": "example",
+      "en": "I like English but it is difficult.",
+      "note": "but shows a difference"
+    },
+    {
+      "type": "tip",
+      "text": "Check every sentence: a capital letter at the start, a full stop at the end."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Two similar ideas: and.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I like tea ___ I like coffee.",
+          "options": [
+            {
+              "text": "and"
+            },
+            {
+              "text": "but"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "A difference: but.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I like swimming ___ I can't swim well.",
+          "options": [
+            {
+              "text": "and"
+            },
+            {
+              "text": "but"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Tall vs short is a difference: but.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My brother is tall ___ my sister is short.",
+          "options": [
+            {
+              "text": "and"
+            },
+            {
+              "text": "but"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Start with your name: My name is …",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is the best first sentence?",
+          "options": [
+            {
+              "text": "My name is Rustam."
+            },
+            {
+              "text": "name Rustam"
+            },
+            {
+              "text": "I Rustam."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Two facts: and.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I am 16 {{1}} I live in Andijan.",
+          "wordBank": [
+            "and",
+            "but"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "and"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Have vs don't have: but.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I have a sister {{1}} I don't have a brother.",
+          "wordBank": [
+            "and",
+            "but"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "but"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "I am a student + and + I love music.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "music",
+            "love",
+            "am",
+            "I",
+            "I",
+            "a",
+            "and",
+            "student"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I am a student and I love music."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "I like English + but + it is difficult.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "is",
+            "I",
+            "it",
+            "English",
+            "like",
+            "but",
+            "difficult"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I like English but it is difficult."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "writing",
+      "cefr": "A1",
+      "explanation": "Capital letters and full stops in every sentence.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which text is correct?",
+          "options": [
+            {
+              "text": "my name is lola. i am 15."
+            },
+            {
+              "text": "My name is Lola. I am 15."
+            },
+            {
+              "text": "My name is Lola I am 15"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

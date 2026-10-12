@@ -1,0 +1,244 @@
+{
+  "title": "At the shop",
+  "kind": "speaking",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Useful phrases in a shop:"
+    },
+    {
+      "type": "example",
+      "en": "Can I have a bottle of water, please?",
+      "note": "to ask for something"
+    },
+    {
+      "type": "example",
+      "en": "How much is it?",
+      "note": "to ask the price"
+    },
+    {
+      "type": "example",
+      "en": "It's two dollars.",
+      "note": "the price"
+    },
+    {
+      "type": "example",
+      "en": "Here you are.",
+      "note": "when you give something"
+    },
+    {
+      "type": "example",
+      "en": "Thank you. / Thanks."
+    },
+    {
+      "type": "tip",
+      "text": "Please and thank you make you sound polite."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "speaking",
+      "cefr": "A1",
+      "explanation": "Can I have …, please? is polite.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You want some bread. You say:",
+          "options": [
+            {
+              "text": "Can I have some bread, please?"
+            },
+            {
+              "text": "Give bread."
+            },
+            {
+              "text": "I bread want."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "speaking",
+      "cefr": "A1",
+      "explanation": "Ask: How much is it?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You want to know the price. You say:",
+          "options": [
+            {
+              "text": "How many is it?"
+            },
+            {
+              "text": "How much is it?"
+            },
+            {
+              "text": "What is it?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "speaking",
+      "cefr": "A1",
+      "explanation": "When you give something: Here you are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The shop assistant gives you the bag. She says:",
+          "options": [
+            {
+              "text": "Here you are."
+            },
+            {
+              "text": "Thank you."
+            },
+            {
+              "text": "Excuse me."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "speaking",
+      "cefr": "A1",
+      "explanation": "Say thank you.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You get your change. You say:",
+          "options": [
+            {
+              "text": "Here you are."
+            },
+            {
+              "text": "Thank you."
+            },
+            {
+              "text": "How much?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "speaking",
+      "cefr": "A1",
+      "explanation": "Can I have …? Here you are.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "A: Can I {{1}} two apples, please? B: Here you {{2}}.",
+          "wordBank": [
+            "have",
+            "are",
+            "is"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "have"
+            ],
+            "2": [
+              "are"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "speaking",
+      "cefr": "A1",
+      "explanation": "How much is it?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "A: How much {{1}} it? B: It's three dollars."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "is"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "Read the conversation again: a small coffee, two dollars. Milk is not in the text.",
+      "content": {
+        "type": "tfng",
+        "payload": {
+          "instruction": "Read. Is it true, false, or not given?",
+          "passage": "Customer: Hello. Can I have a coffee, please?\nAssistant: Sure. Big or small?\nCustomer: Small, please. How much is it?\nAssistant: It's two dollars.\nCustomer: Here you are. Thank you!",
+          "statements": [
+            "The customer wants a coffee.",
+            "The customer wants a big coffee.",
+            "The coffee is two dollars.",
+            "The customer wants some milk."
+          ]
+        },
+        "answer": {
+          "answers": [
+            "true",
+            "false",
+            "true",
+            "not_given"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "speaking",
+      "cefr": "A1",
+      "explanation": "Can I have + a sandwich, + please?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "have",
+            "Can",
+            "I",
+            "a",
+            "sandwich,",
+            "please"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Can I have a sandwich, please?"
+          ]
+        }
+      }
+    }
+  ]
+}

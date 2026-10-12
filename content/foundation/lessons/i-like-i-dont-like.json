@@ -1,0 +1,261 @@
+{
+  "title": "I like, I don't like",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "example",
+      "en": "I like apples.",
+      "note": "like + thing"
+    },
+    {
+      "type": "example",
+      "en": "I love music.",
+      "note": "love = like very much"
+    },
+    {
+      "type": "example",
+      "en": "I don't like coffee."
+    },
+    {
+      "type": "text",
+      "text": "After like, a verb takes -ing."
+    },
+    {
+      "type": "example",
+      "en": "I like reading.",
+      "note": "read → reading"
+    },
+    {
+      "type": "example",
+      "en": "She likes swimming.",
+      "note": "he/she likes"
+    },
+    {
+      "type": "tip",
+      "text": "Ask: Do you like …? — Yes, I do. / No, I don't."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "like + -ing: playing.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I like ___ football.",
+          "options": [
+            {
+              "text": "play"
+            },
+            {
+              "text": "playing"
+            },
+            {
+              "text": "plays"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "She likes.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She ___ chocolate.",
+          "options": [
+            {
+              "text": "like"
+            },
+            {
+              "text": "likes"
+            },
+            {
+              "text": "liking"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "He doesn't like.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He ___ like cold weather.",
+          "options": [
+            {
+              "text": "don't"
+            },
+            {
+              "text": "doesn't"
+            },
+            {
+              "text": "not"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Do you like …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ you like tea? — Yes, I do.",
+          "options": [
+            {
+              "text": "Are"
+            },
+            {
+              "text": "Do"
+            },
+            {
+              "text": "Does"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Love = like very much.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which means \"like very much\"?",
+          "options": [
+            {
+              "text": "love"
+            },
+            {
+              "text": "don't like"
+            },
+            {
+              "text": "hate"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "like + watching.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My brother likes {{1}} TV. (watch)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "watching"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "love + cooking.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I love {{1}} with my friends. (cook)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "cooking"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They don't like.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My parents {{1}} like loud music.",
+          "wordBank": [
+            "don't",
+            "doesn't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "don't",
+              "do not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I like + listening to music.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "like",
+            "music",
+            "to",
+            "listening",
+            "I"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I like listening to music."
+          ]
+        }
+      }
+    }
+  ]
+}

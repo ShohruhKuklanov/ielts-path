@@ -1,0 +1,277 @@
+{
+  "title": "Places in town",
+  "kind": "vocabulary",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "table",
+      "rows": [
+        [
+          "bank",
+          "shop",
+          "market"
+        ],
+        [
+          "hospital",
+          "pharmacy"
+        ],
+        [
+          "school",
+          "library"
+        ],
+        [
+          "park",
+          "station",
+          "café"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "I buy medicine at the pharmacy."
+    },
+    {
+      "type": "example",
+      "en": "I read books in the library."
+    },
+    {
+      "type": "example",
+      "en": "Where's the station? — It's next to the park.",
+      "note": "ask and answer"
+    },
+    {
+      "type": "tip",
+      "text": "Where is → Where's."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "A bank has money.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You get money at the …",
+          "options": [
+            {
+              "text": "bank"
+            },
+            {
+              "text": "library"
+            },
+            {
+              "text": "park"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "A pharmacy sells medicine.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You buy medicine at the …",
+          "options": [
+            {
+              "text": "café"
+            },
+            {
+              "text": "pharmacy"
+            },
+            {
+              "text": "station"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Trains stop at the station.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You take a train at the …",
+          "options": [
+            {
+              "text": "station"
+            },
+            {
+              "text": "school"
+            },
+            {
+              "text": "market"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "A library has books.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You borrow books from the …",
+          "options": [
+            {
+              "text": "hospital"
+            },
+            {
+              "text": "library"
+            },
+            {
+              "text": "bank"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "People and things in town.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "doctor",
+            "teacher",
+            "coffee",
+            "fruit and vegetables"
+          ],
+          "right": [
+            "café",
+            "school",
+            "hospital",
+            "market"
+          ],
+          "instruction": "Match."
+        },
+        "answer": {
+          "pairs": [
+            2,
+            1,
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Ask: Where's …?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} the bank? — It's next to the market."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Where's",
+              "Where is"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Children play in the park.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Children play in the {{1}}.",
+          "wordBank": [
+            "park",
+            "bank",
+            "pharmacy"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "park"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "The hospital + is + next to the school.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "the",
+            "next",
+            "hospital",
+            "school",
+            "is",
+            "The",
+            "to"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "The hospital is next to the school."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Where's + the station?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "station",
+            "Where's",
+            "the"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Where's the station?"
+          ]
+        }
+      }
+    }
+  ]
+}

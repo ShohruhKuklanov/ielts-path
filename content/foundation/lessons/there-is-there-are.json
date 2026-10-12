@@ -1,0 +1,275 @@
+{
+  "title": "There is, there are",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Use there is and there are to say what is in a place."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "one thing",
+          "There is (There's)"
+        ],
+        [
+          "more things",
+          "There are"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "There is a bed in my room."
+    },
+    {
+      "type": "example",
+      "en": "There are two windows."
+    },
+    {
+      "type": "text",
+      "text": "Negative:"
+    },
+    {
+      "type": "example",
+      "en": "There isn't a TV.",
+      "note": "There aren't any chairs."
+    },
+    {
+      "type": "tip",
+      "text": "Questions: Is there a …? / Are there any …?"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "One park: there is.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ a park near my house.",
+          "options": [
+            {
+              "text": "There is"
+            },
+            {
+              "text": "There are"
+            },
+            {
+              "text": "It is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "More than one: there are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ three chairs in the kitchen.",
+          "options": [
+            {
+              "text": "There is"
+            },
+            {
+              "text": "There are"
+            },
+            {
+              "text": "They are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Shops = more than one: there aren't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "There ___ any shops in my street.",
+          "options": [
+            {
+              "text": "isn't"
+            },
+            {
+              "text": "aren't"
+            },
+            {
+              "text": "is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Question: Is there …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ a bank in this street? — Yes, there is.",
+          "options": [
+            {
+              "text": "There is"
+            },
+            {
+              "text": "Is there"
+            },
+            {
+              "text": "Are there"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Question: Are there any …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ any students in the room? — No, there aren't.",
+          "options": [
+            {
+              "text": "Are there"
+            },
+            {
+              "text": "Is there"
+            },
+            {
+              "text": "There are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "One window: there is.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There {{1}} a big window in the living room.",
+          "wordBank": [
+            "is",
+            "are"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "is"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Two bathrooms: there are.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There {{1}} two bathrooms in our flat.",
+          "wordBank": [
+            "is",
+            "are"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "are"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "There isn't a TV.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There {{1}} a TV in my bedroom. I don't watch TV there.",
+          "wordBank": [
+            "isn't",
+            "aren't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "isn't",
+              "is not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "There are + four people + in my family.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "There",
+            "in",
+            "my",
+            "are",
+            "family",
+            "people",
+            "four"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "There are four people in my family."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "title": "In, on, under, next to",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "These words say where something is."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "in",
+          "The keys are in the bag."
+        ],
+        [
+          "on",
+          "The book is on the table."
+        ],
+        [
+          "under",
+          "The cat is under the bed."
+        ],
+        [
+          "next to",
+          "The lamp is next to the bed."
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "behind",
+          "The garden is behind the house."
+        ],
+        [
+          "in front of",
+          "The car is in front of the house."
+        ],
+        [
+          "between",
+          "The bank is between the shop and the café."
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Between is for two things: between A and B."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Inside = in.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The milk is ___ the fridge.",
+          "options": [
+            {
+              "text": "in"
+            },
+            {
+              "text": "on"
+            },
+            {
+              "text": "under"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "On the wall.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The picture is ___ the wall.",
+          "options": [
+            {
+              "text": "in"
+            },
+            {
+              "text": "on"
+            },
+            {
+              "text": "between"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Under the bed is below it.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The shoes are ___ the bed. I can't see them!",
+          "options": [
+            {
+              "text": "on"
+            },
+            {
+              "text": "under"
+            },
+            {
+              "text": "next to"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Between A and B.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The café is ___ the bank and the school.",
+          "options": [
+            {
+              "text": "between"
+            },
+            {
+              "text": "next"
+            },
+            {
+              "text": "behind"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Next to = very near, at the side.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I sit ___ my friend in class.",
+          "options": [
+            {
+              "text": "next to"
+            },
+            {
+              "text": "next"
+            },
+            {
+              "text": "on"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "In = inside, on = on top, under = below.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "in",
+            "on",
+            "under"
+          ],
+          "right": [
+            "inside",
+            "below",
+            "on top of"
+          ],
+          "instruction": "Match the words with the same meaning."
+        },
+        "answer": {
+          "pairs": [
+            0,
+            2,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "In my pocket.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My phone is {{1}} my pocket.",
+          "wordBank": [
+            "in",
+            "on",
+            "under"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "in"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "In front of.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There is a tree in {{1}} of my house."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "front"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "The cat + is + under the table.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "The",
+            "the",
+            "table",
+            "cat",
+            "under",
+            "is"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "The cat is under the table."
+          ]
+        }
+      }
+    }
+  ]
+}

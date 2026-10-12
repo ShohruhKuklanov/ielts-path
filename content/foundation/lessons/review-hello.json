@@ -1,0 +1,282 @@
+{
+  "title": "Review: Hello!",
+  "kind": "review",
+  "cefr": "A0",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Let's review the module."
+    },
+    {
+      "type": "example",
+      "en": "Good morning! Nice to meet you.",
+      "note": "greetings"
+    },
+    {
+      "type": "example",
+      "en": "I'm Aziz. You're my friend.",
+      "note": "I am, you are"
+    },
+    {
+      "type": "example",
+      "en": "Where are you from? — I'm from Japan.",
+      "note": "countries"
+    },
+    {
+      "type": "example",
+      "en": "Are you 20? — No, I'm not. I'm twenty-five.",
+      "note": "questions and numbers"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "8 p.m. is the evening.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "It is 8 p.m. You meet a friend. You say:",
+          "options": [
+            {
+              "text": "Good evening!"
+            },
+            {
+              "text": "Good morning!"
+            },
+            {
+              "text": "Good night!"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I am from Uzbekistan.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I ___ from Uzbekistan.",
+          "options": [
+            {
+              "text": "am"
+            },
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "You are my teacher.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You ___ my teacher.",
+          "options": [
+            {
+              "text": "am"
+            },
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Are you from China?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ you from China?",
+          "options": [
+            {
+              "text": "Are"
+            },
+            {
+              "text": "Is"
+            },
+            {
+              "text": "Do"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "The short answer is Yes, it is.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Is it your bag? — Yes, ___",
+          "options": [
+            {
+              "text": "it is."
+            },
+            {
+              "text": "it's."
+            },
+            {
+              "text": "is it."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "19 is nineteen.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I'm {{1}} years old. (19)"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "nineteen",
+              "19"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "90 + 10 = 100, one hundred.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "ninety + ten = one {{1}}"
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "hundred"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Short forms are common in speaking.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "I am",
+            "you are",
+            "I am not"
+          ],
+          "right": [
+            "I'm",
+            "I'm not",
+            "you're"
+          ],
+          "instruction": "Match the long and short forms."
+        },
+        "answer": {
+          "pairs": [
+            0,
+            2,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Hello, + I'm + Dilnoza.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "I'm",
+            "Dilnoza",
+            "Hello,"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Hello, I'm Dilnoza."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Lola: L - O - L - A.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How do you spell Lola?",
+          "options": [
+            {
+              "text": "L - O - L - A"
+            },
+            {
+              "text": "L - A - L - O"
+            },
+            {
+              "text": "L - O - L - L - A"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    }
+  ]
+}

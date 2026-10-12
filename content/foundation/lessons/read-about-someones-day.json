@@ -1,0 +1,185 @@
+{
+  "title": "Read about someone's day",
+  "kind": "reading",
+  "cefr": "A1",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "When you read about a day, look for times and actions."
+    },
+    {
+      "type": "example",
+      "en": "at 7 o'clock",
+      "note": "a time"
+    },
+    {
+      "type": "example",
+      "en": "he gets up / she goes to work",
+      "note": "actions"
+    },
+    {
+      "type": "tip",
+      "text": "Words like then, after that and in the evening tell you the order."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "He is a bus driver and has breakfast with his wife. The text does not say how many children he has.",
+      "content": {
+        "type": "tfng",
+        "payload": {
+          "instruction": "Read. Is it true, false, or not given?",
+          "passage": "Kamol is a bus driver in Tashkent. He gets up at 5 o'clock every day. He has breakfast with his wife. Then he goes to work. He starts work at 6. He has lunch at 12 at a small café. He comes home at 4. In the evening he plays with his children and watches TV. He goes to bed at 10.",
+          "statements": [
+            "Kamol is a taxi driver.",
+            "He gets up at 5.",
+            "He has breakfast alone.",
+            "He has lunch at a café.",
+            "He has three children."
+          ]
+        },
+        "answer": {
+          "answers": [
+            "false",
+            "true",
+            "false",
+            "true",
+            "not_given"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "\"He starts work at 6.\"",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "What time does Kamol start work?",
+          "options": [
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            },
+            {
+              "text": "12"
+            }
+          ],
+          "instruction": "Read about Kamol again."
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "\"In the evening he plays with his children and watches TV.\"",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "What does he do in the evening?",
+          "options": [
+            {
+              "text": "He plays with his children."
+            },
+            {
+              "text": "He goes to the café."
+            },
+            {
+              "text": "He drives the bus."
+            }
+          ],
+          "instruction": "Read about Kamol again."
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "Her classes start at 9. She doesn't like cooking.",
+      "content": {
+        "type": "tfng",
+        "payload": {
+          "instruction": "Read. Is it true, false, or not given?",
+          "passage": "Anna is a student. She gets up at 8 and has a quick breakfast. Her classes start at 9. After classes she goes to the library. She doesn't like cooking, so she eats dinner with her friends at a café. At night she reads books.",
+          "statements": [
+            "Anna gets up at 8.",
+            "Her classes start at 10.",
+            "She likes cooking.",
+            "She reads at night."
+          ]
+        },
+        "answer": {
+          "answers": [
+            "true",
+            "false",
+            "false",
+            "true"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "\"After classes she goes to the library.\"",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Where does Anna go after classes?",
+          "options": [
+            {
+              "text": "to the café"
+            },
+            {
+              "text": "to the library"
+            },
+            {
+              "text": "home"
+            }
+          ],
+          "instruction": "Read about Anna again."
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "\"she eats dinner with her friends at a café\".",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Anna eats dinner with her {{1}}.",
+          "instruction": "Read about Anna again."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "friends"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "title": "Food and drink",
+  "kind": "vocabulary",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Food:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "bread",
+          "rice",
+          "meat"
+        ],
+        [
+          "chicken",
+          "fish",
+          "egg"
+        ],
+        [
+          "apple",
+          "banana",
+          "potato"
+        ],
+        [
+          "cheese",
+          "soup",
+          "salad"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Drinks:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "tea",
+          "coffee",
+          "water"
+        ],
+        [
+          "milk",
+          "juice",
+          "lemonade"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "I eat rice and chicken for lunch."
+    },
+    {
+      "type": "example",
+      "en": "I drink green tea."
+    },
+    {
+      "type": "tip",
+      "text": "We eat food and drink drinks."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Juice is a drink.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is a drink?",
+          "options": [
+            {
+              "text": "bread"
+            },
+            {
+              "text": "juice"
+            },
+            {
+              "text": "rice"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "An apple is a fruit.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is a fruit?",
+          "options": [
+            {
+              "text": "apple"
+            },
+            {
+              "text": "meat"
+            },
+            {
+              "text": "cheese"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Milk comes from cows.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A cow gives us …",
+          "options": [
+            {
+              "text": "milk"
+            },
+            {
+              "text": "eggs"
+            },
+            {
+              "text": "juice"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Eggs come from chickens.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A chicken gives us …",
+          "options": [
+            {
+              "text": "eggs"
+            },
+            {
+              "text": "milk"
+            },
+            {
+              "text": "bread"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Tea and water are drinks.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which are drinks? Choose TWO.",
+          "options": [
+            {
+              "text": "tea"
+            },
+            {
+              "text": "fish"
+            },
+            {
+              "text": "water"
+            },
+            {
+              "text": "potato"
+            }
+          ],
+          "multiple": true
+        },
+        "answer": {
+          "correct": [
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We eat bread and drink coffee.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "bread",
+            "coffee"
+          ],
+          "right": [
+            "drink",
+            "eat"
+          ],
+          "instruction": "Match the word and the verb."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "A glass of water or milk.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I drink a glass of {{1}} every day. It is good for you.",
+          "wordBank": [
+            "water",
+            "bread",
+            "rice"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "water",
+              "milk",
+              "juice"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "I eat + an egg + for breakfast.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "eat",
+            "for",
+            "an",
+            "I",
+            "egg",
+            "breakfast"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I eat an egg for breakfast."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We drink tea + after dinner.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "after",
+            "drink",
+            "tea",
+            "dinner",
+            "We"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "We drink tea after dinner."
+          ]
+        }
+      }
+    }
+  ]
+}

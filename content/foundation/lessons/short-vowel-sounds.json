@@ -1,0 +1,285 @@
+{
+  "title": "Short vowel sounds",
+  "kind": "phonics",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Each vowel has a short sound."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "a",
+          "cat",
+          "bag"
+        ],
+        [
+          "e",
+          "bed",
+          "pen"
+        ],
+        [
+          "i",
+          "sit",
+          "ship"
+        ],
+        [
+          "o",
+          "hot",
+          "shop"
+        ],
+        [
+          "u",
+          "cup",
+          "bus"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "One vowel between two consonants often has a short sound."
+    },
+    {
+      "type": "example",
+      "en": "bag — beg",
+      "note": "a and e sound different"
+    },
+    {
+      "type": "example",
+      "en": "ship — shop",
+      "note": "i and o sound different"
+    },
+    {
+      "type": "tip",
+      "text": "Change one vowel and you get a new word: bag, beg, big, bug."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Cat and bag both have short a.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word has the same vowel as cat?",
+          "options": [
+            {
+              "text": "bag"
+            },
+            {
+              "text": "bed"
+            },
+            {
+              "text": "cup"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Bed and pen both have short e.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word has the same vowel as bed?",
+          "options": [
+            {
+              "text": "sit"
+            },
+            {
+              "text": "pen"
+            },
+            {
+              "text": "hot"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Cup and bus both have short u.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word has the same vowel as cup?",
+          "options": [
+            {
+              "text": "bus"
+            },
+            {
+              "text": "shop"
+            },
+            {
+              "text": "ship"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Each word shows one short vowel.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "a",
+            "e",
+            "i",
+            "o",
+            "u"
+          ],
+          "right": [
+            "sit",
+            "cat",
+            "hot",
+            "cup",
+            "bed"
+          ],
+          "instruction": "Match the vowel and the word."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            4,
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Bed has short e.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I sleep in a b{{1}}d.",
+          "instruction": "Write the missing vowel."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "e"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Hot has short o.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "The sun is very h{{1}}t.",
+          "instruction": "Write the missing vowel."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "o"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Bag has short a.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I have a red b{{1}}g.",
+          "instruction": "Write the missing vowel."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "a"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "A shop is a place to buy things. A ship is a big boat.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You buy bread in a …",
+          "options": [
+            {
+              "text": "ship"
+            },
+            {
+              "text": "shop"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Sit down. Sit has short i.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Please ___ down.",
+          "options": [
+            {
+              "text": "sit"
+            },
+            {
+              "text": "set"
+            },
+            {
+              "text": "sat"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    }
+  ]
+}

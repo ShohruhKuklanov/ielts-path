@@ -1,0 +1,278 @@
+{
+  "title": "My family",
+  "kind": "vocabulary",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "table",
+      "rows": [
+        [
+          "mother",
+          "father",
+          "parents"
+        ],
+        [
+          "sister",
+          "brother"
+        ],
+        [
+          "daughter",
+          "son",
+          "children"
+        ],
+        [
+          "grandmother",
+          "grandfather"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Parents = mother + father."
+    },
+    {
+      "type": "text",
+      "text": "Children = sons and daughters."
+    },
+    {
+      "type": "example",
+      "en": "This is my mother.",
+      "note": "Use this is to show someone."
+    },
+    {
+      "type": "example",
+      "en": "I have one brother and two sisters."
+    },
+    {
+      "type": "tip",
+      "text": "Mum and dad are friendly words for mother and father."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Your mother's mother is your grandmother.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My mother's mother is my …",
+          "options": [
+            {
+              "text": "sister"
+            },
+            {
+              "text": "grandmother"
+            },
+            {
+              "text": "daughter"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Your father's son is your brother.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My father's son is my …",
+          "options": [
+            {
+              "text": "brother"
+            },
+            {
+              "text": "uncle"
+            },
+            {
+              "text": "father"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Mother + father = parents.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My mother and father are my …",
+          "options": [
+            {
+              "text": "children"
+            },
+            {
+              "text": "parents"
+            },
+            {
+              "text": "sisters"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "A girl is a daughter.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A girl is her parents' …",
+          "options": [
+            {
+              "text": "son"
+            },
+            {
+              "text": "daughter"
+            },
+            {
+              "text": "brother"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Each pair is a woman and a man.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "mother",
+            "sister",
+            "daughter",
+            "grandmother"
+          ],
+          "right": [
+            "grandfather",
+            "father",
+            "brother",
+            "son"
+          ],
+          "instruction": "Match the woman and the man."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            2,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "He is old: grandfather.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "This is my {{1}}. He is 70.",
+          "wordBank": [
+            "grandfather",
+            "sister",
+            "daughter"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "grandfather"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "A son and a daughter are children.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I have two {{1}}: a son and a daughter."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "children"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "This is + my sister.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "This",
+            "my",
+            "sister",
+            "is"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "This is my sister."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "I have + two brothers.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "have",
+            "two",
+            "I",
+            "brothers"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I have two brothers."
+          ]
+        }
+      }
+    }
+  ]
+}

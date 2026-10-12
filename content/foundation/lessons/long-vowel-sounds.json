@@ -1,0 +1,290 @@
+{
+  "title": "Long vowel sounds",
+  "kind": "phonics",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Vowels can also have a long sound."
+    },
+    {
+      "type": "text",
+      "text": "Two letters together often make one long sound."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "ee",
+          "see",
+          "sheep"
+        ],
+        [
+          "ar",
+          "car",
+          "park"
+        ],
+        [
+          "oo",
+          "food",
+          "blue"
+        ],
+        [
+          "or",
+          "door",
+          "four"
+        ],
+        [
+          "ir",
+          "bird",
+          "girl"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "ship — sheep",
+      "note": "short i — long ee"
+    },
+    {
+      "type": "example",
+      "en": "full — fool",
+      "note": "short u — long oo"
+    },
+    {
+      "type": "tip",
+      "text": "Make long sounds longer: sheeeep. Make short sounds quick: ship."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Sheep has ee, a long sound.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word has a long ee sound?",
+          "options": [
+            {
+              "text": "ship"
+            },
+            {
+              "text": "sheep"
+            },
+            {
+              "text": "sit"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Car and park both have ar.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word has the same sound as car?",
+          "options": [
+            {
+              "text": "park"
+            },
+            {
+              "text": "cat"
+            },
+            {
+              "text": "cup"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Food and blue have the long oo sound.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word has the same sound as food?",
+          "options": [
+            {
+              "text": "blue"
+            },
+            {
+              "text": "full"
+            },
+            {
+              "text": "bed"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Bird and girl both have ir.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which word has the same sound as bird?",
+          "options": [
+            {
+              "text": "bed"
+            },
+            {
+              "text": "girl"
+            },
+            {
+              "text": "big"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Two letters can make one long sound.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "ee",
+            "ar",
+            "oo",
+            "or",
+            "ir"
+          ],
+          "right": [
+            "food",
+            "door",
+            "see",
+            "bird",
+            "car"
+          ],
+          "instruction": "Match the letters and the word."
+        },
+        "answer": {
+          "pairs": [
+            2,
+            4,
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "See is spelled s-e-e.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I can s{{1}} you.",
+          "instruction": "Write the missing letters."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "ee"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Car is spelled c-a-r.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My brother is a c{{1}} driver.",
+          "instruction": "Write the missing letters."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "ar"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "A sheep is an animal. A ship is a boat.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A ___ is an animal.",
+          "options": [
+            {
+              "text": "ship"
+            },
+            {
+              "text": "sheep"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "pronunciation",
+      "cefr": "A0",
+      "explanation": "Full means there is no space. It has a short sound.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The bottle is ___. There is no space.",
+          "options": [
+            {
+              "text": "full"
+            },
+            {
+              "text": "fool"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    }
+  ]
+}

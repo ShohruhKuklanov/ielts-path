@@ -1,0 +1,260 @@
+{
+  "title": "I can swim: can and can't",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Use can to say you are able to do something."
+    },
+    {
+      "type": "example",
+      "en": "I can swim."
+    },
+    {
+      "type": "example",
+      "en": "She can't drive.",
+      "note": "can't = cannot"
+    },
+    {
+      "type": "text",
+      "text": "Can is the same for everyone. The verb has no -s."
+    },
+    {
+      "type": "example",
+      "en": "He can cook.",
+      "note": "not: He can cooks. Not: He cans cook."
+    },
+    {
+      "type": "example",
+      "en": "Can you speak English? — Yes, I can. / No, I can't."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Birds can fly.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Birds ___ fly.",
+          "options": [
+            {
+              "text": "can"
+            },
+            {
+              "text": "can't"
+            },
+            {
+              "text": "cans"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Fish can't walk.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Fish ___ walk.",
+          "options": [
+            {
+              "text": "can"
+            },
+            {
+              "text": "can't"
+            },
+            {
+              "text": "cannot to"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "can + base verb: play.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She can ___ the piano.",
+          "options": [
+            {
+              "text": "plays"
+            },
+            {
+              "text": "play"
+            },
+            {
+              "text": "to play"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Can you …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ you swim? — Yes, I can.",
+          "options": [
+            {
+              "text": "Do"
+            },
+            {
+              "text": "Can"
+            },
+            {
+              "text": "Are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "No, he can't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Can he ride a bike? — No, ___",
+          "options": [
+            {
+              "text": "he can't."
+            },
+            {
+              "text": "he don't."
+            },
+            {
+              "text": "he not can."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "She is good: can.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My grandmother {{1}} use a computer. She is very good!",
+          "wordBank": [
+            "can",
+            "can't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "can"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "It's difficult: can't.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I {{1}} speak Chinese. It's very difficult for me.",
+          "wordBank": [
+            "can",
+            "can't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "can't",
+              "cannot"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Can + you + speak English?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "English",
+            "speak",
+            "you",
+            "Can"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Can you speak English?"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "My brother + can't + cook.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "cook",
+            "can't",
+            "My",
+            "brother"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "My brother can't cook."
+          ]
+        }
+      }
+    }
+  ]
+}

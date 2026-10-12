@@ -1,0 +1,291 @@
+{
+  "title": "My home",
+  "kind": "vocabulary",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Rooms:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "kitchen",
+          "bedroom"
+        ],
+        [
+          "bathroom",
+          "living room"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Things in a home:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "table",
+          "chair",
+          "bed"
+        ],
+        [
+          "sofa",
+          "window",
+          "door"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "I cook in the kitchen."
+    },
+    {
+      "type": "example",
+      "en": "I sleep in the bedroom."
+    },
+    {
+      "type": "tip",
+      "text": "Living room is two words."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We cook in the kitchen.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You cook in the …",
+          "options": [
+            {
+              "text": "bedroom"
+            },
+            {
+              "text": "kitchen"
+            },
+            {
+              "text": "bathroom"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We sleep in the bedroom.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You sleep in the …",
+          "options": [
+            {
+              "text": "bedroom"
+            },
+            {
+              "text": "living room"
+            },
+            {
+              "text": "kitchen"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We wash in the bathroom.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You wash in the …",
+          "options": [
+            {
+              "text": "kitchen"
+            },
+            {
+              "text": "bathroom"
+            },
+            {
+              "text": "living room"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We sit on a sofa or a chair.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You sit on a …",
+          "options": [
+            {
+              "text": "window"
+            },
+            {
+              "text": "sofa"
+            },
+            {
+              "text": "door"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Each thing is usually in one room.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "bed",
+            "sofa",
+            "shower",
+            "fridge"
+          ],
+          "right": [
+            "bedroom",
+            "bathroom",
+            "kitchen",
+            "living room"
+          ],
+          "instruction": "Match the thing and the room."
+        },
+        "answer": {
+          "pairs": [
+            0,
+            3,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Open the window for air.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Please open the {{1}}. It is hot!",
+          "wordBank": [
+            "window",
+            "table",
+            "bed"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "window"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We eat at the table.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "We eat dinner at the {{1}}.",
+          "wordBank": [
+            "door",
+            "table",
+            "sofa"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "table"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "My house + has + three bedrooms.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "My",
+            "three",
+            "bedrooms",
+            "has",
+            "house"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "My house has three bedrooms."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "We watch TV + in the living room.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "living",
+            "We",
+            "room",
+            "in",
+            "the",
+            "TV",
+            "watch"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "We watch TV in the living room."
+          ]
+        }
+      }
+    }
+  ]
+}

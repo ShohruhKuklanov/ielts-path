@@ -1,0 +1,254 @@
+{
+  "title": "I work, you work: present simple",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Use the present simple for things you do often."
+    },
+    {
+      "type": "example",
+      "en": "I work in a bank."
+    },
+    {
+      "type": "example",
+      "en": "We live in Tashkent."
+    },
+    {
+      "type": "example",
+      "en": "They study English every day."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "I / you / we / they",
+          "work, live, study, play"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Time words: every day, every week, in the morning, at night."
+    },
+    {
+      "type": "tip",
+      "text": "Time words often go at the end: I drink tea every morning."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Present simple with I: I work.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I ___ in a hospital.",
+          "options": [
+            {
+              "text": "work"
+            },
+            {
+              "text": "working"
+            },
+            {
+              "text": "am work"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We live.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "We ___ in a big house.",
+          "options": [
+            {
+              "text": "lives"
+            },
+            {
+              "text": "live"
+            },
+            {
+              "text": "living"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They play.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "They ___ football every Sunday.",
+          "options": [
+            {
+              "text": "play"
+            },
+            {
+              "text": "plays"
+            },
+            {
+              "text": "are play"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I drink tea every day.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "Every day I tea drink."
+            },
+            {
+              "text": "I drink tea every day."
+            },
+            {
+              "text": "I every day drink tea."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We study.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My friends and I {{1}} English on Monday. (study)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "study"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "You cook.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "You {{1}} very well! (cook)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "cook"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I drink.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I {{1}} coffee in the morning. (drink)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "drink"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We + watch TV + in the evening.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "We",
+            "in",
+            "the",
+            "evening",
+            "watch",
+            "TV"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "We watch TV in the evening."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They + live + in Samarkand.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "They",
+            "in",
+            "live",
+            "Samarkand"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "They live in Samarkand."
+          ]
+        }
+      }
+    }
+  ]
+}

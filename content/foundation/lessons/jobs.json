@@ -1,0 +1,285 @@
+{
+  "title": "Jobs",
+  "kind": "vocabulary",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "table",
+      "rows": [
+        [
+          "teacher",
+          "doctor",
+          "nurse"
+        ],
+        [
+          "student",
+          "driver",
+          "engineer"
+        ],
+        [
+          "cook",
+          "farmer",
+          "police officer"
+        ],
+        [
+          "shop assistant"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Use a or an before a job."
+    },
+    {
+      "type": "example",
+      "en": "She is a doctor."
+    },
+    {
+      "type": "example",
+      "en": "I'm an engineer.",
+      "note": "an before a vowel sound"
+    },
+    {
+      "type": "example",
+      "en": "What do you do?",
+      "note": "This question asks about your job."
+    },
+    {
+      "type": "tip",
+      "text": "Say \"I'm a student\", not \"I'm student\"."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Nurses and doctors work in a hospital.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A ___ works in a hospital.",
+          "options": [
+            {
+              "text": "farmer"
+            },
+            {
+              "text": "nurse"
+            },
+            {
+              "text": "driver"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Teachers work in schools.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A ___ works in a school.",
+          "options": [
+            {
+              "text": "teacher"
+            },
+            {
+              "text": "cook"
+            },
+            {
+              "text": "engineer"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "A cook makes food.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "A ___ makes food in a restaurant.",
+          "options": [
+            {
+              "text": "cook"
+            },
+            {
+              "text": "student"
+            },
+            {
+              "text": "police officer"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Engineer starts with a vowel sound: an engineer.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She is ___ engineer.",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Use a before a job: I'm a student.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "I'm student."
+            },
+            {
+              "text": "I'm a student."
+            },
+            {
+              "text": "I student."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "People work in different places.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "driver",
+            "farmer",
+            "shop assistant",
+            "doctor"
+          ],
+          "right": [
+            "a shop",
+            "a bus",
+            "a hospital",
+            "a field"
+          ],
+          "instruction": "Match the job and the place."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            3,
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "A teacher teaches.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "A: What do you do? B: I'm a {{1}}. I teach English."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "teacher"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "My father + is + a police officer.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "father",
+            "My",
+            "a",
+            "is",
+            "police",
+            "officer"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "My father is a police officer."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "What + do + you + do?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "do",
+            "do",
+            "you",
+            "What"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "What do you do?"
+          ]
+        }
+      }
+    }
+  ]
+}

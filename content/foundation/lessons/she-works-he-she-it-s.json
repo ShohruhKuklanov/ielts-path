@@ -1,0 +1,301 @@
+{
+  "title": "She works: he, she, it + s",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "With he, she and it, add -s to the verb."
+    },
+    {
+      "type": "example",
+      "en": "I work → she works"
+    },
+    {
+      "type": "example",
+      "en": "I live → he lives"
+    },
+    {
+      "type": "text",
+      "text": "After o, s, sh, ch, x add -es."
+    },
+    {
+      "type": "example",
+      "en": "go → goes",
+      "note": "watch → watches"
+    },
+    {
+      "type": "text",
+      "text": "Consonant + y: change y to -ies."
+    },
+    {
+      "type": "example",
+      "en": "study → studies"
+    },
+    {
+      "type": "text",
+      "text": "Have is special."
+    },
+    {
+      "type": "example",
+      "en": "have → has"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "She works.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She ___ in a shop.",
+          "options": [
+            {
+              "text": "work"
+            },
+            {
+              "text": "works"
+            },
+            {
+              "text": "workes"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "go → goes.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He ___ to school by bus.",
+          "options": [
+            {
+              "text": "gos"
+            },
+            {
+              "text": "goes"
+            },
+            {
+              "text": "go"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "watch → watches.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My brother ___ TV every evening.",
+          "options": [
+            {
+              "text": "watchs"
+            },
+            {
+              "text": "watches"
+            },
+            {
+              "text": "watch"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "study → studies.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Lola ___ English at university.",
+          "options": [
+            {
+              "text": "studys"
+            },
+            {
+              "text": "studies"
+            },
+            {
+              "text": "study"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "have → has.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He ___ two cats.",
+          "options": [
+            {
+              "text": "haves"
+            },
+            {
+              "text": "have"
+            },
+            {
+              "text": "has"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "She lives here.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "I lives here."
+            },
+            {
+              "text": "She live here."
+            },
+            {
+              "text": "She lives here."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Add -s, -es or -ies.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "play",
+            "go",
+            "fly",
+            "wash"
+          ],
+          "right": [
+            "washes",
+            "plays",
+            "flies",
+            "goes"
+          ],
+          "instruction": "Match the verb and the he/she form."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            3,
+            2,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "She gets up.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My mother {{1}} at 6 o'clock. (get up)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "gets up"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "It opens.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "The shop {{1}} at 9 a.m. (open)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "opens"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "He + drinks tea + every morning.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "morning",
+            "He",
+            "drinks",
+            "every",
+            "tea"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "He drinks tea every morning."
+          ]
+        }
+      }
+    }
+  ]
+}

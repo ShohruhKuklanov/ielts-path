@@ -1,0 +1,273 @@
+{
+  "title": "Is it? Are you? Questions with be",
+  "kind": "grammar",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "To make a question, put am, is or are first."
+    },
+    {
+      "type": "example",
+      "en": "You are a student. → Are you a student?"
+    },
+    {
+      "type": "example",
+      "en": "It is a cat. → Is it a cat?"
+    },
+    {
+      "type": "text",
+      "text": "Short answers:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Are you …?",
+          "Yes, I am.",
+          "No, I'm not."
+        ],
+        [
+          "Is it …?",
+          "Yes, it is.",
+          "No, it isn't."
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Don't say \"Yes, I'm.\" Say \"Yes, I am.\""
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "We use are with you: Are you …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ you from India?",
+          "options": [
+            {
+              "text": "Is"
+            },
+            {
+              "text": "Are"
+            },
+            {
+              "text": "Am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "We use is with it: Is it …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ it your phone?",
+          "options": [
+            {
+              "text": "Is"
+            },
+            {
+              "text": "Are"
+            },
+            {
+              "text": "Am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "The short answer is Yes, I am.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Are you a teacher? — Yes, ___",
+          "options": [
+            {
+              "text": "I'm."
+            },
+            {
+              "text": "I am."
+            },
+            {
+              "text": "I are."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "The short answer is No, it isn't.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Is it a dog? — No, ___",
+          "options": [
+            {
+              "text": "it isn't."
+            },
+            {
+              "text": "it aren't."
+            },
+            {
+              "text": "it not."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "We say No, I'm not.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Are you tired? — No, ___",
+          "options": [
+            {
+              "text": "I'm not."
+            },
+            {
+              "text": "I amn't."
+            },
+            {
+              "text": "I not."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Are you a student? Yes, I am.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} you a student? — Yes, I {{2}}.",
+          "wordBank": [
+            "Are",
+            "Is",
+            "am",
+            "is"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Are"
+            ],
+            "2": [
+              "am"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Is it hot today? Yes, it is.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} it hot today? — Yes, it {{2}}."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "Is"
+            ],
+            "2": [
+              "is"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Are + you + from Kazakhstan?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "you",
+            "Are",
+            "from",
+            "Kazakhstan"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Are you from Kazakhstan?"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Is + it + a good book?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "it",
+            "Is",
+            "a",
+            "good",
+            "book"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Is it a good book?"
+          ]
+        }
+      }
+    }
+  ]
+}

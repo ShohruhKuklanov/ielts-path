@@ -1,0 +1,301 @@
+{
+  "title": "The alphabet: N to Z",
+  "kind": "alphabet",
+  "cefr": "A0",
+  "estMinutes": 5,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Here are the last 13 letters."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "N n",
+          "O o",
+          "P p",
+          "Q q"
+        ],
+        [
+          "R r",
+          "S s",
+          "T t",
+          "U u"
+        ],
+        [
+          "V v",
+          "W w",
+          "X x",
+          "Y y"
+        ],
+        [
+          "Z z"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Five letters are vowels: a, e, i, o, u."
+    },
+    {
+      "type": "text",
+      "text": "The other letters are consonants."
+    },
+    {
+      "type": "example",
+      "en": "A B C D E F G H I J K L M",
+      "note": "first half"
+    },
+    {
+      "type": "example",
+      "en": "N O P Q R S T U V W X Y Z",
+      "note": "second half"
+    },
+    {
+      "type": "tip",
+      "text": "Q is almost always with u: queen, question."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Big Q is small q. Big R is small r.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "N",
+            "Q",
+            "R",
+            "T"
+          ],
+          "right": [
+            "t",
+            "r",
+            "q",
+            "n"
+          ],
+          "instruction": "Match the big and small letters."
+        },
+        "answer": {
+          "pairs": [
+            3,
+            2,
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Big W is small w. Big Y is small y.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "U",
+            "W",
+            "Y",
+            "Z"
+          ],
+          "right": [
+            "u",
+            "y",
+            "z",
+            "w"
+          ],
+          "instruction": "Match the big and small letters."
+        },
+        "answer": {
+          "pairs": [
+            0,
+            3,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "After S comes T: R, S, T.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "R, S, ___",
+          "options": [
+            {
+              "text": "T"
+            },
+            {
+              "text": "U"
+            },
+            {
+              "text": "Q"
+            }
+          ],
+          "instruction": "What comes next?"
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "The vowels are a, e, i, o, u. O is a vowel.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which letter is a vowel?",
+          "options": [
+            {
+              "text": "t"
+            },
+            {
+              "text": "o"
+            },
+            {
+              "text": "s"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "U and E are vowels. P and Z are consonants.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which letters are vowels? Choose TWO.",
+          "options": [
+            {
+              "text": "u"
+            },
+            {
+              "text": "p"
+            },
+            {
+              "text": "e"
+            },
+            {
+              "text": "z"
+            }
+          ],
+          "multiple": true
+        },
+        "answer": {
+          "correct": [
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "V, W, X, Y, Z.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "V, W, {{1}}, Y, Z",
+          "instruction": "Write the missing letter."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "X",
+              "x"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "M, N, O, P.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "M, {{1}}, O, P",
+          "instruction": "Write the missing letter."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "N",
+              "n"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Z is the last letter of the alphabet.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "What is the last letter?",
+          "options": [
+            {
+              "text": "Y"
+            },
+            {
+              "text": "X"
+            },
+            {
+              "text": "Z"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "The order is P, Q, R, S, T.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "T",
+            "S",
+            "Q",
+            "R",
+            "P"
+          ],
+          "instruction": "Put the letters in order."
+        },
+        "answer": {
+          "accepted": [
+            "P Q R S T"
+          ]
+        }
+      }
+    }
+  ]
+}

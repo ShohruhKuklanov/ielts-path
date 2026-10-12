@@ -1,0 +1,282 @@
+{
+  "title": "Colours and everyday things",
+  "kind": "vocabulary",
+  "cefr": "A0",
+  "estMinutes": 5,
+  "intro": [
+    {
+      "type": "table",
+      "rows": [
+        [
+          "red",
+          "blue",
+          "green",
+          "yellow"
+        ],
+        [
+          "black",
+          "white",
+          "brown",
+          "orange"
+        ],
+        [
+          "pink",
+          "grey"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "The colour comes before the thing."
+    },
+    {
+      "type": "example",
+      "en": "a red bag",
+      "note": "not: a bag red"
+    },
+    {
+      "type": "example",
+      "en": "a white phone"
+    },
+    {
+      "type": "example",
+      "en": "The sky is blue.",
+      "note": "colour after is"
+    },
+    {
+      "type": "tip",
+      "text": "Colours do not take -s: two red bags, not two reds bags."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "The sky is blue.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The sky is …",
+          "options": [
+            {
+              "text": "blue"
+            },
+            {
+              "text": "brown"
+            },
+            {
+              "text": "black"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Bananas are yellow.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Bananas are …",
+          "options": [
+            {
+              "text": "red"
+            },
+            {
+              "text": "yellow"
+            },
+            {
+              "text": "grey"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Grass is green.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Grass is …",
+          "options": [
+            {
+              "text": "pink"
+            },
+            {
+              "text": "green"
+            },
+            {
+              "text": "white"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "The colour comes first: a red bag.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "a bag red"
+            },
+            {
+              "text": "a red bag"
+            },
+            {
+              "text": "a reds bag"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Colours do not take -s: two black pens.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "two blacks pens"
+            },
+            {
+              "text": "two black pens"
+            },
+            {
+              "text": "two pens black"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Snow is white. Coffee is brown.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "snow",
+            "an orange",
+            "coffee",
+            "a tomato"
+          ],
+          "right": [
+            "brown",
+            "white",
+            "orange",
+            "red"
+          ],
+          "instruction": "Match the thing and its colour."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            2,
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Milk is white.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Milk is {{1}}."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "white"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "I have + a green bag.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "a",
+            "green",
+            "I",
+            "bag",
+            "have"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I have a green bag."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "My phone + is + grey.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "is",
+            "My",
+            "grey",
+            "phone"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "My phone is grey."
+          ]
+        }
+      }
+    }
+  ]
+}

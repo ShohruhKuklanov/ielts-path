@@ -1,0 +1,262 @@
+{
+  "title": "Spell your name",
+  "kind": "alphabet",
+  "cefr": "A0",
+  "estMinutes": 5,
+  "intro": [
+    {
+      "type": "text",
+      "text": "To spell a word, say each letter."
+    },
+    {
+      "type": "example",
+      "en": "Aziz: A - Z - I - Z"
+    },
+    {
+      "type": "example",
+      "en": "What's your name?",
+      "note": "a question"
+    },
+    {
+      "type": "example",
+      "en": "My name is Laylo.",
+      "note": "the answer"
+    },
+    {
+      "type": "example",
+      "en": "How do you spell that?",
+      "note": "Ask for the letters."
+    },
+    {
+      "type": "example",
+      "en": "L - A - Y - L - O.",
+      "note": "Say the letters one by one."
+    },
+    {
+      "type": "tip",
+      "text": "Two letters the same? You can say \"double\": A - double N - A."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "speaking",
+      "cefr": "A0",
+      "explanation": "We say: My name is Timur.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "\"What's your name?\" — \"___ Timur.\"",
+          "options": [
+            {
+              "text": "My name is"
+            },
+            {
+              "text": "I name"
+            },
+            {
+              "text": "Name my"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "speaking",
+      "cefr": "A0",
+      "explanation": "Ask: How do you spell that?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Someone says their name. You want the letters. What do you ask?",
+          "options": [
+            {
+              "text": "How do you spell that?"
+            },
+            {
+              "text": "How are you?"
+            },
+            {
+              "text": "Where are you?"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "S - A - R - A spells Sara.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "S - A - R - {{1}}",
+          "instruction": "Spell the name Sara. Write the missing letter."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "A",
+              "a"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "D - I - N - A spells Dina.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "D - {{1}} - N - A",
+          "instruction": "Spell the name Dina. Write the missing letter."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I",
+              "i"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "B - E - N is Ben.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "B - E - N spells …",
+          "options": [
+            {
+              "text": "Ben"
+            },
+            {
+              "text": "Bin"
+            },
+            {
+              "text": "Ban"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "M - A - R - K is Mark.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "M - A - R - K spells …",
+          "options": [
+            {
+              "text": "Mike"
+            },
+            {
+              "text": "Mark"
+            },
+            {
+              "text": "Marc"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "Anna has two n: A - double N - A.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How do you spell Anna?",
+          "options": [
+            {
+              "text": "A - N - A"
+            },
+            {
+              "text": "A - double N - A"
+            },
+            {
+              "text": "A - N - N - E"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "How + do + you + spell + that?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "spell",
+            "do",
+            "that",
+            "you",
+            "How"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "How do you spell that?"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A0",
+      "explanation": "My name + is + Kamola.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "is",
+            "name",
+            "Kamola",
+            "My"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "My name is Kamola."
+          ]
+        }
+      }
+    }
+  ]
+}

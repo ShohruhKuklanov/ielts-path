@@ -1,0 +1,299 @@
+{
+  "title": "My, your, his, her",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "These words show who has something."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "I",
+          "my"
+        ],
+        [
+          "you",
+          "your"
+        ],
+        [
+          "he",
+          "his"
+        ],
+        [
+          "she",
+          "her"
+        ],
+        [
+          "it",
+          "its"
+        ],
+        [
+          "we",
+          "our"
+        ],
+        [
+          "they",
+          "their"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "I have a cat. My cat is white."
+    },
+    {
+      "type": "example",
+      "en": "Aziz has a car. His car is new."
+    },
+    {
+      "type": "example",
+      "en": "Lola has a bag. Her bag is red."
+    },
+    {
+      "type": "example",
+      "en": "They have a house. Their house is big."
+    },
+    {
+      "type": "tip",
+      "text": "Its (no ') = the thing's. It's = it is."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I → my.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I am Aziz. ___ name is Aziz.",
+          "options": [
+            {
+              "text": "My"
+            },
+            {
+              "text": "Your"
+            },
+            {
+              "text": "His"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Madina is a woman: her.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Madina has a dog. ___ dog is small.",
+          "options": [
+            {
+              "text": "His"
+            },
+            {
+              "text": "Her"
+            },
+            {
+              "text": "Its"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Timur is a man: his.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Timur has a phone. ___ phone is black.",
+          "options": [
+            {
+              "text": "His"
+            },
+            {
+              "text": "Her"
+            },
+            {
+              "text": "Their"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We → our.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "We have a teacher. ___ teacher is from the UK.",
+          "options": [
+            {
+              "text": "Our"
+            },
+            {
+              "text": "Their"
+            },
+            {
+              "text": "Your"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They → their.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The children have a ball. ___ ball is blue.",
+          "options": [
+            {
+              "text": "Our"
+            },
+            {
+              "text": "His"
+            },
+            {
+              "text": "Their"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "The cat's food: its food.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The cat is eating. ___ food is in a bowl.",
+          "options": [
+            {
+              "text": "It's"
+            },
+            {
+              "text": "Its"
+            },
+            {
+              "text": "His"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Each person has its own word.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "I",
+            "you",
+            "she",
+            "we",
+            "they"
+          ],
+          "right": [
+            "our",
+            "your",
+            "her",
+            "their",
+            "my"
+          ],
+          "instruction": "Match."
+        },
+        "answer": {
+          "pairs": [
+            4,
+            1,
+            2,
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Ask with your: What is your name?",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "A: What is {{1}} name? B: My name is Ali."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "your"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "My brother → his.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My brother has a job. {{1}} job is interesting."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "His"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

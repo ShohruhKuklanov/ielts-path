@@ -1,0 +1,277 @@
+{
+  "title": "I have, she has",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Use have with I, you, we, they."
+    },
+    {
+      "type": "text",
+      "text": "Use has with he, she, it."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "I / you / we / they",
+          "have"
+        ],
+        [
+          "he / she / it",
+          "has"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "I have a brother."
+    },
+    {
+      "type": "example",
+      "en": "She has two cats."
+    },
+    {
+      "type": "text",
+      "text": "Negative: don't have / doesn't have."
+    },
+    {
+      "type": "example",
+      "en": "I don't have a car."
+    },
+    {
+      "type": "example",
+      "en": "He doesn't have a sister.",
+      "note": "doesn't + have (not has)"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "He has.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My father ___ a big car.",
+          "options": [
+            {
+              "text": "have"
+            },
+            {
+              "text": "has"
+            },
+            {
+              "text": "haves"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "We have.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "We ___ a small house.",
+          "options": [
+            {
+              "text": "have"
+            },
+            {
+              "text": "has"
+            },
+            {
+              "text": "are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "She has.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Aziza ___ three brothers.",
+          "options": [
+            {
+              "text": "have"
+            },
+            {
+              "text": "has"
+            },
+            {
+              "text": "is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I don't have.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I ___ a phone. I'm sad!",
+          "options": [
+            {
+              "text": "don't have"
+            },
+            {
+              "text": "doesn't have"
+            },
+            {
+              "text": "not have"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "After doesn't use have: He doesn't have.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "He doesn't ___ a job.",
+          "options": [
+            {
+              "text": "has"
+            },
+            {
+              "text": "have"
+            },
+            {
+              "text": "having"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They have.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "They {{1}} two children.",
+          "wordBank": [
+            "have",
+            "has"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "have"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "It has.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My cat {{1}} green eyes.",
+          "wordBank": [
+            "have",
+            "has"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "has"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "She doesn't have.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "She {{1}} have a computer.",
+          "wordBank": [
+            "don't",
+            "doesn't"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "doesn't",
+              "does not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "I + don't have + a sister.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "have",
+            "I",
+            "sister",
+            "don't",
+            "a"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I don't have a sister."
+          ]
+        }
+      }
+    }
+  ]
+}

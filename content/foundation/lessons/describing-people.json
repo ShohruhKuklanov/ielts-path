@@ -1,0 +1,280 @@
+{
+  "title": "Describing people",
+  "kind": "vocabulary",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "table",
+      "rows": [
+        [
+          "tall",
+          "short"
+        ],
+        [
+          "young",
+          "old"
+        ],
+        [
+          "happy",
+          "tired"
+        ],
+        [
+          "friendly"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Tall and short are opposites. Young and old are opposites."
+    },
+    {
+      "type": "example",
+      "en": "My brother is tall.",
+      "note": "adjective after is"
+    },
+    {
+      "type": "example",
+      "en": "She is a friendly girl.",
+      "note": "adjective before the person"
+    },
+    {
+      "type": "tip",
+      "text": "Adjectives do not take -s: two tall men, not two talls men."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "At 80 a person is old.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "My grandfather is 80. He is …",
+          "options": [
+            {
+              "text": "young"
+            },
+            {
+              "text": "old"
+            },
+            {
+              "text": "short"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Tall ↔ short.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The opposite of tall is …",
+          "options": [
+            {
+              "text": "old"
+            },
+            {
+              "text": "short"
+            },
+            {
+              "text": "happy"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "Young ↔ old.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "The opposite of young is …",
+          "options": [
+            {
+              "text": "old"
+            },
+            {
+              "text": "tired"
+            },
+            {
+              "text": "friendly"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "After a lot of work you are tired.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She works all day and night. She is …",
+          "options": [
+            {
+              "text": "tired"
+            },
+            {
+              "text": "tall"
+            },
+            {
+              "text": "young"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "The adjective comes first: a tall man.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "a man tall"
+            },
+            {
+              "text": "a tall man"
+            },
+            {
+              "text": "a talls man"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "These words are opposites.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "tall",
+            "young",
+            "happy"
+          ],
+          "right": [
+            "sad",
+            "short",
+            "old"
+          ],
+          "instruction": "Match the opposites."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            2,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "She smiles: friendly or happy.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My teacher is very {{1}}. She always smiles.",
+          "wordBank": [
+            "friendly",
+            "tired",
+            "old"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "friendly",
+              "happy"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "He is + a young doctor.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "He",
+            "is",
+            "young",
+            "doctor",
+            "a"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "He is a young doctor."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "My sister + is + short.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "My",
+            "is",
+            "short",
+            "sister"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "My sister is short."
+          ]
+        }
+      }
+    }
+  ]
+}

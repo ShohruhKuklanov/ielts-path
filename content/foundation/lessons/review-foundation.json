@@ -1,0 +1,334 @@
+{
+  "title": "Review: Foundation",
+  "kind": "review",
+  "cefr": "A1",
+  "estMinutes": 10,
+  "intro": [
+    {
+      "type": "text",
+      "text": "You finished the Foundation stage. Well done!"
+    },
+    {
+      "type": "text",
+      "text": "This review mixes everything. Then you can take the stage test."
+    },
+    {
+      "type": "example",
+      "en": "I'm Javohir. I'm from Uzbekistan. I'm a student.",
+      "note": "be"
+    },
+    {
+      "type": "example",
+      "en": "She gets up at seven and goes to work.",
+      "note": "present simple"
+    },
+    {
+      "type": "example",
+      "en": "There are some books on the table, but there isn't any milk.",
+      "note": "there is / some / any"
+    },
+    {
+      "type": "example",
+      "en": "I can swim, but I can't drive.",
+      "note": "can"
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "They are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "They ___ from Kazakhstan.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "am"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "study → studies.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She ___ English every day.",
+          "options": [
+            {
+              "text": "study"
+            },
+            {
+              "text": "studies"
+            },
+            {
+              "text": "studys"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Does he …?",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ he like football?",
+          "options": [
+            {
+              "text": "Do"
+            },
+            {
+              "text": "Does"
+            },
+            {
+              "text": "Is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Two banks: there are.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "There ___ two banks in my street.",
+          "options": [
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "be"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Water: How much.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "How ___ water do you drink?",
+          "options": [
+            {
+              "text": "many"
+            },
+            {
+              "text": "much"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Lola → her.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Lola has a cat. ___ cat is white.",
+          "options": [
+            {
+              "text": "His"
+            },
+            {
+              "text": "Her"
+            },
+            {
+              "text": "Its"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A1",
+      "explanation": "6:30 is half past six.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "It's 6:30. It's …",
+          "options": [
+            {
+              "text": "half past six"
+            },
+            {
+              "text": "half past seven"
+            },
+            {
+              "text": "quarter to six"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "man → men.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one man, two ___",
+          "options": [
+            {
+              "text": "mans"
+            },
+            {
+              "text": "men"
+            },
+            {
+              "text": "mens"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "He doesn't drink coffee.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My father {{1}} drink coffee. He drinks tea."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "doesn't",
+              "does not"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "like + -ing.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I like {{1}} books. (read)",
+          "instruction": "Write the verb."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "reading"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "On the table.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "The keys are {{1}} the table.",
+          "wordBank": [
+            "on",
+            "at",
+            "to"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "on"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Can + you + speak English?",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "English",
+            "speak",
+            "you",
+            "Can"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Can you speak English?"
+          ]
+        }
+      }
+    }
+  ]
+}

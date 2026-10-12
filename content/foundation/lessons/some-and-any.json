@@ -1,0 +1,281 @@
+{
+  "title": "Some and any",
+  "kind": "grammar",
+  "cefr": "A1",
+  "estMinutes": 7,
+  "intro": [
+    {
+      "type": "text",
+      "text": "We can count some nouns: an apple, two apples."
+    },
+    {
+      "type": "text",
+      "text": "We cannot count some nouns: water, rice, milk."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "positive",
+          "some"
+        ],
+        [
+          "negative",
+          "any"
+        ],
+        [
+          "question",
+          "any"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "There are some apples."
+    },
+    {
+      "type": "example",
+      "en": "There is some water."
+    },
+    {
+      "type": "example",
+      "en": "We don't have any bread."
+    },
+    {
+      "type": "example",
+      "en": "Are there any eggs?"
+    },
+    {
+      "type": "tip",
+      "text": "Do not say \"a water\". Say \"some water\" or \"a glass of water\"."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Positive + uncountable: some milk.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "There is ___ milk in the fridge.",
+          "options": [
+            {
+              "text": "some"
+            },
+            {
+              "text": "any"
+            },
+            {
+              "text": "a"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Negative: any.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "We don't have ___ eggs.",
+          "options": [
+            {
+              "text": "some"
+            },
+            {
+              "text": "any"
+            },
+            {
+              "text": "a"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Question: any.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Are there ___ bananas?",
+          "options": [
+            {
+              "text": "some"
+            },
+            {
+              "text": "any"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "One apple: an apple.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I want ___ apple.",
+          "options": [
+            {
+              "text": "an"
+            },
+            {
+              "text": "some"
+            },
+            {
+              "text": "any"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Rice is uncountable.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which noun can we NOT count?",
+          "options": [
+            {
+              "text": "egg"
+            },
+            {
+              "text": "rice"
+            },
+            {
+              "text": "banana"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Positive: some.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I need {{1}} sugar for my tea.",
+          "wordBank": [
+            "some",
+            "any"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "some"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Negative: any.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There aren't {{1}} chairs in the room.",
+          "wordBank": [
+            "some",
+            "any"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "any"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "Question: any.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Is there {{1}} juice?",
+          "wordBank": [
+            "some",
+            "any"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "any"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A1",
+      "explanation": "There are + some potatoes + in the bag.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "There",
+            "are",
+            "the",
+            "bag",
+            "potatoes",
+            "some",
+            "in"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "There are some potatoes in the bag."
+          ]
+        }
+      }
+    }
+  ]
+}

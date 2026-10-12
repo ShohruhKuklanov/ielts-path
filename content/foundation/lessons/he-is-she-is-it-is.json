@@ -1,0 +1,282 @@
+{
+  "title": "He is, she is, it is",
+  "kind": "grammar",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Use he for a man or a boy."
+    },
+    {
+      "type": "text",
+      "text": "Use she for a woman or a girl."
+    },
+    {
+      "type": "text",
+      "text": "Use it for a thing or an animal."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "he",
+          "is",
+          "he's"
+        ],
+        [
+          "she",
+          "is",
+          "she's"
+        ],
+        [
+          "it",
+          "is",
+          "it's"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "Bobur is my brother. He is 12."
+    },
+    {
+      "type": "example",
+      "en": "Madina is a doctor. She's from Samarkand."
+    },
+    {
+      "type": "example",
+      "en": "This is my cat. It's black."
+    },
+    {
+      "type": "tip",
+      "text": "It's = it is. Its (no ') is different: we learn it later."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Sardor is a man, so we use he.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Sardor is my friend. ___ is from Bukhara.",
+          "options": [
+            {
+              "text": "He"
+            },
+            {
+              "text": "She"
+            },
+            {
+              "text": "It"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Nigora is a woman, so we use she.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Nigora is a teacher. ___ is very kind.",
+          "options": [
+            {
+              "text": "He"
+            },
+            {
+              "text": "She"
+            },
+            {
+              "text": "It"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "A phone is a thing, so we use it.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "This is my phone. ___ is new.",
+          "options": [
+            {
+              "text": "He"
+            },
+            {
+              "text": "She"
+            },
+            {
+              "text": "It"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "She is a student.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "She ___ a student.",
+          "options": [
+            {
+              "text": "am"
+            },
+            {
+              "text": "is"
+            },
+            {
+              "text": "are"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "He is = he's. She is = she's. It is = it's.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "he is",
+            "she is",
+            "it is"
+          ],
+          "right": [
+            "it's",
+            "he's",
+            "she's"
+          ],
+          "instruction": "Match the long and short forms."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            2,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "My mother is a nurse. She is 45.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "My mother {{1}} a nurse. {{2}} is 45.",
+          "wordBank": [
+            "is",
+            "She",
+            "He"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "is"
+            ],
+            "2": [
+              "She"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Tom is a man: he.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Tom is from the USA. {{1}} is a driver."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "He"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "She + is + from Tashkent.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "Tashkent",
+            "is",
+            "She",
+            "from"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "She is from Tashkent."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "It's + a big city.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "It's",
+            "big",
+            "a",
+            "city"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "It's a big city."
+          ]
+        }
+      }
+    }
+  ]
+}

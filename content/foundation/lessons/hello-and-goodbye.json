@@ -1,0 +1,277 @@
+{
+  "title": "Hello and goodbye",
+  "kind": "vocabulary",
+  "cefr": "A0",
+  "estMinutes": 5,
+  "intro": [
+    {
+      "type": "example",
+      "en": "Hello!",
+      "note": "for everyone"
+    },
+    {
+      "type": "example",
+      "en": "Hi!",
+      "note": "for friends"
+    },
+    {
+      "type": "text",
+      "text": "The time of day changes the greeting."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "morning",
+          "Good morning!"
+        ],
+        [
+          "afternoon",
+          "Good afternoon!"
+        ],
+        [
+          "evening",
+          "Good evening!"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "Nice to meet you.",
+      "note": "when you meet someone new"
+    },
+    {
+      "type": "example",
+      "en": "Goodbye! / Bye!",
+      "note": "when you leave"
+    },
+    {
+      "type": "tip",
+      "text": "Good night is only for when you go to bed, not for hello."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "In the morning we say Good morning.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "It is 9 o'clock in the morning. You say:",
+          "options": [
+            {
+              "text": "Good morning!"
+            },
+            {
+              "text": "Good evening!"
+            },
+            {
+              "text": "Good night!"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "After 12 o'clock we say Good afternoon.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "It is 3 o'clock in the afternoon. You say:",
+          "options": [
+            {
+              "text": "Good morning!"
+            },
+            {
+              "text": "Good afternoon!"
+            },
+            {
+              "text": "Good night!"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "With a new person we say Nice to meet you.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You meet a new person. You say:",
+          "options": [
+            {
+              "text": "Nice to meet you."
+            },
+            {
+              "text": "Good night."
+            },
+            {
+              "text": "Bye."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Good night is for bedtime.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You are going to bed. You say:",
+          "options": [
+            {
+              "text": "Good evening!"
+            },
+            {
+              "text": "Good night!"
+            },
+            {
+              "text": "Hello!"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Hi is short and friendly.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is friendly, for friends?",
+          "options": [
+            {
+              "text": "Hi!"
+            },
+            {
+              "text": "Good afternoon!"
+            },
+            {
+              "text": "Nice to meet you."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Hi = hello. Bye = goodbye.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "Hello!",
+            "Goodbye!"
+          ],
+          "right": [
+            "Bye!",
+            "Hi!"
+          ],
+          "instruction": "Match the words with the same meaning."
+        },
+        "answer": {
+          "pairs": [
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "In the evening we say Good evening.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Good {{1}}! It is 7 p.m.",
+          "wordBank": [
+            "morning",
+            "evening"
+          ]
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "evening"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "We answer: Nice to meet you, too.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "A: Nice to meet you. B: Nice to {{1}} you, too."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "meet"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Nice + to + meet + you.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "meet",
+            "Nice",
+            "to",
+            "you"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "Nice to meet you."
+          ]
+        }
+      }
+    }
+  ]
+}

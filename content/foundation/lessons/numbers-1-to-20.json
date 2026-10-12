@@ -1,0 +1,293 @@
+{
+  "title": "Numbers 1 to 20",
+  "kind": "vocabulary",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "table",
+      "rows": [
+        [
+          "1 one",
+          "2 two",
+          "3 three",
+          "4 four"
+        ],
+        [
+          "5 five",
+          "6 six",
+          "7 seven",
+          "8 eight"
+        ],
+        [
+          "9 nine",
+          "10 ten",
+          "11 eleven",
+          "12 twelve"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "13 thirteen",
+          "14 fourteen",
+          "15 fifteen",
+          "16 sixteen"
+        ],
+        [
+          "17 seventeen",
+          "18 eighteen",
+          "19 nineteen",
+          "20 twenty"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "13 to 19 end in -teen."
+    },
+    {
+      "type": "example",
+      "en": "I have two brothers."
+    },
+    {
+      "type": "example",
+      "en": "I am fifteen.",
+      "note": "Say your age with I am."
+    },
+    {
+      "type": "tip",
+      "text": "Thirteen and thirty sound different: thir-TEEN, THIR-ty."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Learn to read and write each number.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "3",
+            "5",
+            "8",
+            "12"
+          ],
+          "right": [
+            "five",
+            "eight",
+            "twelve",
+            "three"
+          ],
+          "instruction": "Match the number and the word."
+        },
+        "answer": {
+          "pairs": [
+            3,
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "13 to 19 end in -teen.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "13",
+            "15",
+            "19",
+            "20"
+          ],
+          "right": [
+            "twenty",
+            "fifteen",
+            "nineteen",
+            "thirteen"
+          ],
+          "instruction": "Match the number and the word."
+        },
+        "answer": {
+          "pairs": [
+            3,
+            1,
+            2,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "11 is eleven.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "11",
+          "options": [
+            {
+              "text": "eleven"
+            },
+            {
+              "text": "seven"
+            },
+            {
+              "text": "twelve"
+            }
+          ],
+          "instruction": "Choose the word."
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "14 is fourteen. 40 is forty.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is 14?",
+          "options": [
+            {
+              "text": "forty"
+            },
+            {
+              "text": "fourteen"
+            },
+            {
+              "text": "four"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "6 + 4 = 10, ten.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Six + four = ___",
+          "options": [
+            {
+              "text": "nine"
+            },
+            {
+              "text": "ten"
+            },
+            {
+              "text": "eleven"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "One, two, three, four.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "one, two, {{1}}, four",
+          "instruction": "Write the missing number."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "three",
+              "3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Ten, eleven, twelve, thirteen.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "ten, eleven, {{1}}, thirteen",
+          "instruction": "Write the missing number."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "twelve",
+              "12"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "16 is sixteen.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I am {{1}}. (16)",
+          "instruction": "Write the number as a word."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "sixteen",
+              "16"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "I + have + three + sisters.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "tokens": [
+            "sisters",
+            "three",
+            "have",
+            "I"
+          ],
+          "instruction": "Put the words in order."
+        },
+        "answer": {
+          "accepted": [
+            "I have three sisters."
+          ]
+        }
+      }
+    }
+  ]
+}

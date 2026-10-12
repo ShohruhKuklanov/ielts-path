@@ -1,0 +1,182 @@
+{
+  "title": "Read a short note",
+  "kind": "reading",
+  "cefr": "A1",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "Notes and messages are short. Read them quickly first."
+    },
+    {
+      "type": "text",
+      "text": "Then read again and look for the information you need: who, what, when, where."
+    },
+    {
+      "type": "example",
+      "en": "Hi Kamila, I'm at the library. Meet me at 4. Jasur",
+      "note": "who: Jasur / where: library / when: 4"
+    },
+    {
+      "type": "tip",
+      "text": "Names, times and places often answer the questions."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "Malika is at Dilnoza's house. She comes home at 7. The text does not say what Dilnoza likes.",
+      "content": {
+        "type": "tfng",
+        "payload": {
+          "instruction": "Read. Is it true, false, or not given?",
+          "passage": "Hi Mum,\nI'm at Dilnoza's house. We're doing our homework. I'm home at 7 o'clock. Can we have pizza for dinner?\nLove, Malika",
+          "statements": [
+            "Malika is at home now.",
+            "Malika and Dilnoza are doing homework.",
+            "Malika is home at 7 o'clock.",
+            "Dilnoza likes pizza."
+          ]
+        },
+        "answer": {
+          "answers": [
+            "false",
+            "true",
+            "true",
+            "not_given"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "The note ends with \"Love, Malika\".",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Who wrote the note to Mum?",
+          "options": [
+            {
+              "text": "Dilnoza"
+            },
+            {
+              "text": "Malika"
+            },
+            {
+              "text": "Mum"
+            }
+          ],
+          "instruction": "Hi Mum, I'm at Dilnoza's house. … Love, Malika"
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "She asks: \"Can we have pizza for dinner?\"",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "What does Malika want for dinner?",
+          "options": [
+            {
+              "text": "pizza"
+            },
+            {
+              "text": "soup"
+            },
+            {
+              "text": "rice"
+            }
+          ],
+          "instruction": "Hi Mum, … Can we have pizza for dinner? Love, Malika"
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "The class is in Room 12, not 5. The note does not say who the teacher is.",
+      "content": {
+        "type": "tfng",
+        "payload": {
+          "instruction": "Read. Is it true, false, or not given?",
+          "passage": "Dear Mr Karimov,\nThe English class on Tuesday is in Room 12, not Room 5. The class starts at 10 a.m.\nThank you,\nSchool office",
+          "statements": [
+            "The class is on Tuesday.",
+            "The class is in Room 5.",
+            "The class starts at 10 a.m.",
+            "Mr Karimov is the teacher."
+          ]
+        },
+        "answer": {
+          "answers": [
+            "true",
+            "false",
+            "true",
+            "not_given"
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "\"in Room 12, not Room 5\".",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Where is the English class?",
+          "options": [
+            {
+              "text": "Room 5"
+            },
+            {
+              "text": "Room 10"
+            },
+            {
+              "text": "Room 12"
+            }
+          ],
+          "instruction": "Dear Mr Karimov, The English class on Tuesday is in Room 12, not Room 5. …"
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "reading",
+      "cefr": "A1",
+      "explanation": "Tom writes: meet me at the station.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Tom and Ben are meeting at the {{1}} at 5 o'clock.",
+          "instruction": "Read the note: \"Hi Ben, meet me at the station at 5. — Tom\""
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "station"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

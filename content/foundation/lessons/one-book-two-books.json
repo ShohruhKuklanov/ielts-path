@@ -1,0 +1,283 @@
+{
+  "title": "One book, two books",
+  "kind": "grammar",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "For more than one thing, we usually add -s."
+    },
+    {
+      "type": "example",
+      "en": "one book → two books"
+    },
+    {
+      "type": "example",
+      "en": "one pen → three pens"
+    },
+    {
+      "type": "text",
+      "text": "After s, x, sh, ch we add -es."
+    },
+    {
+      "type": "example",
+      "en": "one bus → two buses",
+      "note": "one box → two boxes"
+    },
+    {
+      "type": "text",
+      "text": "Some words change completely."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "man",
+          "men"
+        ],
+        [
+          "woman",
+          "women"
+        ],
+        [
+          "child",
+          "children"
+        ],
+        [
+          "person",
+          "people"
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Say one person, two people. Not: two persons."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Add -s: bags.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one bag, two ___",
+          "options": [
+            {
+              "text": "bag"
+            },
+            {
+              "text": "bags"
+            },
+            {
+              "text": "bages"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "After x we add -es: boxes.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one box, two ___",
+          "options": [
+            {
+              "text": "boxs"
+            },
+            {
+              "text": "boxes"
+            },
+            {
+              "text": "box"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Child → children.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one child, three ___",
+          "options": [
+            {
+              "text": "childs"
+            },
+            {
+              "text": "children"
+            },
+            {
+              "text": "childrens"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Woman → women.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "one woman, two ___",
+          "options": [
+            {
+              "text": "womans"
+            },
+            {
+              "text": "women"
+            },
+            {
+              "text": "woman"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Person → people.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "There are five ___ in the room.",
+          "options": [
+            {
+              "text": "person"
+            },
+            {
+              "text": "persons"
+            },
+            {
+              "text": "people"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Some words add -s, some add -es, some change.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "left": [
+            "man",
+            "bus",
+            "apple",
+            "watch"
+          ],
+          "right": [
+            "buses",
+            "apples",
+            "watches",
+            "men"
+          ],
+          "instruction": "Match one and more than one."
+        },
+        "answer": {
+          "pairs": [
+            3,
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "brother → brothers.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I have two {{1}}. (brother)",
+          "instruction": "Write the plural."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "brothers"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "bus → buses.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "There are three {{1}} on the street. (bus)",
+          "instruction": "Write the plural."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "buses"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "man → men.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Four {{1}} work here. (man)",
+          "instruction": "Write the plural."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "men"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
