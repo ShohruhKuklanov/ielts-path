@@ -56,12 +56,18 @@ CI=1 pnpm fix-deps
 # 4. Local database (needs Docker Desktop)
 if docker info >/dev/null 2>&1; then
   step "Ma'lumotlar bazasi ishga tushirilmoqda / starting the database"
+  [ -f supabase/.env ] || cp supabase/.env.example supabase/.env
   pnpm db:start
+  step "Bazani yangilash va darslarni yuklash / applying migrations and loading lessons"
+  pnpm exec supabase migration up
+  pnpm content:load
   env_out=$(pnpm exec supabase status -o env)
   key=$(printf '%s\n' "$env_out" | grep -E '^(PUBLISHABLE_KEY|ANON_KEY)=' | head -1 | cut -d= -f2- | tr -d '"')
   ip=$(ipconfig getifaddr en0 || ipconfig getifaddr en1 || echo 127.0.0.1)
   printf 'EXPO_PUBLIC_SUPABASE_URL=http://%s:54321\nEXPO_PUBLIC_SUPABASE_KEY=%s\n' "$ip" "$key" > apps/mobile/.env
   echo "apps/mobile/.env written (URL http://$ip:54321)"
+  printf 'NEXT_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321\nNEXT_PUBLIC_SUPABASE_KEY=%s\n' "$key" > apps/admin/.env.local
+  echo "apps/admin/.env.local written"
 else
   printf '\n\033[1;33m%s\033[0m\n' "Docker Desktop ishlamayapti / is not running."
   echo "Docker Desktop'ni o'rnating va oching, keyin bu faylni yana ikki marta bosing."

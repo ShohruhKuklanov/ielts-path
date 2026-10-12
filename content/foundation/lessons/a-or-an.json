@@ -1,0 +1,256 @@
+{
+  "title": "A or an?",
+  "kind": "grammar",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "We use a or an before one thing."
+    },
+    {
+      "type": "text",
+      "text": "Use an before the sounds a, e, i, o, u."
+    },
+    {
+      "type": "example",
+      "en": "a book",
+      "note": "b → a"
+    },
+    {
+      "type": "example",
+      "en": "an apple",
+      "note": "a → an"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "a",
+          "an"
+        ],
+        [
+          "a pen",
+          "an egg"
+        ],
+        [
+          "a bag",
+          "an orange"
+        ],
+        [
+          "a car",
+          "an umbrella"
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Listen to the first sound. Hour starts with an o sound, so we say an hour."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Apple starts with a. Use an: an apple.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ apple",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Pen starts with p. Use a: a pen.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ pen",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Egg starts with e. Use an: an egg.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ egg",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "vocabulary",
+      "cefr": "A0",
+      "explanation": "Umbrella starts with u. Use an: an umbrella.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ umbrella",
+          "options": [
+            {
+              "text": "a"
+            },
+            {
+              "text": "an"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Orange and ice cream start with o and i. Use an.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which TWO need an?",
+          "options": [
+            {
+              "text": "___ orange"
+            },
+            {
+              "text": "___ cat"
+            },
+            {
+              "text": "___ ice cream"
+            },
+            {
+              "text": "___ dog"
+            }
+          ],
+          "multiple": true,
+          "instruction": "Choose TWO answers."
+        },
+        "answer": {
+          "correct": [
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "a bag (b), an orange (o).",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "I have {{1}} bag and {{2}} orange.",
+          "wordBank": [
+            "a",
+            "an"
+          ],
+          "instruction": "Write a or an."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "a"
+            ],
+            "2": [
+              "an"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "an umbrella (u), a car (c).",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "This is {{1}} umbrella. That is {{2}} car.",
+          "wordBank": [
+            "a",
+            "an"
+          ],
+          "instruction": "Write a or an."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "an"
+            ],
+            "2": [
+              "a"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "It + is + an egg.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "instruction": "Put the words in order.",
+          "tokens": [
+            "an",
+            "is",
+            "It",
+            "egg"
+          ]
+        },
+        "answer": {
+          "accepted": [
+            "It is an egg."
+          ]
+        }
+      }
+    }
+  ]
+}

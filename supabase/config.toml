@@ -86,3 +86,7 @@ file_size_limit = "50MiB"
 [edge_runtime]
 enabled = true
 policy = "per_worker"
+
+# Secrets for Edge Functions, read from supabase/.env (set-api-key.command writes it).
+[edge_runtime.secrets]
+ANTHROPIC_API_KEY = "env(ANTHROPIC_API_KEY)"

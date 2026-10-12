@@ -1,0 +1,282 @@
+{
+  "title": "I am, you are",
+  "kind": "grammar",
+  "cefr": "A0",
+  "estMinutes": 6,
+  "intro": [
+    {
+      "type": "text",
+      "text": "We use am with I."
+    },
+    {
+      "type": "text",
+      "text": "We use are with you."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "I",
+          "am",
+          "I'm"
+        ],
+        [
+          "you",
+          "are",
+          "you're"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "en": "I am Aziz.",
+      "note": "I + am"
+    },
+    {
+      "type": "example",
+      "en": "You are a student.",
+      "note": "you + are"
+    },
+    {
+      "type": "example",
+      "en": "I'm from Uzbekistan.",
+      "note": "I'm = I am"
+    },
+    {
+      "type": "example",
+      "en": "I'm not from Japan.",
+      "note": "I am not = I'm not"
+    },
+    {
+      "type": "tip",
+      "text": "Always write I with a big letter: I, not i."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Use am with I: I am Laylo.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "I ___ Laylo.",
+          "options": [
+            {
+              "text": "am"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Use are with you: You are my friend.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "You ___ my friend.",
+          "options": [
+            {
+              "text": "am"
+            },
+            {
+              "text": "are"
+            },
+            {
+              "text": "is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I'm is the short form of I am.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "___ from Tashkent.",
+          "options": [
+            {
+              "text": "I'm"
+            },
+            {
+              "text": "I are"
+            },
+            {
+              "text": "I is"
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "Use are with you.",
+      "content": {
+        "type": "mcq",
+        "payload": {
+          "prompt": "Which is correct?",
+          "options": [
+            {
+              "text": "You is a teacher."
+            },
+            {
+              "text": "You are a teacher."
+            },
+            {
+              "text": "You am a teacher."
+            }
+          ]
+        },
+        "answer": {
+          "correct": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I am Timur. You are Anna.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "Hello! I {{1}} Timur. You {{2}} Anna.",
+          "wordBank": [
+            "am",
+            "are"
+          ],
+          "instruction": "Write am or are."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "am"
+            ],
+            "2": [
+              "are"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I am = I'm. You are = you're. I am not = I'm not.",
+      "content": {
+        "type": "match_pairs",
+        "payload": {
+          "instruction": "Match the long and short forms.",
+          "left": [
+            "I am",
+            "you are",
+            "I am not"
+          ],
+          "right": [
+            "you're",
+            "I'm",
+            "I'm not"
+          ]
+        },
+        "answer": {
+          "pairs": [
+            1,
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I + am + a student.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "instruction": "Put the words in order.",
+          "tokens": [
+            "a",
+            "I",
+            "student",
+            "am"
+          ]
+        },
+        "answer": {
+          "accepted": [
+            "I am a student."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "You + are + from Japan.",
+      "content": {
+        "type": "word_order",
+        "payload": {
+          "instruction": "Put the words in order.",
+          "tokens": [
+            "from",
+            "are",
+            "You",
+            "Japan"
+          ]
+        },
+        "answer": {
+          "accepted": [
+            "You are from Japan."
+          ]
+        }
+      }
+    },
+    {
+      "skill": "grammar",
+      "cefr": "A0",
+      "explanation": "I am → I'm.",
+      "content": {
+        "type": "gap_fill",
+        "payload": {
+          "text": "{{1}} a teacher.",
+          "instruction": "Write the short form of I am."
+        },
+        "answer": {
+          "blanks": {
+            "1": [
+              "I'm"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -8,13 +8,13 @@ The full plan is in the **IELTS 0→9 App — Technical Blueprint** doc.
 | Learner app (iOS, Android, web) | `apps/mobile` | Expo SDK 57, Expo Router, TypeScript |
 | Shared logic and types | `packages/shared` | TypeScript |
 | Database, auth, server functions | `supabase` | Supabase (Postgres + RLS, Auth, Edge Functions) |
-| Admin panel | `apps/admin` | Next.js (added in Step 3) |
+| Admin panel | `apps/admin` | Next.js 16 (content review, AI drafting) |
 
 ## Build progress
 
 - [x] **Step 1:** monorepo, full database schema with security rules, app shell (light/dark, 5 tabs), sign-in
 - [x] **Step 2:** shared logic: 10 exercise types with validation and grading, IELTS band maths, SM-2 flashcard scheduling (41 tests)
-- [ ] Step 3: content pipeline and minimal admin
+- [x] **Step 3:** content pipeline: Foundation syllabus (8 modules, 45 lessons), 2 hand-written lessons, AI drafting with Claude, admin review queue
 - [ ] Step 4: Foundation and Elementary content
 - [ ] Step 5: placement test and onboarding
 - [ ] Step 6: study plan and Today screen
@@ -83,6 +83,28 @@ and stage 1 unlocked in `stage_progress`.
 
 ---
 
+## Admin panel and AI lessons
+
+1. Run **setup.command** once (it applies the new database changes and loads the lessons from `content/`).
+2. Double-click **admin.command**. It opens **http://localhost:3001**.
+3. Sign in with your email (the code is at http://127.0.0.1:54324).
+4. Double-click **make-admin.command**, type the same email, then reload the admin page.
+5. To let Claude write lessons: double-click **set-api-key.command** and paste your Anthropic API key
+   (from console.anthropic.com → API keys). It is saved only in `supabase/.env` on your Mac.
+
+In the admin: **Content** shows every planned lesson; **Write with AI** drafts one (about a minute).
+Every lesson, AI or human, waits in the **Review queue** until someone approves it. **Request changes**
+sends it back with your notes, and the next AI draft takes the notes into account.
+
+Where content lives:
+
+| What | Where |
+| --- | --- |
+| Syllabus (modules, lessons, goals) | `content/<stage>/syllabus.json` |
+| Hand-written lessons | `content/<stage>/lessons/*.json` (checked by `pnpm test`) |
+| AI prompt and output schema | `supabase/functions/content-generate/prompt.ts` |
+| Model | `claude-sonnet-5-5` by default; set `ANTHROPIC_MODEL` in `supabase/.env` to change |
+
 ## Setting up the sign-in providers
 
 | Provider | What you need | Where it goes |
@@ -136,4 +158,6 @@ supabase/
 | `pnpm db:reset` | Rebuild the local database from the migrations (deletes local data) |
 | `pnpm db:types` | Regenerate TypeScript types from the database |
 | `pnpm typecheck` | Type-check all packages |
-| `pnpm test` | Run the unit tests (exercise grading, band maths, SM-2) |
+| `pnpm test` | Run the unit tests (exercise grading, band maths, SM-2, content files) |
+| `pnpm content:load` | Load new syllabus/lesson files into the local database |
+| `pnpm admin` | Start the admin panel on http://localhost:3001 |

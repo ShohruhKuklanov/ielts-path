@@ -13,10 +13,14 @@
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "db:start": "supabase start",
+    "db:start": "node scripts/sync-shared.mjs && supabase start",
     "db:reset": "supabase db reset",
     "db:types": "supabase gen types typescript --local > packages/shared/src/types/database.ts",
-    "fix-deps": "pnpm --filter mobile exec expo install --fix"
+    "fix-deps": "pnpm --filter mobile exec expo install --fix",
+    "admin": "pnpm --filter admin dev",
+    "sync:shared": "node scripts/sync-shared.mjs",
+    "content:build": "node --experimental-strip-types --no-warnings scripts/build-content-sql.mts",
+    "content:load": "pnpm content:build && docker exec -i supabase_db_ielts-app psql -q -v ON_ERROR_STOP=1 -U postgres -d postgres < supabase/seed.sql"
   },
   "devDependencies": {
     "supabase": "^2.40.0",

@@ -27,3 +27,8 @@ supabase/.branches/
 apps/mobile/expo-env.d.ts
 setup.log
 expo-login.log
+
+# Next.js (admin)
+apps/admin/.next/
+apps/admin/next-env.d.ts
+apps/admin/.env.local

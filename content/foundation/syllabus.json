@@ -1,0 +1,774 @@
+{
+  "stage": "foundation",
+  "modules": [
+    {
+      "title": "Letters and sounds",
+      "icon": "text",
+      "lessons": [
+        {
+          "title": "The alphabet: A to M",
+          "kind": "alphabet",
+          "cefr": "A0",
+          "goals": [
+            "Say and recognise the letters A–M",
+            "Match capital and small letters"
+          ],
+          "targetLanguage": [
+            "A a",
+            "B b",
+            "C c",
+            "D d",
+            "E e",
+            "F f",
+            "G g",
+            "H h",
+            "I i",
+            "J j",
+            "K k",
+            "L l",
+            "M m"
+          ]
+        },
+        {
+          "title": "The alphabet: N to Z",
+          "kind": "alphabet",
+          "cefr": "A0",
+          "goals": [
+            "Say and recognise the letters N–Z",
+            "Say the whole alphabet in order"
+          ],
+          "targetLanguage": [
+            "N n",
+            "O o",
+            "P p",
+            "Q q",
+            "R r",
+            "S s",
+            "T t",
+            "U u",
+            "V v",
+            "W w",
+            "X x",
+            "Y y",
+            "Z z"
+          ]
+        },
+        {
+          "title": "Spell your name",
+          "kind": "alphabet",
+          "cefr": "A0",
+          "goals": [
+            "Spell a name letter by letter",
+            "Ask: How do you spell that?"
+          ],
+          "targetLanguage": [
+            "How do you spell your name?",
+            "My name is …"
+          ]
+        },
+        {
+          "title": "Short vowel sounds",
+          "kind": "phonics",
+          "cefr": "A0",
+          "goals": [
+            "Hear and say short a, e, i, o, u",
+            "Tell apart pairs like bag/beg, ship/shop"
+          ],
+          "targetLanguage": [
+            "cat",
+            "bed",
+            "sit",
+            "hot",
+            "cup",
+            "bag",
+            "beg",
+            "ship",
+            "shop"
+          ]
+        },
+        {
+          "title": "Long vowel sounds",
+          "kind": "phonics",
+          "cefr": "A0",
+          "goals": [
+            "Hear and say long vowels: see, car, blue, door, bird",
+            "Tell apart ship/sheep, full/fool"
+          ],
+          "targetLanguage": [
+            "see",
+            "sheep",
+            "car",
+            "blue",
+            "food",
+            "door",
+            "bird"
+          ]
+        },
+        {
+          "title": "Numbers 1 to 20",
+          "kind": "vocabulary",
+          "cefr": "A0",
+          "goals": [
+            "Say and write numbers 1–20",
+            "Understand numbers when you hear them"
+          ],
+          "targetLanguage": [
+            "one",
+            "two",
+            "three",
+            "ten",
+            "eleven",
+            "twelve",
+            "thirteen",
+            "twenty"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hello!",
+      "icon": "hand-left",
+      "lessons": [
+        {
+          "title": "Hello and goodbye",
+          "kind": "vocabulary",
+          "cefr": "A0",
+          "goals": [
+            "Greet people and say goodbye",
+            "Use Good morning / afternoon / evening"
+          ],
+          "targetLanguage": [
+            "hello",
+            "hi",
+            "goodbye",
+            "bye",
+            "good morning",
+            "good afternoon",
+            "good evening",
+            "nice to meet you"
+          ]
+        },
+        {
+          "title": "I am, you are",
+          "kind": "grammar",
+          "cefr": "A0",
+          "goals": [
+            "Use I am / you are in positive sentences",
+            "Use short forms I'm / you're"
+          ],
+          "targetLanguage": [
+            "I am",
+            "I'm",
+            "you are",
+            "you're"
+          ]
+        },
+        {
+          "title": "Where are you from?",
+          "kind": "vocabulary",
+          "cefr": "A0",
+          "goals": [
+            "Name 10 countries",
+            "Ask and answer: Where are you from? I'm from …"
+          ],
+          "targetLanguage": [
+            "Uzbekistan",
+            "Kazakhstan",
+            "Russia",
+            "Turkey",
+            "China",
+            "India",
+            "the UK",
+            "the USA",
+            "Japan",
+            "Korea"
+          ]
+        },
+        {
+          "title": "Numbers 20 to 100",
+          "kind": "vocabulary",
+          "cefr": "A1",
+          "goals": [
+            "Say and write tens: twenty to one hundred",
+            "Say numbers like 34 and 99"
+          ],
+          "targetLanguage": [
+            "thirty",
+            "forty",
+            "fifty",
+            "sixty",
+            "seventy",
+            "eighty",
+            "ninety",
+            "one hundred"
+          ]
+        },
+        {
+          "title": "Is it? Are you? Questions with be",
+          "kind": "grammar",
+          "cefr": "A0",
+          "goals": [
+            "Make yes/no questions with be",
+            "Give short answers: Yes, I am. / No, I'm not."
+          ],
+          "targetLanguage": [
+            "Are you …?",
+            "Is it …?",
+            "Yes, I am.",
+            "No, I'm not."
+          ]
+        },
+        {
+          "title": "Review: Hello!",
+          "kind": "review",
+          "cefr": "A0",
+          "goals": [
+            "Review greetings, I am / you are, countries and numbers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "People and things",
+      "icon": "cube",
+      "lessons": [
+        {
+          "title": "A or an?",
+          "kind": "grammar",
+          "cefr": "A0",
+          "goals": [
+            "Use a before consonant sounds and an before vowel sounds",
+            "Name everyday objects with a/an"
+          ],
+          "targetLanguage": [
+            "a book",
+            "a pen",
+            "an apple",
+            "an egg",
+            "an umbrella",
+            "a bag"
+          ]
+        },
+        {
+          "title": "He is, she is, it is",
+          "kind": "grammar",
+          "cefr": "A0",
+          "goals": [
+            "Use he / she / it with is",
+            "Use short forms he's / she's / it's"
+          ],
+          "targetLanguage": [
+            "he is",
+            "she is",
+            "it is",
+            "he's",
+            "she's",
+            "it's"
+          ]
+        },
+        {
+          "title": "One book, two books",
+          "kind": "grammar",
+          "cefr": "A0",
+          "goals": [
+            "Make regular plurals with -s and -es",
+            "Learn common irregular plurals"
+          ],
+          "targetLanguage": [
+            "books",
+            "boxes",
+            "buses",
+            "children",
+            "men",
+            "women",
+            "people"
+          ]
+        },
+        {
+          "title": "This, that, these, those",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Point to near and far things",
+            "Use this/that with one thing and these/those with more"
+          ],
+          "targetLanguage": [
+            "this",
+            "that",
+            "these",
+            "those"
+          ]
+        },
+        {
+          "title": "Colours and everyday things",
+          "kind": "vocabulary",
+          "cefr": "A0",
+          "goals": [
+            "Name 10 colours",
+            "Describe objects: a red bag"
+          ],
+          "targetLanguage": [
+            "red",
+            "blue",
+            "green",
+            "yellow",
+            "black",
+            "white",
+            "brown",
+            "orange",
+            "pink",
+            "grey"
+          ]
+        },
+        {
+          "title": "We are, they are",
+          "kind": "grammar",
+          "cefr": "A0",
+          "goals": [
+            "Use we / they with are",
+            "Make negatives: isn't / aren't"
+          ],
+          "targetLanguage": [
+            "we are",
+            "they are",
+            "isn't",
+            "aren't"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "My family and me",
+      "icon": "people",
+      "lessons": [
+        {
+          "title": "My family",
+          "kind": "vocabulary",
+          "cefr": "A0",
+          "goals": [
+            "Name family members",
+            "Say: This is my mother."
+          ],
+          "targetLanguage": [
+            "mother",
+            "father",
+            "sister",
+            "brother",
+            "son",
+            "daughter",
+            "grandmother",
+            "grandfather",
+            "parents",
+            "children"
+          ]
+        },
+        {
+          "title": "My, your, his, her",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Use possessive adjectives my, your, his, her, our, their"
+          ],
+          "targetLanguage": [
+            "my",
+            "your",
+            "his",
+            "her",
+            "its",
+            "our",
+            "their"
+          ]
+        },
+        {
+          "title": "Jobs",
+          "kind": "vocabulary",
+          "cefr": "A1",
+          "goals": [
+            "Name 12 jobs",
+            "Say: She is a doctor. I'm a student."
+          ],
+          "targetLanguage": [
+            "teacher",
+            "doctor",
+            "student",
+            "driver",
+            "nurse",
+            "engineer",
+            "shop assistant",
+            "cook",
+            "farmer",
+            "police officer"
+          ]
+        },
+        {
+          "title": "Describing people",
+          "kind": "vocabulary",
+          "cefr": "A1",
+          "goals": [
+            "Use adjectives for people: tall, short, young, old",
+            "Put the adjective before the noun"
+          ],
+          "targetLanguage": [
+            "tall",
+            "short",
+            "young",
+            "old",
+            "friendly",
+            "happy",
+            "tired"
+          ]
+        },
+        {
+          "title": "I have, she has",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Use have / has for family and things",
+            "Make negatives: don't have / doesn't have"
+          ],
+          "targetLanguage": [
+            "I have",
+            "she has",
+            "I don't have",
+            "he doesn't have"
+          ]
+        },
+        {
+          "title": "Review: My family and me",
+          "kind": "review",
+          "cefr": "A1",
+          "goals": [
+            "Review family words, possessives, jobs, have/has"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "My day",
+      "icon": "time",
+      "lessons": [
+        {
+          "title": "What time is it?",
+          "kind": "vocabulary",
+          "cefr": "A1",
+          "goals": [
+            "Tell the time: o'clock, half past, quarter past/to"
+          ],
+          "targetLanguage": [
+            "o'clock",
+            "half past",
+            "quarter past",
+            "quarter to"
+          ]
+        },
+        {
+          "title": "Daily routines",
+          "kind": "vocabulary",
+          "cefr": "A1",
+          "goals": [
+            "Name daily actions",
+            "Say what you do every day"
+          ],
+          "targetLanguage": [
+            "get up",
+            "have breakfast",
+            "go to work",
+            "go to school",
+            "have lunch",
+            "come home",
+            "go to bed"
+          ]
+        },
+        {
+          "title": "I work, you work: present simple",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Use the present simple for routines with I/you/we/they",
+            "Use time words: every day, in the morning"
+          ],
+          "targetLanguage": [
+            "I work",
+            "we live",
+            "they study",
+            "every day"
+          ]
+        },
+        {
+          "title": "She works: he, she, it + s",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Add -s / -es with he, she, it",
+            "Spell verbs like goes, watches, studies"
+          ],
+          "targetLanguage": [
+            "works",
+            "goes",
+            "watches",
+            "studies",
+            "has"
+          ]
+        },
+        {
+          "title": "Don't and doesn't",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Make negative present simple sentences"
+          ],
+          "targetLanguage": [
+            "don't",
+            "doesn't"
+          ]
+        },
+        {
+          "title": "Do you…? Does she…?",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Make present simple questions and short answers"
+          ],
+          "targetLanguage": [
+            "Do you …?",
+            "Does he …?",
+            "Yes, I do.",
+            "No, she doesn't."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Places around me",
+      "icon": "home",
+      "lessons": [
+        {
+          "title": "My home",
+          "kind": "vocabulary",
+          "cefr": "A1",
+          "goals": [
+            "Name rooms and furniture"
+          ],
+          "targetLanguage": [
+            "kitchen",
+            "bedroom",
+            "bathroom",
+            "living room",
+            "table",
+            "chair",
+            "bed",
+            "sofa",
+            "window",
+            "door"
+          ]
+        },
+        {
+          "title": "There is, there are",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Use there is / there are to describe places",
+            "Use there isn't / there aren't"
+          ],
+          "targetLanguage": [
+            "there is",
+            "there are",
+            "there isn't",
+            "there aren't"
+          ]
+        },
+        {
+          "title": "In, on, under, next to",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Use prepositions of place"
+          ],
+          "targetLanguage": [
+            "in",
+            "on",
+            "under",
+            "next to",
+            "behind",
+            "in front of",
+            "between"
+          ]
+        },
+        {
+          "title": "Places in town",
+          "kind": "vocabulary",
+          "cefr": "A1",
+          "goals": [
+            "Name places in a town",
+            "Say where they are"
+          ],
+          "targetLanguage": [
+            "bank",
+            "shop",
+            "hospital",
+            "school",
+            "park",
+            "station",
+            "market",
+            "pharmacy",
+            "café",
+            "library"
+          ]
+        },
+        {
+          "title": "I can swim: can and can't",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Talk about ability with can / can't",
+            "Ask: Can you …?"
+          ],
+          "targetLanguage": [
+            "can",
+            "can't",
+            "Can you …?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Food and shopping",
+      "icon": "cart",
+      "lessons": [
+        {
+          "title": "Food and drink",
+          "kind": "vocabulary",
+          "cefr": "A1",
+          "goals": [
+            "Name 20 foods and drinks"
+          ],
+          "targetLanguage": [
+            "bread",
+            "rice",
+            "meat",
+            "chicken",
+            "fish",
+            "egg",
+            "apple",
+            "tea",
+            "coffee",
+            "water",
+            "milk",
+            "juice"
+          ]
+        },
+        {
+          "title": "Some and any",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Use some in positive sentences and any in questions and negatives",
+            "Know countable and uncountable nouns"
+          ],
+          "targetLanguage": [
+            "some",
+            "any",
+            "an apple",
+            "some water"
+          ]
+        },
+        {
+          "title": "How much? How many?",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Ask about quantity and price"
+          ],
+          "targetLanguage": [
+            "How much …?",
+            "How many …?",
+            "It's … dollars."
+          ]
+        },
+        {
+          "title": "I like, I don't like",
+          "kind": "grammar",
+          "cefr": "A1",
+          "goals": [
+            "Talk about likes with like + noun and like + -ing"
+          ],
+          "targetLanguage": [
+            "I like",
+            "I don't like",
+            "I love",
+            "I like reading"
+          ]
+        },
+        {
+          "title": "At the shop",
+          "kind": "speaking",
+          "cefr": "A1",
+          "goals": [
+            "Use simple shop phrases",
+            "Understand a short shop conversation"
+          ],
+          "targetLanguage": [
+            "Can I have …?",
+            "How much is it?",
+            "Here you are.",
+            "Thank you."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "First reading and writing",
+      "icon": "create",
+      "lessons": [
+        {
+          "title": "Capital letters and full stops",
+          "kind": "writing",
+          "cefr": "A1",
+          "goals": [
+            "Start sentences with a capital letter and end with a full stop",
+            "Use capitals for names, countries and I"
+          ]
+        },
+        {
+          "title": "Read a short note",
+          "kind": "reading",
+          "cefr": "A1",
+          "goals": [
+            "Find information in a short message",
+            "Answer true/false questions about it"
+          ]
+        },
+        {
+          "title": "Write about yourself",
+          "kind": "writing",
+          "cefr": "A1",
+          "goals": [
+            "Write 4–5 simple sentences about yourself",
+            "Use and and but to join ideas"
+          ],
+          "targetLanguage": [
+            "and",
+            "but"
+          ]
+        },
+        {
+          "title": "Read about someone's day",
+          "kind": "reading",
+          "cefr": "A1",
+          "goals": [
+            "Understand a short text about a daily routine",
+            "Find times and actions"
+          ]
+        },
+        {
+          "title": "Review: Foundation",
+          "kind": "review",
+          "cefr": "A1",
+          "goals": [
+            "Review the whole stage before the stage test"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,3 +5,4 @@ export * from './text/normalize.ts';
 export * from './exercises/schemas.ts';
 export * from './exercises/grade.ts';
 export * from './srs/sm2.ts';
+export * from './lessons/schemas.ts';
