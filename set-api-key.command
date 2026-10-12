@@ -12,8 +12,10 @@ read -rs key
 echo
 key=$(printf '%s' "$key" | tr -d '[:space:]')
 case "$key" in
-  sk-ant-*) ;;
-  *) echo "Bu Anthropic kalitiga o'xshamaydi (sk-ant- bilan boshlanishi kerak). Hech narsa saqlanmadi."; exit 1 ;;
+  sk-ant-api*) ;;
+  *) echo "Bu API kalit emas. U console.anthropic.com → API Keys sahifasidan olinadi va sk-ant-api bilan boshlanadi."
+     echo "This is not an API key. Create one at console.anthropic.com → API Keys (it starts with sk-ant-api)."
+     echo "Hech narsa saqlanmadi / nothing was saved."; exit 1 ;;
 esac
 
 grep -v '^ANTHROPIC_API_KEY=' supabase/.env > supabase/.env.tmp || true
