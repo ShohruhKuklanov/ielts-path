@@ -1,3 +1,5 @@
+/* IELTS PATH brand: Path Blue #2f62e9 (light), Path Blue Dark #6c93ff (dark mode,
+   for contrast on the dark background). Keep in sync with apps/mobile/src/theme/tokens.ts. */
 :root {
   --bg: #f7f8fa; --surface: #fff; --surface-alt: #eef1f5; --border: #dde2ea;
   --text: #141a26; --muted: #5b6577; --primary: #2f62e9; --on-primary: #fff;

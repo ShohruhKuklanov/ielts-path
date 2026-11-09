@@ -55,7 +55,7 @@ export function AuthGate({ children }: { children: ReactNode }) {
   return (
     <div className="shell">
       <nav className="nav">
-        <div className="brand">IELTS Path admin</div>
+        <div className="brand">IELTS PATH admin</div>
         {nav.map(([href, label]) => (
           <Link key={href} href={href} className={(href === '/' ? path === '/' : path.startsWith(href)) ? 'active' : ''}>
             {label}

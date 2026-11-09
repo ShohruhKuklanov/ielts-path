@@ -1,4 +1,4 @@
-# IELTS Path (working name)
+# IELTS PATH
 
 A learning app that takes a learner from zero English (A0) to IELTS Band 9.
 The full plan is in the **IELTS 0→9 App — Technical Blueprint** doc.
@@ -9,6 +9,22 @@ The full plan is in the **IELTS 0→9 App — Technical Blueprint** doc.
 | Shared logic and types | `packages/shared` | TypeScript |
 | Database, auth, server functions | `supabase` | Supabase (Postgres + RLS, Auth, Edge Functions) |
 | Admin panel | `apps/admin` | Next.js 16 (content review, AI drafting) |
+
+## Branding
+
+- **Name:** IELTS PATH (store name and the app's display name; bundle ID `com.ieltspath.app`).
+- **Path Blue `#2F62E9`** — primary brand colour: light-theme `primary`, Expo `primaryColor`,
+  web theme colour, and the colour for store listing assets. White text on it is 5.2:1 (AA).
+- **Path Blue Dark `#6C93FF`** — the brand blue in dark mode (Path Blue is only 3.6:1 on the dark
+  background); `#0E1117` text on it is 6.5:1.
+- **Path Navy `#17345F`** — the "IELTS" half of the wordmark on light backgrounds.
+- Source of truth: `apps/mobile/src/theme/tokens.ts` (mobile) and `apps/admin/app/globals.css` (admin).
+- Wordmark: `apps/mobile/src/components/BrandWordmark.tsx` and `apps/mobile/assets/ielts-path-logo.svg`
+  (SVG uses live text, not outlines).
+
+Still to be created before a store build (not in the repo yet):
+app icon (1024×1024 PNG), Android adaptive icon foreground, splash image, web/admin favicon,
+App Store and Google Play screenshots, and the Google Play feature graphic (1024×500).
 
 ## Build progress
 

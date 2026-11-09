@@ -1,9 +1,17 @@
 import type { ExpoConfig } from 'expo/config';
 
-// App name, bundle IDs and colours are placeholders until the brand is chosen.
+// IELTS PATH branding. Path Blue #2F62E9 is the brand colour (see src/theme/tokens.ts).
+// Still to be designed and added before a store build (none exist in assets/ yet):
+//   icon            assets/icon.png            1024×1024 PNG, no transparency (iOS)
+//   adaptiveIcon    assets/adaptive-icon.png   1024×1024 foreground, background #2F62E9
+//   splash          assets/splash-icon.png     via the expo-splash-screen plugin
+// Until then Expo uses its default icon and a plain splash.
+const BRAND_BLUE = '#2F62E9';
+
 const config: ExpoConfig = {
-  name: 'IELTS Path',
+  name: 'IELTS PATH',
   slug: 'ielts-path',
+  primaryColor: BRAND_BLUE,
   scheme: 'ieltsapp',
   version: '0.1.0',
   orientation: 'portrait',
@@ -19,6 +27,7 @@ const config: ExpoConfig = {
   web: {
     bundler: 'metro',
     output: 'single',
+    themeColor: BRAND_BLUE,
   },
   plugins: ['expo-router', 'expo-apple-authentication'],
   experiments: {

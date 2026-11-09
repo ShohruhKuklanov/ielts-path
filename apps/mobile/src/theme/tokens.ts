@@ -1,5 +1,23 @@
-// Design tokens. Brand colours are placeholders until the brand is chosen:
-// change `primary` here and the whole app follows.
+// IELTS PATH brand colours and shared design tokens.
+//
+// Path Blue #2F62E9 is the brand colour: the light theme's `primary`, the
+// app-level `primaryColor` in app.config.ts and the colour for store assets.
+// Dark mode uses the lighter Path Blue Dark #6C93FF instead, because #2F62E9
+// is too dark on the near-black background (about 3.6:1).
+//
+// Contrast checks (WCAG 2.x):
+//   white #FFFFFF on Path Blue #2F62E9         ≈ 5.2:1  (AA for all text)
+//   Path Blue #2F62E9 on background #F7F8FA    ≈ 4.9:1  (AA for all text)
+//   Path Navy #17345F on background #F7F8FA    ≈ 11.7:1
+//   #0E1117 on Path Blue Dark #6C93FF          ≈ 6.5:1  (AA for all text)
+//   Path Blue Dark #6C93FF on #0E1117          ≈ 6.5:1
+
+/** Path Blue: primary brand colour (light theme, icons, store listing). */
+export const BRAND_BLUE = '#2F62E9';
+/** Path Blue Dark: the brand blue on dark backgrounds. */
+export const BRAND_BLUE_DARK = '#6C93FF';
+/** Path Navy: the "IELTS" half of the wordmark on light backgrounds. */
+export const BRAND_NAVY = '#17345F';
 
 export type ColorScheme = 'light' | 'dark';
 
@@ -27,7 +45,7 @@ export const palettes: Record<ColorScheme, Palette> = {
     border: '#DDE2EA',
     text: '#141A26',
     textMuted: '#5B6577',
-    primary: '#2F62E9',
+    primary: BRAND_BLUE,
     onPrimary: '#FFFFFF',
     primarySoft: '#E5ECFD',
     success: '#1F9D57',
@@ -42,7 +60,7 @@ export const palettes: Record<ColorScheme, Palette> = {
     border: '#2C3342',
     text: '#EEF1F6',
     textMuted: '#9AA4B5',
-    primary: '#6C93FF',
+    primary: BRAND_BLUE_DARK,
     onPrimary: '#0E1117',
     primarySoft: '#1E2A47',
     success: '#4CC985',

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 
 import { AppText } from '@/components/AppText';
+import { BrandWordmark } from '@/components/BrandWordmark';
 import { Button } from '@/components/Button';
 import { SegmentedControl } from '@/components/SegmentedControl';
 import { Screen } from '@/components/Screen';
@@ -84,6 +85,7 @@ export default function SignIn() {
         />
       }
     >
+      <BrandWordmark />
       <AppText variant="title">Sign in</AppText>
       <AppText muted>We will send you a 6-digit code. No password needed.</AppText>
 

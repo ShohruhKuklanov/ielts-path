@@ -4,6 +4,7 @@ import type { ComponentProps } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { AppText } from '@/components/AppText';
+import { BrandWordmark } from '@/components/BrandWordmark';
 import { Button } from '@/components/Button';
 import { Screen } from '@/components/Screen';
 import { useTheme } from '@/theme/ThemeProvider';
@@ -21,9 +22,7 @@ export default function Welcome() {
   return (
     <Screen footer={<Button label="Get started" icon="arrow-forward" onPress={() => router.push('/sign-in')} />}>
       <View style={styles.hero}>
-        <View style={[styles.logo, { backgroundColor: colors.primary }]}>
-          <Ionicons name="school" size={40} color={colors.onPrimary} />
-        </View>
+        <BrandWordmark />
         <AppText variant="title" center>
           From zero English to IELTS 9
         </AppText>
@@ -48,7 +47,6 @@ export default function Welcome() {
 
 const styles = StyleSheet.create({
   hero: { alignItems: 'center', gap: spacing.lg, marginTop: spacing.xxl, marginBottom: spacing.lg },
-  logo: { width: 80, height: 80, borderRadius: radius.lg, alignItems: 'center', justifyContent: 'center' },
   points: { gap: spacing.xl },
   point: { flexDirection: 'row', alignItems: 'center', gap: spacing.lg },
   icon: { width: 52, height: 52, borderRadius: radius.md, alignItems: 'center', justifyContent: 'center' },

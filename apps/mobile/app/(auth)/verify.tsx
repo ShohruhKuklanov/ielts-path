@@ -2,6 +2,7 @@ import { useLocalSearchParams } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 
 import { AppText } from '@/components/AppText';
+import { BrandWordmark } from '@/components/BrandWordmark';
 import { Button } from '@/components/Button';
 import { Screen } from '@/components/Screen';
 import { TextField } from '@/components/TextField';
@@ -86,6 +87,7 @@ export default function Verify() {
         </>
       }
     >
+      <BrandWordmark />
       <AppText variant="title">Enter your code</AppText>
       <AppText muted>
         We sent a {CODE_LENGTH}-digit code to {target}.
