@@ -99,6 +99,17 @@ and stage 1 unlocked in `stage_progress`.
 
 ---
 
+## Web app (cloud)
+
+The web version is built by Netlify from this repo (`netlify.toml`) and talks to a Supabase cloud project.
+
+1. Create a Supabase project, then double-click `deploy-db.command` to copy the schema and lessons to it.
+2. In Netlify, import this GitHub repo; set `EXPO_PUBLIC_SUPABASE_URL` and `EXPO_PUBLIC_SUPABASE_KEY`
+   (publishable/anon key only, never the service_role key).
+3. In Supabase → Authentication → URL Configuration, add the Netlify site URL.
+
+Every push to `main` redeploys the web app.
+
 ## Admin panel and AI lessons
 
 1. Run **setup.command** once (it applies the new database changes and loads the lessons from `content/`).

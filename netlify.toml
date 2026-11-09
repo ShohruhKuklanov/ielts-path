@@ -1,0 +1,16 @@
+# Netlify builds the IELTS PATH web app (the Expo app exported for the browser).
+# Set EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_KEY in Netlify → Project configuration →
+# Environment variables (not here). Both are public values: the publishable/anon key only works
+# within the database's row-level security rules. Never put the service_role key in Netlify.
+[build]
+  command = "pnpm install --frozen-lockfile && pnpm --filter mobile exec expo export --platform web"
+  publish = "apps/mobile/dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Single-page app: every route is served by index.html and expo-router takes it from there.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
